@@ -1,0 +1,111 @@
+body {
+    /* margin-left: 3em;
+    margin-right: 3em; */
+    margin: 0;
+    font-family: 'Inter UI', 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+header {
+    margin-left: 5vw;
+    padding-top: 3rem;
+    color: #222;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    margin-left: 1rem;
+    margin-bottom: 0;
+}
+
+header p {
+    font-size: 1.1rem;
+    line-height: 2rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+/* Main container for project area */
+.projects-container {
+    margin-left: 5vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+/* Intermediate containers for projects; arranged inside flexbox */
+.project-div {
+    /* border for debugging */
+    border: 1px dotted gray;
+    margin-left: 15px;
+    margin-right: 15px;
+    min-width: 430px;
+    min-height: 630px;
+    max-width: 430px;
+
+    /*width: 40%;*/                           /* Forces two columns max regardless of screen width */
+    position: relative;                   /* Layout for .project within .project-div           */
+}
+
+/* Containers for projects themselves */
+.project {
+    /* padding: 10px; */
+    /* border and background for debugging */
+    /* border: 1px solid orange;
+    background-color: #fec; */
+    min-width: 400px;
+    max-width: 400px;
+    height: 600px;
+    position: absolute;                   /* Allows positioning within .project-div            */
+    left: 0%;                            /* Pushes .project to the right a bit to center      */
+    box-shadow: 1em 1em 2em .25em rgba(0,0,0,.2);
+    opacity: 0;
+    /* transition: transform 4s .25s cubic-bezier(0,1,.3,1), margin-top .3s .25s ease-out; */
+    /* will-change: opacity; */
+    margin-top: 50px;
+    transform: scale(1);
+    transition: opacity .7s ease-in-out .25s,
+                margin-top .7s ease-in-out .1s,
+                transform .7s ease-in-out;
+}
+
+/* Slide up effect for projects when visible */
+.project.is-visible {
+    opacity: 1;
+    margin-top: 0;
+}
+
+.project:hover {
+    transform: scale(1.05);
+    transition: transform .7s ease-in-out;
+}
+
+
+/* Text style for projects */
+.project-text {
+    font-size: 3em;
+    font-weight: bold;
+    /* position: absolute;
+    width: 250px; */
+    /* color: rgba(80,80,64,.8); */
+    /* top: 1em; */
+    /* left: .5em; */
+    /* Styles for contrasting color effect */
+    height: inherit;
+    background: inherit;
+    -webkit-background-clip: text;
+            background-clip: text;
+    color: transparent;
+    filter: invert(1) grayscale(1) contrast(9) drop-shadow(.05em .05em orange);
+}
+
+/* Rules for multi column layout */
+@media only screen and (min-width: 940px) {
+    /* Pushes first column vertically down */
+    .projects-container .project-div:nth-child(odd) {
+        top: 80px;
+        /* background for debugging */
+        /* background-color: aquamarine; */
+    }
+}
