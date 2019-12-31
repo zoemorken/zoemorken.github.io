@@ -2,32 +2,70 @@ body {
     /* margin-left: 3em;
     margin-right: 3em; */
     margin: 0;
-    font-family: 'Inter UI', 'Open Sans', 'Helvetica Neue', sans-serif
+    font-family: 'Lato', 'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    color: #5f5f5f;
+}
+
+.leftmargin {
+    flex: 1 10vw;
+}
+
+.rightmargin {
+    flex: 1 10vw;
+}
+
+.centercontent {
+    flex-grow: 10;
+    flex-basis: 900px;
 }
 
 header {
-    margin-left: 5vw;
     padding-top: 3rem;
-    color: #222;
 }
 
-header h1 {
-    font-size: 2.5rem;
-    line-height: 2.5rem;
-    margin-left: 1rem;
-    margin-bottom: 0;
-}
-
-header p {
+header .mainhead, header .subhead {
     font-size: 1.1rem;
-    line-height: 2rem;
-    margin-left: 1rem;
+    display: flex;
+    justify-content: space-between;
     margin-top: 1rem;
 }
 
-/* Main container for project area */
-.projects-container {
-    margin-left: 5vw;
+.mainhead h1 {
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    line-height: 2.5rem;
+    margin-bottom: 0;
+}
+
+.subhead .right {
+    text-align: right;
+}
+
+.avatar {
+    width: 48px;
+    margin-top: 0.9rem; /* Hack to push avatar down */
+}
+
+h2 {
+    font-size: 1.2rem;
+}
+
+/* Dotted line after section heading */
+h2:before {
+    content: "\a0";
+    display: block;
+    padding: 2px 0;
+    line-height: 1px;
+    border-top: 1px dotted lightgray;
+    max-width: 430px;
+}
+
+/* Main container for projects */
+.card-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -35,9 +73,9 @@ header p {
 }
 
 /* Intermediate containers for projects; arranged inside flexbox */
-.project-div {
+.card-div {
     /* border for debugging */
-    border: 1px dotted gray;
+    /* border: 1px dotted gray; */
     margin-left: 15px;
     margin-right: 15px;
     min-width: 430px;
@@ -45,25 +83,25 @@ header p {
     max-width: 430px;
 
     /*width: 40%;*/                           /* Forces two columns max regardless of screen width */
-    position: relative;                   /* Layout for .project within .project-div           */
+    position: relative;                   /* Layout for .project within .card-div           */
+    top: -2rem;
 }
 
 /* Containers for projects themselves */
 .project {
     /* padding: 10px; */
     /* border and background for debugging */
-    /* border: 1px solid orange;
-    background-color: #fec; */
+    border: 1px solid black;
+/*    background-color: #fec; */
     min-width: 400px;
     max-width: 400px;
     height: 600px;
-    position: absolute;                   /* Allows positioning within .project-div            */
-    left: 0%;                            /* Pushes .project to the right a bit to center      */
-    box-shadow: 1em 1em 2em .25em rgba(0,0,0,.2);
+    position: absolute;                   /* Allows positioning within .card-div            */
+    /* box-shadow: 1em 1em 2em .25em rgba(0,0,0,.2); */
     opacity: 0;
     /* transition: transform 4s .25s cubic-bezier(0,1,.3,1), margin-top .3s .25s ease-out; */
     /* will-change: opacity; */
-    margin-top: 50px;
+    /* margin-top: 50px; */
     transform: scale(1);
     transition: opacity .7s ease-in-out .25s,
                 margin-top .7s ease-in-out .1s,
@@ -84,28 +122,50 @@ header p {
 
 /* Text style for projects */
 .project-text {
-    font-size: 3em;
+    font-size: 1.2em;
     font-weight: bold;
-    /* position: absolute;
-    width: 250px; */
+    position: absolute;
+    width: 250px;
+    margin: 0.5rem;
+
+    /* margin-top: 520px;
+    margin-left: 1rem; */
     /* color: rgba(80,80,64,.8); */
     /* top: 1em; */
     /* left: .5em; */
     /* Styles for contrasting color effect */
-    height: inherit;
+    /* height: inherit;
     background: inherit;
     -webkit-background-clip: text;
             background-clip: text;
     color: transparent;
-    filter: invert(1) grayscale(1) contrast(9) drop-shadow(.05em .05em orange);
+    filter: invert(1) contrast(9) grayscale(1) contrast(9) drop-shadow(.05em .05em orange); */ */
 }
 
 /* Rules for multi column layout */
 @media only screen and (min-width: 940px) {
     /* Pushes first column vertically down */
-    .projects-container .project-div:nth-child(odd) {
-        top: 80px;
+    .card-container .card-div:nth-child(odd) {
+        top: 0;
         /* background for debugging */
         /* background-color: aquamarine; */
     }
+}
+
+
+footer {
+    background-color: #555;
+    flex-basis: 100%;
+    height: 8rem;
+    text-align: center;
+    color: white;
+}
+
+footer h1 {
+    font-size: 1.5rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
 }
