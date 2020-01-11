@@ -5,7 +5,6 @@ body {
 
 .container {
     width: 60rem;
-    height: 18.75rem;
     margin-left: auto;
     margin-right: auto;
 }
@@ -96,13 +95,13 @@ main h1 {
     padding: 1rem 0;
 }
 
-.overview-right a {
+.overview-right a, .card1-info a, .card2-info a, .card3-info a, .cap4 a {
     text-decoration: none;
     font-weight: 700;
     color: slateblue;
 }
 
-.overview-right a:hover {
+.overview-right a:hover, .card1-info a:hover, .card2-info a:hover, .card3-info a:hover, .cap4 a:hover {
     background-color: rgba(183, 190, 231, 0.3);
 }
 
@@ -130,6 +129,7 @@ main h1 {
     border-radius: 0.125rem;
     min-width: 30%;
 }
+
 
 .card2-images, .card2-captions, .concepttesting, .concepttestingcap {
     display: flex;
@@ -275,4 +275,35 @@ main h1 {
     font-weight: 700;
     text-align: center;
     padding: 2rem 0;
+}
+
+footer {
+    background-color: #0D0F13;
+    height: 12rem;
+    text-align: center;
+    color: #7F839E;
+    margin-top: 2.5rem;
+}
+
+footer h1 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding-top: 2.5rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(183, 190, 231);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+footer a:hover {
+    background-color: rgba(183, 190, 231, 0.253);
+}
+
+footer .copyright {
+    font-size: 0.75rem;
+    color: rgba(127, 131, 158, 0.5);
+    padding-top: 0.5rem;
 }

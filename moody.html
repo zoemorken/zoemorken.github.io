@@ -45,10 +45,10 @@
                 <h2>Focus and Chosen API</h2>
                 <!-- add the why / bold isn't working, fix-->
                 <p>I chose to create a web app for people that would create a playlist based off of what they’re doing in the moment (studying, exercising, etc.).</p>
-                <p><b>Chosen API:</b> Spotify’s Web API for Developers</p>
-                <p><b>Input:</b> Mood / Situation (visualized as menu on the side of the screen)</p>
-                <p><b>Output:</b> Recommended playlist or list of songs</p>
-                <p><b>Endpoint:</b> /v1/recommendations</p>
+                <p><span style="font-weight: bold">Chosen API:</span> Spotify’s Web API for Developers</p>
+                <p><span style="font-weight: bold">Input:</span> Mood / Situation (visualized as menu on the side of the screen)</p>
+                <p><span style="font-weight: bold">Output:</span> Recommended playlist or list of songs</p>
+                <p><span style="font-weight: bold">Endpoint:</span> /v1/recommendations</p>
             </div>
             <div class="approach">
                 <h1>Approach</h1>
@@ -71,7 +71,7 @@
             </div>
             <div class="card2-info">
                 <h2>Specifying Functionality</h2>
-                <p>Following the tutorial, my API retrieved the Spotify user’s account data. This was a placeholder endpoint that I changed. To customize Moody, I replaced this with my chosen endpoint: <a href="https://developer.spotify.com/documentation/web-api/reference/browse/get-recommendations/" target="_blank">v1/recommendations</a>. Changes I made in the code were added incrementally – I always commented out code I thought I didn’t need, checked the browser, then deleted if everything was still working – to reduce the possibility of not knowing where the error occurred.</p>
+                <p>Following the tutorial, my API retrieved the Spotify user’s account data. This was a placeholder endpoint that I changed. To customize Moody, I replaced this with my chosen endpoint: <a href="https://developer.spotify.com/documentation/web-api/reference/browse/get-recommendations/" target="_blank">/v1/recommendations</a>. Changes I made in the code were added incrementally – I always commented out code I thought I didn’t need, checked the browser, then deleted if everything was still working – to reduce the possibility of not knowing where the error occurred.</p>
                 <p>To clarify, most of my changes were made on the index.html page I downloaded from GitHub. I did not make a separate file due to the fact that some of the components needed for authorization and access into Spotify’s API already existed on this page upon downloading. Therefore, the index.html page includes not only HTML, but some JavaScript (JS) and jQuery as well as Handlebars.js, a compiler that takes HTML and (using a Handlebars expression), compiles them to a JS function. For clarity, different scripts are organized in logical order, from the first login page to the actual web app itself.</p>
                 <p>The app functions as follows:</p>
                 <ol>
@@ -106,14 +106,27 @@
                 <h1>Reflection</h1>
                 <p>My first experience working with an API was much more difficult than anticipated. Prior to this exercise, I had no background knowledge on the subject and had no idea what many of the terms thrown my way meant. Because each part of the process exercised different mental capabilities, I’ve broken this reflection into how I approached creating Moody.</p>
                 <ul>
-                    <li>Spotify Authorization Set-Up: By far the most technically challenging part. I relied heavily on external sources when the tutorial didn’t make sense or wasn’t working for me. Coming into this exercise, I struggled to understand what an API was, much less how I could run one. Therefore, when going through the tutorial, I asked many questions: “What is Node.js? What is a local host? What is an access / refresh token?” Though these terms are not as foreign to me now as they were then, I still am not completely familiar with the many components in my code running behind the scenes (to know every detail would be a semester-long project of its own!). However, I understand how everything interacts with one another, from the client-side HTML to the server-side API. Additionally, I learned basic Unix commands to start the terminal!</li>
-                    <li>Specifying Functionality: This was also difficult, as I had limited JS and jQuery knowledge. Once I had the API example set up on my computer, I began to edit and rearrange the code gradually. I saved and checked the smallest of modifications in the browser to confirm everything was still running properly. By doing so, I was able to reduce the amount of time spent debugging since only one change was made at a time. This made running into issues easier; when I did encounter problems, I would use Developer Tools to view errors (especially helpful when replacing user profile information with track information).</li>
-                    <li>Styling and Enhanced UX: What I found most exciting to do, besides seeing the API work for the first time. Because I was already familiar with CSS, this part was relatively short and involved a lot of me playing around with line widths, spacing, sizing, etc. When deciding on a more meaningful way to showcase information retrieved from the API, I was happy to discover that emojis had their own HTML reference. I had to learn a bit of JS to have the name of the playlist update accordingly, but this addition enhanced the overall end result.</li>
+                    <li><span style="font-weight: bold">Spotify Authorization Set-Up:</span> By far the most technically challenging part. I relied heavily on external sources when the tutorial didn’t make sense or wasn’t working for me. Coming into this exercise, I struggled to understand what an API was, much less how I could run one. Therefore, when going through the tutorial, I asked many questions: “What is Node.js? What is a local host? What is an access / refresh token?” Though these terms are not as foreign to me now as they were then, I still am not completely familiar with the many components in my code running behind the scenes (to know every detail would be a semester-long project of its own!). However, I understand how everything interacts with one another, from the client-side HTML to the server-side API. Additionally, I learned basic Unix commands to start the terminal!</li>
+                    <li><span style="font-weight: bold">Specifying Functionality:</span> This was also difficult, as I had limited JS and jQuery knowledge. Once I had the API example set up on my computer, I began to edit and rearrange the code gradually. I saved and checked the smallest of modifications in the browser to confirm everything was still running properly. By doing so, I was able to reduce the amount of time spent debugging since only one change was made at a time. This made running into issues easier; when I did encounter problems, I would use Developer Tools to view errors (especially helpful when replacing user profile information with track information).</li>
+                    <li><span style="font-weight: bold">Styling and Enhanced UX:</span> What I found most exciting to do, besides seeing the API work for the first time. Because I was already familiar with CSS, this part was relatively short and involved a lot of me playing around with line widths, spacing, sizing, etc. When deciding on a more meaningful way to showcase information retrieved from the API, I was happy to discover that emojis had their own HTML reference. I had to learn a bit of JS to have the name of the playlist update accordingly, but this addition enhanced the overall end result.</li>
                 </ul>
                 <p>If I were to continue working on this exercise, I would make several improvements. First, I would include more moods as well as constraints (experimenting with other track attributes such as instrumentalness, key, and popularity). Another endpoint I could add would involve creating a playlist in Spotify out of the tracks retrieved (the user would click a button at the bottom of the page).</p>
-                <p>Ultimately, I gained so much in creating Moody, improving on both my technical and creative skills.</p>
+                <p>Ultimately, in creating Moody, I improved greatly on both my technical and creative skills.</p>
             </div>
         </main>
     </div>
+    <footer>
+        <h1>Zo&euml; Morken</h1>
+        <p>
+            <a href="mailto:zmorken@purdue.edu">Email</a> –
+            <a href="zoemorkenresume.pdf" target="_blank">Resume</a> –
+            <a href="http://linkedin.com/in/zoe-morken" target="_blank">LinkedIn</a> –
+            <a href="https://www.instagram.com/zoe.morken/" target="_blank">Instagram</a> – 
+            <a href="https://github.com/zoemorken" target="_blank">GitHub</a>
+        </p>
+        <div class="copyright">
+            <p>© 2020</p>
+        </div>
+    </footer> 
 </body>
 </html>
