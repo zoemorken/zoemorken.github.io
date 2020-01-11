@@ -93,7 +93,17 @@ main h1 {
 }
 
 .overview-right h3 {
-    padding-bottom: 1rem;
+    padding: 1rem 0;
+}
+
+.overview-right a {
+    text-decoration: none;
+    font-weight: 700;
+    color: slateblue;
+}
+
+.overview-right a:hover {
+    background-color: rgba(183, 190, 231, 0.3);
 }
 
 .coverdescription p, .overview-right p {
@@ -187,13 +197,18 @@ main h1 {
 .persona {
     width: 50%;
     padding-bottom: 2rem;
-    /* display: flex;
-    justify-content: space-between; */
+    display: flex;
+    justify-content: space-between;
 }
 
 .persona img {
     max-width: 100%;
     max-height: 100%;
+}
+
+.persona-right {
+    min-width: 100%;
+    padding-top: 5rem;
 }
 
 /* Whiteboard images don't fit within overall container; fix. */
