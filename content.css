@@ -1,0 +1,263 @@
+body {
+    color: #444444;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.container {
+    width: 60rem;
+    height: 18.75rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    padding-bottom: 1.25rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+/* h4 is meant for the design challenge (aka overarching question). It is not smaller than the h3. */
+
+h4 {
+    font-size: 1.75rem;
+    font-weight: 400;
+    margin: 5rem 0;
+    line-height: 1.5;
+    border-left: 0.25rem solid slateblue;
+    padding-bottom: none;
+    padding-left: 1rem;
+}
+
+p, li {
+    font-weight: 300;
+    font-size: 1rem;
+    padding-bottom: 0.75rem;
+    line-height: 1.5;
+}
+
+.hero-image {
+    height: 40rem;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-image.moody {
+    background-image: url("images/moody.jpg");
+}
+
+.hero-image.cerner {
+    background-image: url("images/cerner.jpg");
+}
+
+.cover-description {
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.185);
+    width: 30%;
+    padding: 3.125rem;
+    position: absolute;
+    margin-top: 20rem;
+    color: white;
+}
+
+main h1 {
+    padding-top: 2rem;
+    color: slateblue;
+}
+
+.overview, .surveyresults {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+}
+
+.objective {
+    width: 70%;
+    min-height: 20rem;
+    border-right: 0.0625rem solid #444444;
+}
+
+.objective p, .surveyresults-left p, .surveyresults-left li {
+    width: 90%;
+}
+
+.overview-right {
+    width: 25%;
+}
+
+.overview-right h3 {
+    padding-bottom: 1rem;
+}
+
+.coverdescription p, .overview-right p {
+    padding-bottom: 0.25rem;
+    font-weight: 400;
+}
+
+.steps {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.steps h3 {
+    color: rgba(255, 255, 255, 0.80);
+    padding: 0;
+}
+
+.card1, .card2, .card3 {
+    box-sizing: border-box;
+    padding: 1.875rem;
+    background-color: #1DB954;
+    border-radius: 0.125rem;
+    min-width: 30%;
+}
+
+.card2-images, .card2-captions, .concepttesting, .concepttestingcap {
+    display: flex;
+    justify-content: space-between;
+    font-style: italic;
+}
+
+.image1, .image2, .cap1, .cap2, .cap6, .cap7 {
+    width: 50%;
+}
+
+.cap1-cerner {
+    width: 75%;
+}
+
+.image1 img, .image2 img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.cernerimages {
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    /* W3Schools CSS Shadow Effects (polaroid example) */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.cap1, .cap1-cerner, .cap2, .cap3, .cap4, .cap5, .cap6, .cap7 {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-style: italic;
+    padding: 1.25rem 0;
+}
+
+.surveyresults {
+    padding-bottom: 2rem;
+}
+
+.surveyresults-left {
+    width: 50%;
+    border-right: 0.0625rem solid #444444;
+}
+
+.surveyresults-right {
+    width: 45%;
+}
+.interviewtakeaways ol {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.interviewtakeaways li {
+    width: 22%;
+    list-style: none;
+    background-color:rgba(29, 185, 84, 0.15);
+    border-radius: 2;
+    padding: 0.6rem;
+}
+
+/* Fix: I want .persona-right information on the right of the persona image. */
+
+.persona {
+    width: 50%;
+    padding-bottom: 2rem;
+    /* display: flex;
+    justify-content: space-between; */
+}
+
+.persona img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Whiteboard images don't fit within overall container; fix. */
+
+.whiteboardexmap {
+    display: flex;
+    justify-content: space-between;
+    width: 25%;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+.whiteboardexmap img, .groupphotowork img, .exmapfull img, .exmapgoogle img, .annotatedwhiteboard img, .concepttesting img {
+    max-width: 100%;
+    max-height: 100%;
+    padding-right: 1rem;
+}
+
+/* Had to add margin since my flex display on .cernersketches class wasn't working for some reason...see three style sections below. don't know why it isn't centered */
+.cernersketches img {
+    margin: 0 2.5rem;
+    max-width: 100%;
+    max-height: 100%;
+    padding-right: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.groupphotowork {
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+
+.exmapfull, .exmapgoogle, .annotatedwhiteboard {
+    width: 95%;
+    padding: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cernersketches {
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+.annotatedwhiteboard {
+    padding-bottom: 2rem;
+}
+
+.concepttesting {
+    width: 50%;
+}
+
+
+.cernerteam {
+    background-image: url("images/cernerteamphoto.jpg");
+}
+
+.endcap p {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 2rem 0;
+}

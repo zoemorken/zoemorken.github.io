@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>API Exercise</title>
+    <link rel="stylesheet" href="css-reset.css">
+    <link rel="stylesheet" type="text/css" href="content.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="hero-image moody">
+            <div class="cover-description">
+                <h1>Moody</h1>
+                <p>Designing a web application for those looking to use music as a means to enhance experiences.</p>
+            </div>
+        </div>
+
+        <main>
+            <h1>Overview</h1>
+            <div class="overview">
+                <div class="objective">
+                    <h2>Objective</h2>
+                    <p>In the past decade, the traditional method of designing websites (static pages with links) has largely been replaced with the designing of web applications (apps). Web apps are able to engage users through dynamic and interactive content through external web services. Different web services supply methods for sending and receiving information across a network, typically from a server to a client. Through application programming interfaces (APIs), web developers can request content from web services to implement onto their web applications. Popular services such as Google, Facebook, and YouTube provide public APIs.</p>
+                    <p> Our task was to create a web app that called upon a public API of our choice. To frame up our application, we were to choose something both personally meaningful and containing a strong user experience (UX) focus. The final product was to include an interactive web page (HTML) styled with CSS and an API that enhanced functionality and UX of our web app.</p>
+                </div>
+                <div class="overview-right">
+                    <h3>Role</h3>
+                    <p>UI / UX Designer</p>
+                    <h3>Duration</h3>
+                    <p>7 weeks (October–December 2019)</p>
+                    <h3>Tools</h3>
+                    <p>Spotify's API for Developers, Visual Studio Code Editor – HTML, CSS, JS, JQuery</p>
+                </div>
+            </div>
+            <div class="project-info">
+                <h2>Focus and Chosen API</h2>
+                <!-- add the why / bold isn't working, fix-->
+                <p>I chose to create a web app for people that would create a playlist based off of what they’re doing in the moment (studying, exercising, etc.).</p>
+                <p><b>Chosen API:</b> Spotify’s Web API for Developers</p>
+                <p><b>Input:</b> Mood / Situation (visualized as menu on the side of the screen)</p>
+                <p><b>Output:</b> Recommended playlist or list of songs</p>
+                <p><b>Endpoint:</b> /v1/recommendations</p>
+            </div>
+            <div class="approach">
+                <h1>Approach</h1>
+                <p>After having a rough idea of what my web app would look like, I approached the exercise in three main steps:</p>
+                <div class="steps">
+                    <div class="card1"><h3>Spotify Authorization Setup</h3></div>
+                    <div class="card2"><h3>Specifying Functionality</h3></div>
+                    <div class="card3"><h3>Styling and Enhanced UX</h3></div>
+                </div>
+            </div>
+            <div class="card1-info">
+                <h2>Spotify Authorization Setup</h2>
+                <p>To start, I followed <a href="https://developer.spotify.com/documentation/web-api/quick-start/" target="_blank">Spotify’s quick start web API tutorial</a>. Though Spotify’s API is free, it requires authentication by the user (in other words, a Spotify account) to access user-related information. Therefore, it was imperative that I register my app according to the guide. Following the setup process, I did the following:</p>
+                <ol>
+                    <li><b>Register my application.</b> I created the app under my Spotify account. After deciding on a name (Moody) and description, Spotify provided me with a Client ID and secret (a key to pass secure calls to Spotify Accounts and Web API services).</li>
+                    <li><b>Prepare and test my environment.</b> Following the tutorial, I downloaded and installed Node.js in order to create an HTTP server on my computer. Running both server.js and app.js in Node, I was able to start up a web server on my computer at port 8888. When typing in “localhost:8888,” my Chrome browser made a call to a server, in which Node replied with the http request. Per the Spotify tutorial, I set up the response as “Hello World.”</li>
+                    <li><b>Add Node.js into downloaded OAuth examples.</b> A GitHub repository with the examples was supplied in the tutorial, so I downloaded those.</li>
+                    <li><b>Provide the app credentials.</b> In the app.js file (one of the files I downloaded from GitHub), I had to input the Client ID, Client Secret, and Redirect URI in order to call my specific app. Going back to my dashboard, I retrieved these values and got my app up and running. I was able to successfully retrieve my information!</li>
+                </ol>
+            </div>
+            <div class="card2-info">
+                <h2>Specifying Functionality</h2>
+                <p>Following the tutorial, my API retrieved the Spotify user’s account data. This was a placeholder endpoint that I changed. To customize Moody, I replaced this with my chosen endpoint: <a href="https://developer.spotify.com/documentation/web-api/reference/browse/get-recommendations/" target="_blank">v1/recommendations</a>. Changes I made in the code were added incrementally – I always commented out code I thought I didn’t need, checked the browser, then deleted if everything was still working – to reduce the possibility of not knowing where the error occurred.</p>
+                <p>To clarify, most of my changes were made on the index.html page I downloaded from GitHub. I did not make a separate file due to the fact that some of the components needed for authorization and access into Spotify’s API already existed on this page upon downloading. Therefore, the index.html page includes not only HTML, but some JavaScript (JS) and jQuery as well as Handlebars.js, a compiler that takes HTML and (using a Handlebars expression), compiles them to a JS function. For clarity, different scripts are organized in logical order, from the first login page to the actual web app itself.</p>
+                <p>The app functions as follows:</p>
+                <ol>
+                    <li>The user provides their credentials to log in to Spotify.</li>
+                    <li>The navigation menu on the left side calls an AJAX function which retrieves data from Spotify’s server asynchronously (the endpoint URL is built to make the AJAX call).</li>
+                    <li>JSON results from the API are parsed and rendered by Handlebars into HTML.</li>
+                </ol>
+                <!-- Revise image alt names -->
+                <div class="card2-images">
+                    <div class="image1">
+                        <img src="images/moodyimage1.png" alt="Authentication Screen">
+                    </div>
+                    <div class="image2">
+                        <img src="images/moodyimage2.png" alt="Global view of web application.">
+                    </div>
+                </div>
+                <div class="card2-captions">
+                    <div class="cap1">
+                        <p>Before using the app, authentication is needed from the user.</p>
+                    </div>
+                    <div class="cap2">
+                        <p>Once credentials are provided, the navigation menu makes calls to the API. A default call for the study mood is made immediately after login so the page is not empty.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card3-info">
+                <h2>Styling and Enhanced UX</h2>
+                <p>After getting Moody to function as intended, I styled the web app. I wanted users to be able to discover new songs when selecting a given mood but in a more fun and playful manner than a simple dropdown menu and list of tracks. To do this, I followed <a href="https://developer.spotify.com/branding-guidelines/" target="_blank">Spotify’s branding guidelines</a> to help users associate the app with Spotify as well as make a navigation menu out of iOS emojis!</p>
+                <p>Styling for Moody was done in a separate style.css file. Here, I manipulated background color, placement of the aside (what I chose to call the menu, as it existed on the left side of the screen) and generated tracks, and size of the emojis. The actual emojis themselves are displayed in HTML using their unique decimal reference.</p>
+            </div>
+            <div class="reflection">
+                <h1>Reflection</h1>
+                <p>My first experience working with an API was much more difficult than anticipated. Prior to this exercise, I had no background knowledge on the subject and had no idea what many of the terms thrown my way meant. Because each part of the process exercised different mental capabilities, I’ve broken this reflection into how I approached creating Moody.</p>
+                <ul>
+                    <li>Spotify Authorization Set-Up: By far the most technically challenging part. I relied heavily on external sources when the tutorial didn’t make sense or wasn’t working for me. Coming into this exercise, I struggled to understand what an API was, much less how I could run one. Therefore, when going through the tutorial, I asked many questions: “What is Node.js? What is a local host? What is an access / refresh token?” Though these terms are not as foreign to me now as they were then, I still am not completely familiar with the many components in my code running behind the scenes (to know every detail would be a semester-long project of its own!). However, I understand how everything interacts with one another, from the client-side HTML to the server-side API. Additionally, I learned basic Unix commands to start the terminal!</li>
+                    <li>Specifying Functionality: This was also difficult, as I had limited JS and jQuery knowledge. Once I had the API example set up on my computer, I began to edit and rearrange the code gradually. I saved and checked the smallest of modifications in the browser to confirm everything was still running properly. By doing so, I was able to reduce the amount of time spent debugging since only one change was made at a time. This made running into issues easier; when I did encounter problems, I would use Developer Tools to view errors (especially helpful when replacing user profile information with track information).</li>
+                    <li>Styling and Enhanced UX: What I found most exciting to do, besides seeing the API work for the first time. Because I was already familiar with CSS, this part was relatively short and involved a lot of me playing around with line widths, spacing, sizing, etc. When deciding on a more meaningful way to showcase information retrieved from the API, I was happy to discover that emojis had their own HTML reference. I had to learn a bit of JS to have the name of the playlist update accordingly, but this addition enhanced the overall end result.</li>
+                </ul>
+                <p>If I were to continue working on this exercise, I would make several improvements. First, I would include more moods as well as constraints (experimenting with other track attributes such as instrumentalness, key, and popularity). Another endpoint I could add would involve creating a playlist in Spotify out of the tracks retrieved (the user would click a button at the bottom of the page).</p>
+                <p>Ultimately, I gained so much in creating Moody, improving on both my technical and creative skills.</p>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
