@@ -1,17 +1,8 @@
 body {
-    /* margin-left: 3em;
-    margin-right: 3em; */
     margin: 0;
     font-family: 'Quicksand', sans-serif;
-    /* display: flex;
-    flex-wrap: wrap;
-    align-items: center; */
     color: #444444;
 }
-
-/* .leftmargin, .rightmargin {
-    flex: 1 10vw;
-} */
 
 .centercontent {
     flex-basis: 900px;
@@ -116,13 +107,12 @@ h2:before {
     /* Allows positioning within .card-div*/
     /* box-shadow: 1em 1em 2em .25em rgba(0,0,0,.2); */
     opacity: 0;
-    /* transition: transform 4s .25s cubic-bezier(0,1,.3,1), margin-top .3s .25s ease-out; */
-    /* will-change: opacity; */
-    /* margin-top: 50px; */
-    transform: scale(1);
+    background-size: 200%;
+    background-position: center;
     transition: opacity .7s ease-in-out .25s,
                 margin-top .7s ease-in-out .1s,
-                transform .7s ease-in-out;
+                /* transform .7s ease-in-out; */
+                background-size .7s ease-in-out;
 }
 
 /* Slide up effect for projects when visible */
@@ -132,8 +122,8 @@ h2:before {
 }
 
 .project:hover {
-    transform: scale(1.05);
-    transition: transform .7s ease-in-out;
+    background-size: 220%;
+    transition: background-size .7s ease-in-out;
 }
 
 .card-container a {
@@ -152,18 +142,6 @@ h2:before {
     min-height: 5.25rem;
     padding-top: 3rem;
     padding-left: 2rem;
-    /* margin-top: 520px;
-    margin-left: 1rem; */
-    /* color: rgba(80,80,64,.8); */
-    /* top: 1em; */
-    /* left: .5em; */
-    /* Styles for contrasting color effect */
-    /* height: inherit;
-    background: inherit;
-    -webkit-background-clip: text;
-            background-clip: text;
-    color: transparent;
-    filter: invert(1) contrast(9) grayscale(1) contrast(9) drop-shadow(.05em .05em orange); */ 
 }
 
 /* Rules for multi column layout */

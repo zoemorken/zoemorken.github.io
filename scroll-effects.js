@@ -1,20 +1,10 @@
 // Javascript for controlling scroll animations
 
 document.addEventListener("DOMContentLoaded", function () {
-    // Toggle the is-visible class when show-on-scroll objects are within the viewport
-    // const observers = new IntersectionObserver(function(entries) {
-    //     entries.forEach(entry => entry.target.classList.toggle("is-visibile"));
-    // });
-    // const targets = document.querySelectorAll(".show-on-scroll");
-    // targets.forEach(function(target) {
-    //     observers.observe(target);
-    // });
-
-
     // Sets up the background images for projects
     document.querySelectorAll('[data-background]').forEach(function(e) {
         let url = e.getAttribute('data-background');
-        e.style.background='url('+url+') 50%/ cover';
+        e.style['background-image']='url('+url+')';
     });
 
     // Methods to check for visibility of elements and apply is-visible class as needed
