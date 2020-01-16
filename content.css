@@ -56,6 +56,10 @@ p, li {
     background-image: url("images/cerner.jpg");
 }
 
+.hero-image.friendli {
+    background-image: url("images/friendli.jpg");
+}
+
 .cover-description {
     box-sizing: border-box;
     background-color: rgba(255, 255, 255, 0.185);
@@ -150,7 +154,7 @@ main h1 {
     max-height: 100%;
 }
 
-.cernerimages {
+.cernerimages, .friendliimages {
     margin-left: auto;
     margin-right: auto;
     width: 75%;
@@ -170,15 +174,24 @@ main h1 {
     padding-bottom: 2rem;
 }
 
-.surveyresults-left {
+.surveyresults-left, .interviewtakeawaysv2-left {
     width: 50%;
     border-right: 0.0625rem solid #444444;
 }
 
-.surveyresults-right {
+.interviewtakeawaysv2-left {
+    border-right: none;
+}
+
+.interviewtakeawaysv2-left img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.surveyresults-right, .interviewtakeawaysv2-right {
     width: 45%;
 }
-.interviewtakeaways ol {
+.interviewtakeaways ol, .interviewtakeawaysv2 {
     display: flex;
     justify-content: space-between;
     margin-bottom: 2rem;
