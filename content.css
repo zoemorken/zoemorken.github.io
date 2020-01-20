@@ -35,6 +35,11 @@ h4 {
     padding-left: 1rem;
 }
 
+.friendlifinaltext h4 {
+    font-size: 1rem;
+    margin: 0;
+}
+
 p, li {
     font-weight: 300;
     font-size: 1rem;
@@ -135,7 +140,7 @@ main h1 {
 }
 
 
-.card2-images, .card2-captions, .concepttesting, .concepttestingcap {
+.card2-images, .card2-captions, .concepttesting, .concepttestingcap, .friendliwhiteboarding, .friendliwhiteboardingcap {
     display: flex;
     justify-content: space-between;
     font-style: italic;
@@ -234,7 +239,7 @@ main h1 {
     padding-bottom: 2rem;
 }
 
-.whiteboardexmap img, .groupphotowork img, .exmapfull img, .exmapgoogle img, .annotatedwhiteboard img, .concepttesting img {
+.whiteboardexmap img, .groupphotowork img, .exmapfull img, .exmapgoogle img, .annotatedwhiteboard img, .concepttesting img, .friendliwhiteboarding img, .friendliv1images img, .friendliv2images img, .friendlifinalimages img {
     max-width: 100%;
     max-height: 100%;
     padding-right: 1rem;
@@ -274,10 +279,18 @@ main h1 {
     padding-bottom: 2rem;
 }
 
-.concepttesting {
+.concepttesting, .friendliwhiteboarding, .friendliv1images, .friendliv2images, .friendlifinalimages {
     width: 50%;
 }
 
+.friendliv1text, .friendliv2text, .friendlifinaltext {
+    width: 45%;
+}
+
+.friendliv1, .friendliv2, .friendlifinal {
+    display: flex;
+    justify-content: space-between;
+}
 
 .cernerteam {
     background-image: url("images/cernerteamphoto.jpg");
