@@ -75,6 +75,10 @@ p, li {
     color: white;
 }
 
+.cover-description.friendli {
+    color: #444444;
+}
+
 main h1 {
     padding-top: 2rem;
     color: slateblue;
