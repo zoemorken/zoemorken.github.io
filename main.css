@@ -8,6 +8,8 @@ body {
     flex-basis: 900px;
     max-width: 960px;
     margin: 0 auto;
+    padding-inline-start: .5rem;
+    padding-inline-end: .5rem;
 }
 
 header {
@@ -144,16 +146,26 @@ h2:before {
     padding-left: 2rem;
 }
 
-/* Rules for multi column layout */
+/* Rules for two column layout */
 @media only screen and (min-width: 940px) {
-    /* Pushes first column vertically down */
-    .card-container *:nth-child(odd) .card-div {
+    /* Pull second column vertically up (first column has top set) */
+    .card-container .card-div:nth-of-type(odd) {
         top: 0;
-        /* background for debugging */
-        /* background-color: aquamarine; */
+    }
+    /* If there's an odd number of projects, push the last one over to the left */
+    .card-container .card-div:last-of-type:nth-child(odd) {
+        margin-right: 460px;
     }
 }
-
+/* Rules for single column layout */
+@media only screen and (max-width: 940px) {
+    .card-container {
+        justify-content: center;
+    }
+    .card-div {
+        top: 0;
+    }
+}
 
 footer {
     background-color: #0D0F13;
