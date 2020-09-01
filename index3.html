@@ -21,6 +21,15 @@
     crossorigin="anonymous"></script>
 
   <style>
+    .page-title {
+      padding-left: .5em;
+      font-weight: 500;
+      font-size: large;
+    }
+    .nav-button {
+      margin: 4px;
+    }
+
     /* .navbar {
       margin: 2em 0 2em 0;
       padding: 0;
@@ -39,8 +48,7 @@
 
 </head>
 
-<body>
-
+<body class="px-4">
 
   <div class="pos-f-t sticky-top">
     <div class="collapse" id="navbarToggleExternalContent">
@@ -50,34 +58,34 @@
         <a href="#"><strong class="text-white">Contact</strong></a>
       </div>
     </div>
-    <nav class="navbar navbar-dark bg-dark">
-      <h5 class="text-white">Zoë Morken</h5>
+    <nav class="navbar navbar-light bg-light border-bottom">
+      <span>
+        <img class="nav-button" src="/images/brightness-high-fill.svg" alt="" width="16" height="16" title="Light mode">
+        <img class="nav-button" src="/images/moon-grey.svg" alt="" width="16" height="16" title="Dark mode">
+        <span class="page-title">Zoë Morken</span>
+        </span>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <img class="nav-button" src="/images/caret-down.svg" alt="" width="16" height="16" title="Menu">
       </button>
     </nav>
   </div>
 
+  <div class="row row-cols-1 row-cols-md-2">
 
-
-  <div class="row row-cols-1 row-cols-md-3">
-    <!-- <div class="col mb-4">
-      <div class="card h-100 bg-dark text-white">
-        <img src="https://thehappypuppysite.com/wp-content/uploads/2018/08/black-labrador-long.jpg" class="card-img"
-          alt="...">
-        <div class="card-img-overlay">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-            content. This content is a little bit longer.</p>
-          <p class="card-text">Last updated 3 mins ago</p>
-        </div>
+    <div class="col mt-4">
+      <div class="card h-100 shadow">
+        <h4 class="p-2">User Experience Design</h4>
+        <p class="mt-4 p-2">Bacon ipsum dolor amet pancetta drumstick meatball pork belly picanha. Kielbasa ham hock doner picanha shank, tail strip steak cupim porchetta.
+           Cupim rump swine brisket jerky meatloaf leberkas, t-bone beef ribs. Ball tip doner corned beef picanha swine biltong,
+           kevin porchetta landjaeger beef ribs venison bacon ham. Capicola jerky hamburger ground round, pork belly filet mignon shoulder leberkas burgdoggen 
+           shank bacon turkey chislic flank spare ribs. Beef ribs picanha swine sausage meatloaf, tail cow pastrami short loin bacon.</p>
       </div>
-    </div> -->
+    </div>
 
-    <div class="col mb-4">
-      <div class="card h-100">
+    <div class="col mt-4">
+      <div class="card h-100 shadow">
         <img
-          src="https://ih1.redbubble.net/image.477598075.2285/flat,750x,075,f-pad,750x1000,f8f8f8.jpg"
+          src="https://thehappypuppysite.com/wp-content/uploads/2018/08/black-labrador-long.jpg"
           class="card-img-top" alt="Puppies">
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
@@ -87,10 +95,10 @@
       </div>
     </div>
 
-    <div class="col mb-4">
-      <div class="card h-100">
+    <div class="col mt-4">
+      <div class="card h-100 shadow">
         <img
-          src="https://images.unsplash.com/photo-1534142499731-a32a99935397?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"
+          src="https://www.theglobeandmail.com/resizer/vq3O7LI3hvsjTP2N0m9NwU4W3Eg=/1500x0/filters:quality(80)/arc-anglerfish-tgam-prod-tgam.s3.amazonaws.com/public/4ETF3GZR3NA3RDDW23XDRBKKCI"
           class="card-img-top" alt="Trees">
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
@@ -100,10 +108,10 @@
       </div>
     </div>
 
-    <div class="col mb-4">
-      <div class="card h-100">
+    <div class="col mt-4">
+      <div class="card h-100 shadow">
         <img
-          src="https://images.unsplash.com/photo-1526512340740-9217d0159da9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"
+          src="https://i.pinimg.com/originals/49/b6/28/49b628b412729a0b10777e2607bc509c.png"
           class="card-img-top" alt="Desert">
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
@@ -114,7 +122,46 @@
     </div>
 
   </div>
+
+  <!-- Spacer -->      
+  <div class="border-bottom p-4"></div>
+
+  <div class="row row-cols-1 row-cols-md-2">
+    <div class="col mt-4">
+      <div class="card h-100 border-0">
+        <h4 class="p-2">Other works</h4>
+        <p class="mt-4 p-2">Bacon ipsum dolor amet pancetta drumstick meatball pork belly picanha. Kielbasa ham hock doner picanha shank, tail strip steak cupim porchetta.
+           Cupim rump swine brisket jerky meatloaf leberkas, t-bone beef ribs. Ball tip doner corned beef picanha swine biltong,
+           kevin porchetta landjaeger beef ribs venison bacon ham. Capicola jerky hamburger ground round, pork belly filet mignon shoulder leberkas burgdoggen 
+           shank bacon turkey chislic flank spare ribs. Beef ribs picanha swine sausage meatloaf, tail cow pastrami short loin bacon.</p>
+      </div>
+    </div>
+
+    <div class="col mt-4">
+      <div class="card h-100 shadow">
+        <img
+          src="https://cottagelife.com/wp-content/uploads/2017/04/ducky.jpg"
+          class="card-img-top" alt="Duck">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+            content. This content is a little bit longer.</p>
+        </div>
+      </div>
+    </div>
   </div>
+
+  <!-- Footer -->
+  <div class="row align-items-center bg-light mt-4">
+    <div class="col-10">
+      <p class="mt-4 p-2">Bacon ipsum dolor amet pancetta drumstick meatball pork belly picanha. Kielbasa ham hock doner picanha shank, tail strip steak cupim porchetta.
+          Cupim rump swine brisket jerky meatloaf leberkas, t-bone beef ribs. Ball tip doner corned beef picanha swine biltong.</p>
+    </div>
+    <div class="col-2">
+      <a href="#">Back to top</a>
+    </div>
+  </div>
+
 </body>
 
 </html>
