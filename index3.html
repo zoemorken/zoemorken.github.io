@@ -9,6 +9,8 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- Font Awesome icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
   <!-- Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
@@ -29,9 +31,33 @@
     .nav-button {
       margin: 4px;
     }
+    .zoom {
+      transition: transform .3s;
+      transition-timing-function: ease-in-out;
+    }
+    .zoom:hover {
+      transform: scale(1.025);
+    }
+    button.navbar-toggler {
+      background-color: #5c5;
+      border: none;
+      width: 24px;
+      height: 24px;
+    }
+    button.navbar-toggler:focus {
+      outline: none;
+    }
+    button.navbar-toggler span.fas {
+      color: white;
+      margin-left: -8px;
+    }
+    button.navbar-toggler[aria-expanded="true"] {
+      transform: rotate(180deg);
+    }
 
+    /* TODO: dark theme styles move to css file */
     [data-theme="dark"] {
-      background-color: #111 !important;
+      background-color: #000 !important;
       color: #eee;
     }
 
@@ -64,23 +90,13 @@
     }
 
     [data-theme="dark"] .card {
-      background-color: #333;
+      background-color: #222;
     }
 
-    /* .navbar {
-      margin: 2em 0 2em 0;
-      padding: 0;
-    } */
-
-    /* .card-img-overlay {
-      opacity: 0;
-      transition: opacity 500ms, background-color 500ms;
+    [data-theme="dark"] .nav-button {
+      background-color: white;
     }
 
-    .card-img-overlay:hover {
-      opacity: 100%;
-      background-color: #ffffff50;
-    } */
   </style>
 
 </head>
@@ -88,14 +104,27 @@
 <body class="px-5">
 
   <div class="pos-f-t sticky-top">
-    <div class="collapse" id="navbarToggleExternalContent">
-      <div class="bg-dark p-4">
-        <a href="#"><strong class="text-white">About me</strong></a><br>
-        <a href="#"><strong class="text-white">Resume</strong></a><br>
-        <a href="#"><strong class="text-white">Contact</strong></a>
+    <!-- <div class="collapse" id="navbarToggleExternalContent"> -->
+      <div class="" id="navbarToggleExternalContent">
+
+      <div class="row align-items-center bg-white mt-3">
+        <div class="col-8">
+          <h4 class="p-2">About</h4>
+          <p class="my-4 p-2">Bacon ipsum dolor amet pancetta drumstick meatball pork belly picanha. Kielbasa ham hock doner picanha shank, tail strip steak cupim porchetta.
+              Cupim rump swine brisket jerky meatloaf leberkas, t-bone beef ribs. Ball tip doner corned beef picanha swine biltong.</p>
+        </div>
+        <div class="col-4 pl-5">
+          <h4 class="p-2">Contact</h4>
+          <p class="my-4 p-2">Email &bull; Resume &bull; 
+            <img class="nav-button" src="/images/linkedin.svg" alt="" width="16" height="16" title="LinkedIn">
+            <img class="nav-button" src="/images/instagram.svg" alt="" width="16" height="16" title="Instagram">
+            <img class="nav-button" src="/images/github.svg" alt="" width="16" height="16" title="Github">
+          </p>
+        </div>
       </div>
-    </div>
-    <nav class="navbar navbar-light bg-light border-bottom">
+    
+    </div>    
+    <nav class="navbar navbar-light bg-white border-bottom">
       <span>
         <!-- <img class="nav-button" src="/images/brightness-high-fill.svg" alt="" width="16" height="16" title="Light mode">
         <img class="nav-button" src="/images/moon-grey.svg" alt="" width="16" height="16" title="Dark mode"> -->
@@ -107,15 +136,15 @@
         <script src="scripts/dark-mode-switch.min.js"></script>        
       </span>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-        <img class="nav-button" src="/images/caret-down.svg" alt="" width="16" height="16" title="Menu">
+        <span class="fas fa-chevron-down"></span>
       </button>
     </nav>
   </div>
 
   <div class="row row-cols-1 row-cols-md-2">
 
-    <div class="col mt-4 px-4">
-      <div class="card h-100 border-0">
+    <div class="col mt-4 p-5">
+      <div class="h-100 border-0 zoom">
         <h4 class="p-2">User Experience Design</h4>
         <p class="mt-4 p-2">Bacon ipsum dolor amet pancetta drumstick meatball pork belly picanha. Kielbasa ham hock doner picanha shank, tail strip steak cupim porchetta.
            Cupim rump swine brisket jerky meatloaf leberkas, t-bone beef ribs. Ball tip doner corned beef picanha swine biltong,
@@ -124,12 +153,12 @@
       </div>
     </div>
 
-    <div class="col mt-4 px-4">
-      <div class="card h-100 shadow">
+    <div class="col mt-4 p-5">
+      <div class="card h-100 border-0 shadow zoom">
         <img
           src="https://thehappypuppysite.com/wp-content/uploads/2018/08/black-labrador-long.jpg"
           class="card-img-top" alt="Puppies">
-        <div class="card-body">
+        <div class="card-body px-5">
           <h5 class="card-title">Card title</h5>
           <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
             content. This content is a little bit longer.</p>
@@ -137,12 +166,12 @@
       </div>
     </div>
 
-    <div class="col mt-4 px-4">
-      <div class="card h-100 shadow">
+    <div class="col mt-4 p-5">
+      <div class="card h-100 border-0 shadow zoom">
         <img
           src="https://www.theglobeandmail.com/resizer/vq3O7LI3hvsjTP2N0m9NwU4W3Eg=/1500x0/filters:quality(80)/arc-anglerfish-tgam-prod-tgam.s3.amazonaws.com/public/4ETF3GZR3NA3RDDW23XDRBKKCI"
           class="card-img-top" alt="Trees">
-        <div class="card-body">
+        <div class="card-body px-5">
           <h5 class="card-title">Card title</h5>
           <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
             content.</p>
@@ -150,12 +179,12 @@
       </div>
     </div>
 
-    <div class="col mt-4 px-4">
-      <div class="card h-100 shadow">
+    <div class="col mt-4 p-5">
+      <div class="card h-100 border-0 shadow zoom">
         <img
           src="https://i.pinimg.com/originals/49/b6/28/49b628b412729a0b10777e2607bc509c.png"
           class="card-img-top" alt="Desert">
-        <div class="card-body">
+        <div class="card-body px-5">
           <h5 class="card-title">Card title</h5>
           <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
             content.</p>
@@ -168,9 +197,9 @@
   <!-- Spacer -->      
   <div class="border-bottom p-4"></div>
 
-  <div class="row row-cols-1 row-cols-md-2">
-    <div class="col mt-4 px-4">
-      <div class="card h-100 border-0">
+  <div class="row row-cols-1 row-cols-md-2 mt-3">
+    <div class="col mt-4 p-5">
+      <div class="h-100 border-0 zoom">
         <h4 class="p-2">Other works</h4>
         <p class="mt-4 p-2">Bacon ipsum dolor amet pancetta drumstick meatball pork belly picanha. Kielbasa ham hock doner picanha shank, tail strip steak cupim porchetta.
            Cupim rump swine brisket jerky meatloaf leberkas, t-bone beef ribs. Ball tip doner corned beef picanha swine biltong,
@@ -179,12 +208,12 @@
       </div>
     </div>
 
-    <div class="col mt-4 px-4">
-      <div class="card h-100 shadow">
+    <div class="col mt-4 p-5">
+      <div class="card h-100 border-0 shadow zoom">
         <img
           src="https://cottagelife.com/wp-content/uploads/2017/04/ducky.jpg"
           class="card-img-top" alt="Duck">
-        <div class="card-body">
+        <div class="card-body px-5">
           <h5 class="card-title">Card title</h5>
           <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
             content. This content is a little bit longer.</p>
@@ -193,10 +222,13 @@
     </div>
   </div>
 
+  <!-- Spacer -->      
+  <div class="p-4"></div>
+
   <!-- Footer -->
-  <div class="row align-items-center bg-light mt-4">
-    <div class="col-10">
-      <p class="mt-4 p-2">Bacon ipsum dolor amet pancetta drumstick meatball pork belly picanha. Kielbasa ham hock doner picanha shank, tail strip steak cupim porchetta.
+  <div class="row align-items-center bg-white mt-3">
+    <div class="col-10 mb-5">
+      <p class="myt-4 p-2">Bacon ipsum dolor amet pancetta drumstick meatball pork belly picanha. Kielbasa ham hock doner picanha shank, tail strip steak cupim porchetta.
           Cupim rump swine brisket jerky meatloaf leberkas, t-bone beef ribs. Ball tip doner corned beef picanha swine biltong.</p>
     </div>
     <div class="col-2">
