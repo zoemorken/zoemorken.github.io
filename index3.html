@@ -39,7 +39,7 @@
       transform: scale(1.025);
     }
     button.navbar-toggler {
-      background-color: #5c5;
+      /* background-color: #5c5; */
       border: none;
       width: 24px;
       height: 24px;
@@ -47,13 +47,13 @@
     button.navbar-toggler:focus {
       outline: none;
     }
-    button.navbar-toggler span.fas {
+/*    button.navbar-toggler span.fas {
       color: white;
       margin-left: -8px;
     }
     button.navbar-toggler[aria-expanded="true"] {
       transform: rotate(180deg);
-    }
+    } */
 
     /* TODO: dark theme styles move to css file */
     [data-theme="dark"] {
@@ -97,6 +97,10 @@
       background-color: white;
     }
 
+    [data-theme="dark"] .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    }
+
   </style>
 
 </head>
@@ -104,8 +108,7 @@
 <body class="px-5">
 
   <div class="pos-f-t sticky-top">
-    <!-- <div class="collapse" id="navbarToggleExternalContent"> -->
-      <div class="" id="navbarToggleExternalContent">
+      <div class="collapse" id="navbarToggleExternalContent">
 
       <div class="row align-items-center bg-white mt-3">
         <div class="col-8">
@@ -124,7 +127,7 @@
       </div>
     
     </div>    
-    <nav class="navbar navbar-light bg-white border-bottom">
+    <nav class="navbar navbar-light bg-white border-bottom py-4">
       <span>
         <!-- <img class="nav-button" src="/images/brightness-high-fill.svg" alt="" width="16" height="16" title="Light mode">
         <img class="nav-button" src="/images/moon-grey.svg" alt="" width="16" height="16" title="Dark mode"> -->
@@ -136,7 +139,8 @@
         <script src="scripts/dark-mode-switch.min.js"></script>        
       </span>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="fas fa-chevron-down"></span>
+        <span class="navbar-toggler-icon"></span>
+        <!-- <span class="fas fa-chevron-down"></span> -->
       </button>
     </nav>
   </div>
