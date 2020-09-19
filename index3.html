@@ -23,8 +23,18 @@
     crossorigin="anonymous"></script>
 
   <style>
-    body {
+    .px-5em {
       padding-left: 5rem;
+      padding-right: 5rem;
+    }
+    .px-10em {
+      padding-left: 10rem;
+      padding-right: 10rem;
+    }
+    .pl-5em {
+      padding-left: 5rem;
+    }
+    .pr-5em {
       padding-right: 5rem;
     }
 
@@ -43,22 +53,21 @@
     .zoom:hover {
       transform: scale(1.025);
     }
+    .frosted-glass {
+      background-color: rgba(255, 255, 255, .8)!important;
+      backdrop-filter: blur(5px);
+    }
+
     button.navbar-toggler {
-      /* background-color: #5c5; */
       border: none;
-      width: 24px;
-      height: 24px;
     }
     button.navbar-toggler:focus {
       outline: none;
     }
-/*    button.navbar-toggler span.fas {
-      color: white;
-      margin-left: -8px;
+
+    .bg-offwhite {
+      background-color: #f8f8f8;
     }
-    button.navbar-toggler[aria-expanded="true"] {
-      transform: rotate(180deg);
-    } */
 
     /* TODO: dark theme styles move to css file */
     [data-theme="dark"] {
@@ -106,16 +115,26 @@
       background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
     }
 
+    [data-theme="dark"] .frosted-glass {
+      background-color: rgba(0, 0, 0, .5)!important;
+      backdrop-filter: blur(5px);
+    }
+
+    [data-theme="dark"] .bg-offwhite {
+      background-color: #222;
+    }
+
+
   </style>
 
 </head>
 
 <body>
 
-  <div class="pos-f-t sticky-top">
+  <div class="pos-f-t sticky-top frosted-glass">
       <div class="collapse" id="navbarToggleExternalContent">
 
-      <div class="row align-items-center bg-white mt-3">
+      <div class="row align-items-center mt-3 px-5em">
         <div class="col-8">
           <h4 class="p-2">About</h4>
           <p class="my-4 p-2">Bacon ipsum dolor amet pancetta drumstick meatball pork belly picanha. Kielbasa ham hock doner picanha shank, tail strip steak cupim porchetta.
@@ -132,8 +151,8 @@
       </div>
     
     </div>    
-    <nav class="navbar navbar-light bg-white border-bottom py-4">
-      <span>
+    <nav class="navbar navbar-light py-4">
+      <span class="pl-5em">
         <!-- <img class="nav-button" src="/images/brightness-high-fill.svg" alt="" width="16" height="16" title="Light mode">
         <img class="nav-button" src="/images/moon-grey.svg" alt="" width="16" height="16" title="Dark mode"> -->
         <span class="custom-control custom-switch">
@@ -143,14 +162,14 @@
         </span>
         <script src="scripts/dark-mode-switch.min.js"></script>        
       </span>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler pr-5em" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         <!-- <span class="fas fa-chevron-down"></span> -->
       </button>
     </nav>
   </div>
 
-  <div class="row row-cols-1 row-cols-md-2">
+  <div class="row row-cols-1 row-cols-md-2 px-5em">
 
     <div class="col mt-4 p-3">
       <div class="h-100 border-0">
@@ -204,9 +223,9 @@
   </div>
 
   <!-- Spacer -->      
-  <div class="border-bottom p-4"></div>
+  <div class="border-bottom p-4 mx-5"></div>
 
-  <div class="row row-cols-1 row-cols-md-2 mt-3">
+  <div class="row row-cols-1 row-cols-md-2 mt-3 px-5em">
     <div class="col mt-4 p-3">
       <div class="h-100 border-0">
         <h4 class="p-2">Other works</h4>
@@ -235,12 +254,12 @@
   <div class="p-4"></div>
 
   <!-- Footer -->
-  <div class="row align-items-center bg-white mt-3">
+  <div class="row align-items-center bg-offwhite mt-3 px-10em">
     <div class="col-10 mb-5">
-      <p class="myt-4 p-2">Bacon ipsum dolor amet pancetta drumstick meatball pork belly picanha. Kielbasa ham hock doner picanha shank, tail strip steak cupim porchetta.
+      <p class="mt-4 p-2">Bacon ipsum dolor amet pancetta drumstick meatball pork belly picanha. Kielbasa ham hock doner picanha shank, tail strip steak cupim porchetta.
           Cupim rump swine brisket jerky meatloaf leberkas, t-bone beef ribs. Ball tip doner corned beef picanha swine biltong.</p>
     </div>
-    <div class="col-2">
+    <div class="col-2 mb-5">
       <a href="#">Back to top</a>
     </div>
   </div>
