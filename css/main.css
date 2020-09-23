@@ -1,0 +1,113 @@
+body {
+    font-family: Mulish, 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
+}
+
+h1,h2,h3,h4,h5,.page-title {
+    font-family: Poppins, 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
+}
+
+.px-5em {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+.px-10em {
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+.pl-5em {
+  padding-left: 5rem;
+}
+.pr-5em {
+  padding-right: 5rem;
+}
+
+.page-title {
+  padding-left: 0.5em;
+  font-weight: 500;
+  font-size: large;
+}
+.nav-button {
+  margin: 4px;
+}
+.zoom {
+  transition: transform 0.3s ease-in-out;
+}
+.zoom:hover {
+  transform: scale(1.025);
+}
+.frosted-glass {
+  background-color: rgba(255, 255, 255, 0.8) !important;
+  backdrop-filter: blur(5px);
+}
+#navbar {
+    top: 0;
+    transition: top 0.3s linear;
+}
+#navbar.scroll-up {   
+    top: -20rem !important;
+}
+
+button.navbar-toggler {
+  border: none;
+}
+button.navbar-toggler:focus {
+  outline: none;
+}
+
+.bg-offwhite {
+  background-color: #f8f8f8;
+}
+
+[data-theme="dark"] {
+  background-color: #121212 !important;
+  color: #eee;
+}
+
+[data-theme="dark"] .bg-light {
+  background-color: #333 !important;
+}
+
+[data-theme="dark"] .bg-white {
+  background-color: #121212 !important;
+}
+
+[data-theme="dark"] .bg-black {
+  background-color: #eee !important;
+}
+
+[data-theme="dark"] .border-top {
+  border-top-color: #777 !important;
+}
+
+[data-theme="dark"] .border-bottom {
+  border-bottom-color: #777 !important;
+}
+
+[data-theme="dark"] .border-left {
+  border-left-color: #777 !important;
+}
+
+[data-theme="dark"] .border-right {
+  border-right-color: #777 !important;
+}
+
+[data-theme="dark"] .card {
+  background-color: #222;
+}
+
+[data-theme="dark"] .nav-button {
+  background-color: white;
+}
+
+[data-theme="dark"] .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+[data-theme="dark"] .frosted-glass {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  backdrop-filter: blur(5px);
+}
+
+[data-theme="dark"] .bg-offwhite {
+  background-color: #222;
+}
