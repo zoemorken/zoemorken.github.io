@@ -65,6 +65,10 @@ p, li {
     background-image: url("images/friendli.jpg");
 }
 
+.hero-image.affinity {
+    background-image: url("images/affinity.jpg")
+}
+
 .cover-description {
     box-sizing: border-box;
     background-color: rgba(255, 255, 255, 0.185);
@@ -163,7 +167,7 @@ main h1 {
     max-height: 100%;
 }
 
-.cernerimages, .friendliimages {
+.cernerimages, .friendliimages, .affinityimages {
     margin-left: auto;
     margin-right: auto;
     width: 75%;
@@ -298,6 +302,10 @@ main h1 {
 
 .cernerteam {
     background-image: url("images/cernerteamphoto.jpg");
+}
+
+.affinityteam {
+    background-image: url("images/affinityteamphoto.png")
 }
 
 .endcap p {
