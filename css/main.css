@@ -54,10 +54,21 @@ button.navbar-toggler:focus {
   outline: none;
 }
 
+/* Place text in the middle of the image */
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translate(-10%, -50%);
+  color: white;
+}
+
+
 .bg-offwhite {
   background-color: #f8f8f8;
 }
 
+/* Dark theme styles */
 [data-theme="dark"] {
   background-color: #121212 !important;
   color: #eee;

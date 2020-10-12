@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- Font Awesome icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+  <script src="scripts/navbar-scroll.js"></script>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/sidebar.css" />
+
+  <style>
+    /* The hero image */
+    .hero-image {
+        /* Use "linear-gradient" to add a darken background effect to the image.
+            This will make the text easier to read
+        */
+        background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("images/project3-hero.jpg");
+
+        /* Set a specific height */
+        height: 30rem;
+
+        /* Position and center the image to scale nicely on all screens */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+  </style>
+  
+</head>
+
+<body>
+
+  <div class="pos-f-t sticky-top frosted-glass" id="navbar">
+      <div class="collapse" id="navbarToggleExternalContent">
+
+      <div class="row align-items-center mt-3 px-5em">
+        <div class="col-8">
+          <h4 class="p-2">About</h4>
+          <p class="my-4 p-2">Bacon ipsum dolor amet pancetta drumstick meatball pork belly picanha. Kielbasa ham hock doner picanha shank, tail strip steak cupim porchetta.
+              Cupim rump swine brisket jerky meatloaf leberkas, t-bone beef ribs. Ball tip doner corned beef picanha swine biltong.</p>
+        </div>
+        <div class="col-4 pl-5">
+          <h4 class="p-2">Contact</h4>
+          <p class="my-4 p-2">Email &bull; Resume &bull; 
+            <img class="nav-button" src="/images/linkedin.svg" alt="" width="16" height="16" title="LinkedIn">
+            <img class="nav-button" src="/images/instagram.svg" alt="" width="16" height="16" title="Instagram">
+            <img class="nav-button" src="/images/github.svg" alt="" width="16" height="16" title="Github">
+          </p>
+        </div>
+      </div>
+    
+    </div>    
+    <nav class="navbar navbar-light py-4">
+      <span class="pl-5em">
+        <!-- <img class="nav-button" src="/images/brightness-high-fill.svg" alt="" width="16" height="16" title="Light mode">
+        <img class="nav-button" src="/images/moon-grey.svg" alt="" width="16" height="16" title="Dark mode"> -->
+        <span class="custom-control custom-switch">
+          <input type="checkbox" class="custom-control-input" id="darkSwitch" />
+          <label class="custom-control-label" for="darkSwitch"></label>
+          <span class="page-title">Zoë Morken</span>
+        </span>
+        <script src="scripts/dark-mode-switch.min.js"></script>
+      </span>
+      <button class="navbar-toggler pr-5em" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        <!-- <span class="fas fa-chevron-down"></span> -->
+      </button>
+    </nav>
+  </div>
+
+  <div class="hero-image">
+    <div class="hero-text">
+      <h1>I Dug a Canyon</h1>
+      <h4 class="mt-4">And plan to fill it with bacon</h4>
+    </div>
+  </div>
+
+  <div class="container-fluid mt-5">
+        <div class="row flex-xl-nowrap">
+            <main class="col-12 col-md-11 col-xl-10 py-md-3 pl-md-5 bd-content" role="main">
+                <div class="col mt-4 p-3">
+                    <div class="h-100 border-0">
+                        <h2 id="project-brief">                  
+                            <div>Project Brief</div>
+                            <a class="anchorjs-link" href="#project-brief" aria-label="Anchor" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a>
+                        </h2>
+                        <p class="mt-2 p-2">Spicy jalapeno bacon ipsum dolor amet ham hock chuck rump, andouille jerky pork loin shank ball
+                            tip strip steak ribeye meatball t-bone prosciutto. Strip steak tenderloin picanha rump frankfurter. Jowl turducken
+                            ham porchetta prosciutto spare ribs chuck, doner rump flank picanha tenderloin meatball corned beef. Pig jowl spare
+                            ribs, meatloaf pork alcatra andouille bacon doner tri-tip turducken shankle ribeye bresaola swine. Sirloin tenderloin
+                            ribeye shoulder, flank chicken corned beef. Beef ribs rump bresaola ham hock strip steak corned beef. Shankle ham
+                            capicola tri-tip, landjaeger rump boudin t-bone beef spare ribs venison pancetta.
+                        </p>
+                    </div>
+                </div>
+                <div class="row row-cols-1 row-cols-md-2 p-3">
+                    <div class="col-8 mt-4 p-3">
+                        <div class="h-100 border-0">
+                            <div class="card h-100 border-0 shadow zoom">
+                                <img src="images/project3-a.jpg" class="card-img-top" alt="Jamon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 mt-4 p-3">
+                        <div class="h-100 border-0">
+                            <h3>Subheading</h3>
+                            <p>Ground round chicken tri-tip swine pancetta ham hock burgdoggen, andouille buffalo prosciutto.
+                            Pastrami swine venison salami, picanha shankle tenderloin ball tip jowl corned beef pork belly
+                            chicken t-bone. T-bone tail landjaeger shankle ball tip prosciutto.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+ 
+                <div class="row row-cols-1 p-3">
+                    <div class="h-100 border-0">
+                        <h3 id="problem">                  
+                            <div>Problem</div>
+                            <a class="anchorjs-link " href="#problem" aria-label="Anchor" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a>
+                        </h3>
+                        <p>Buffalo meatloaf tenderloin doner kevin. Cupim landjaeger venison sirloin turkey doner 
+                            prosciutto drumstick ham. Leberkas cupim jerky, spare ribs pork loin drumstick buffalo hamburger shankle landjaeger 
+                            pancetta t-bone ham ball tip tri-tip. Brisket salami tail spare ribs short loin. Chuck salami corned beef tongue, turducken 
+                            venison ham strip steak tenderloin frankfurter. Shoulder ribeye sausage turducken strip steak, spare ribs jowl filet 
+                            mignon biltong chicken drumstick pork belly.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="row row-cols-1 p-3">
+                    <div class="h-100 border-0">
+                        <h3 id="solution">                  
+                            <div>Solution</div>
+                            <a class="anchorjs-link " href="#solution" aria-label="Anchor" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a>
+                        </h3>
+                        <p>Chicken swine fatback, capicola pastrami cupim strip steak venison drumstick doner. Landjaeger ham hock 
+                            pork loin turkey. Chuck capicola beef ribs ribeye, ham hock salami leberkas jerky bresaola shankle short loin t-bone 
+                            alcatra. Jerky turducken swine ribeye brisket pork filet mignon pig porchetta kielbasa shankle venison short ribs flank 
+                            short loin. Fatback turkey chicken tri-tip landjaeger tongue cupim picanha filet mignon pig meatloaf sirloin spare ribs 
+                            porchetta. Shank flank andouille leberkas porchetta. Beef pastrami leberkas swine turducken.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row row-cols-1 p-3">
+                    <div class="h-100 border-0">
+                        <h3 id="research">                  
+                            <div>Research</div>
+                            <a class="anchorjs-link " href="#research" aria-label="Anchor" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a>
+                        </h3>
+                        <p>Bacon swine ground round tenderloin, flank sirloin turducken beef kielbasa cupim doner kevin jowl. Cupim 
+                            porchetta pork, leberkas tongue brisket sirloin burgdoggen jowl flank biltong spare ribs fatback capicola filet mignon. 
+                            Boudin ham hock chicken beef ribs andouille pork loin. Tail prosciutto shankle biltong fatback. Beef ribs sirloin short 
+                            ribs frankfurter kevin bacon pancetta biltong buffalo pork loin sausage flank landjaeger porchetta. Drumstick strip steak 
+                            shank pig ham, andouille buffalo pastrami frankfurter ground round fatback kielbasa beef kevin flank.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row row-cols-1 p-3">
+                    <div class="h-100 border-0">
+                        <h3 id="ideation">                  
+                            <div>Ideation</div>
+                            <a class="anchorjs-link " href="#ideation" aria-label="Anchor" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a>
+                        </h3>
+                        <p>Eiusmod nisi cupidatat pastrami bresaola leberkas. Chuck anim tail qui quis porchetta. Officia mollit alcatra 
+                            picanha strip steak. Elit tri-tip jowl sirloin pork chop meatball aute, lorem non mollit spare ribs sed kielbasa enim brisket. 
+                            Aliqua ut drumstick, turducken aliquip boudin pastrami.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row row-cols-1 p-3">
+                    <div class="h-100 border-0">
+                        <h3 id="testing">                  
+                            <div>Testing</div>
+                            <a class="anchorjs-link " href="#testing" aria-label="Anchor" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a>
+                        </h3>
+                        <p>Spare ribs tenderloin frankfurter aute. Ribeye shoulder aliquip fugiat consectetur pastrami buffalo quis exercitation. T-bone culpa 
+                            non, sunt aliquip occaecat in pork chop. Do cupidatat filet mignon tongue.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row row-cols-1 p-3">
+                    <div class="h-100 border-0">
+                        <h3 id="iterations">                  
+                            <div>Iterations</div>
+                            <a class="anchorjs-link " href="#iterations" aria-label="Anchor" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a>
+                        </h3>
+                        <p>Ham hock magna ex consequat veniam mollit brisket biltong labore laboris ham picanha. Pancetta t-bone sed incididunt in. Porchetta 
+                            mollit pig ribeye nostrud tail consequat. Tail biltong jerky elit nostrud esse non sed short ribs. Prosciutto spare ribs andouille 
+                            turducken landjaeger anim.
+                        </p>
+                    </div>
+                </div>
+
+
+                <div class="row row-cols-1 p-3">
+                    <div class="h-100 border-0">
+                        <h3 id="reflection">                  
+                            <div>Reflection</div>
+                            <a class="anchorjs-link " href="#reflection" aria-label="Anchor" data-anchorjs-icon="#" style="padding-left: 0.375em;"></a>
+                        </h3>
+                        <p>Landjaeger ex id, buffalo porchetta spare ribs elit ea excepteur nulla mollit nostrud pastrami. Turducken qui short ribs do. 
+                            Short ribs burgdoggen ipsum, exercitation bresaola irure cillum laboris enim turkey tri-tip. Nisi swine pork chop pork cillum nulla.
+                        </p>
+                    </div>
+                </div>
+
+            </main>
+
+            <div class="d-none d-xl-block col-xl-2 py-md-3 pl-md-5 bc-toc">
+                <ul class="section-nav">
+                    <li class="toc-entry toc-h2">
+                        <a href="#project-brief"><h5>Project Brief</h5></a>
+                        <a href="#problem"><h5>Problem</h5></a>
+                        <a href="#solution"><h5>Solution</h5></a>
+                        <a href="#research"><h5>Research</h5></a>
+                        <a href="#ideation"><h5>Ideation</h5></a>
+                        <a href="#testing"><h5>Testing</h5></a>
+                        <a href="#iterations"><h5>Iterations</h5></a>
+                        <a href="#reflection"><h5>Reflection</h5></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+  </div>
+
+
+  <!-- Spacer -->      
+  <div class="p-4"></div>
+
+  <!-- Footer -->
+  <div class="row align-items-center bg-offwhite mt-3 px-10em">
+    <div class="col-10 mb-5">
+      <p class="mt-4 p-2">Bacon ipsum dolor amet pancetta drumstick meatball pork belly picanha. Kielbasa ham hock doner picanha shank, tail strip steak cupim porchetta.
+          Cupim rump swine brisket jerky meatloaf leberkas, t-bone beef ribs. Ball tip doner corned beef picanha swine biltong.</p>
+    </div>
+    <div class="col-2 mb-5">
+      <a href="#">Back to top</a>
+    </div>
+  </div>
+
+</body>
+
+</html>
