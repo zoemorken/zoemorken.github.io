@@ -3,398 +3,401 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Experience Studio Spring 2020</title>
-    <link rel="stylesheet" href="css-reset.css">
-    <link rel="stylesheet" type="text/css" href="content.css">
-    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Font Awesome icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <script src="scripts/navbar-scroll.js"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/sidebar.css" />
+
+    <style>
+        /* The hero image */
+        .hero-image {
+            /* Use "linear-gradient" to add a darken background effect to the image.
+            This will make the text easier to read
+        */
+            background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("images/project3-hero.jpg");
+
+            /* Set a specific height */
+            height: 30rem;
+
+            /* Position and center the image to scale nicely on all screens */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+    </style>
+
 </head>
-<div class="container">
-    <div class="hero-image affinity">
-        <div class="cover-description">
-            <h1>Affinity</h1>
-            <p>Securing major gift donations for universities by fostering trust and building lasting relationships with
-                donors.</p>
-        </div>
-    </div>
-    <main>
-        <h1>Overview</h1>
-        <div class="context">
-            <h2>Context</h2>
-            <p>During the Spring 2020 semester, our Experience Studio team at Purdue University was sponsored by
-                DonateEquity, a consultancy and digital data company providing information on high value business owners
-                to non-profits seeking donations. This was an open-ended project that allowed us to explore many
-                possible avenues toward a solution.</p>
-        </div>
-        <div class="overview">
-            <div class="objective">
-                <h2>Objective</h2>
-                <p>With the rise of digital information available on the Internet, there is potential for non-profits
-                    (universities in particular) to seek out and solicit new leads for donations. Data integration and
-                    machine learning enable a new level of valuable data mining, in which non-profits could leverage to
-                    find affinities with potential donors. Therefore, we were encouraged to create a solution that would
-                    help universities identify prominent businesspeople through their existing alumni network that could
-                    give the university a donation of sizable monetary value.</p>
-                <p>Though there were many different directions we could take this project, we eventually shifted our
-                    focus towards
-                    <span style="background-color: #fff2cc">university development officers needing a way to better
-                        connect with donors on their portfolio</span>. From our interviews, we found that many officers
-                    were not satisfied with their university's chosen CRM tool, as it did not allow for the flexibility
-                    needed during business trips. This was an area of improvement we identified to help officers develop
-                    more personal relationships despite needing to do so with a large number of donors. As will be
-                    discussed later, the shift was warranted by a completely different problem that revealed itself
-                    during interviews.</p>
-            </div>
-            <div class="overview-right">
-                <h3>Role</h3>
-                <p>Team Lead</p>
-                <h3>Duration</h3>
-                <p>Spring Semester (January–May 2020)</p>
-                <h3>Team Members</h3>
-                <p>Zoë Morken, Brandon Dentler, Ria Sali, Allen Chen, Alex Gearhart, Ellie Kouba, Stesha Linder</p>
-                <h3>Tools</h3>
-                <p>Whimsical</p>
-                <h3>Final Deliverables</h3>
-                <p>Design documentation including research and ideation, low to mid-fidelity prototypes</p>
-            </div>
-        </div>
-        <div class="designchallenge">
-            <h4>How might we help university development officers maintain or strengthen relationships with their
-                assigned donors?
-            </h4>
-        </div>
-        <div class="project-info">
-            <h2>Solution</h2>
-            <p>A cloud-based, database tool integrated with the university’s Customer Relationship Management (CRM)
-                system that allows for efficient creation and retrieval of contact reports as well as flexible meeting
-                scheduling.</p>
-            <!-- Revise image alt names -->
-            <div class="image1 affinityimages">
-                <img src="images/affinityimage1.png" alt="Business Trip Scheduling">
-            </div>
-            <div class="cap1">
-                <p>Meeting scheduling with donors, in list format and organized by recency.</p>
-            </div>
-            <p>Clicking the green pencil icon in the bottom right corner creates a new contact report. Here, officers
-                can assign a donor to the report, jot down important notes from their meeting, include tags on the donor
-                they can search for later, and choose to move them into a different phase of the life cycle. Contact
-                reports are stored locally on the app until the officer decides to upload them into the CRM.</p>
-            <div class="image2 affinityimages">
-                <img src="images/affinityimage2.png" alt="Visualizing Donors in the Area">
-            </div>
-            <div class="cap2">
-                <p>View donors by searching a name or location. Each icon represents a donor in the area. When clicked,
-                    information on that donor is pulled up, which opens into a new screen with contact preferences,
-                    necessary information and a list of the contact reports the officer has recorded on them.</p>
-            </div>
-            <!-- <div class="contribution">
-                <h3>My Contributions:</h3>
-                <ul>
-                    <li>Performed extensive research on current healthcare modes of communication (EMRs) to better
-                        inform self and group members and identified areas to explore further as means of tackling
-                        different barriers of communication in healthcare</li>
-                    <li>Established written problem statement for group approved by sponsors</li>
-                    <li>Ideated constantly throughout shifting problem space, created multiple technological means of
-                        communication (e.g. mobile, web) to address different contexts, and built a persona to base our
-                        Experience Map on</li>
-                </ul>
-            </div> -->
-        </div>
-        <div class="explorationprocess">
-            <h1>Design Process</h1>
-            <h2>Approach</h2>
-            <p>For this project, we completed a series of four design sprints, each lasting two weeks. We originally
-                intended to go through the process of user research, sketching, prototyping/building low-fidelity and
-                high-fidelity mockups, and testing in a condensed period of time. However, because we rescoped, we
-                revised our timeline and used each sprint instead to better understand our new focus: making
-                meaningful and lasting connections with current donors. In doing so, our project was focused on
-                recreating Affinity’s concept rather than building out its user interface (UI).</p>
-        </div>
-        <div class="datacollection">
-            <h1>Sprint 1</h1>
-            <h2>Secondary Research</h2>
-            <p>This sprint was made up of a combination of activities, which can be categorized into research and
-                ideation. Our goals were to familiarize ourselves with how universities acquire donations, determine
-                existing tools universities use to discover new leads, and sketch out ideas for Affinity’s interface.
-            </p>
-            <p></p>
-            <div class="surveyresults">
-                <div class="surveyresults-left">
-                    <h3>Research</h3>
-                    <ul>
-                        <li>Goal – to understand more about university advancement and the different business terms
-                            involved in
-                            acquiring donations.</li>
-                        <li>Overview – individually researched a breadth of topics (e.g., what motivates the act of
-                            donating, how
-                            schools build their alumni network, etc.), then put our findings in an affinity diagram to
-                            share what we discovered and determine what we still wanted to know.</li>
-                    </ul>
-                </div>
-                <div class="surveyresults-right">
-                    <h3>Ideation</h3>
-                    <ul>
-                        <li>Goal – to gain inspiration from existing customer relationship management (CRM) tools used
-                            by universities to keep track of donors by recording likes, dislikes, and questions about
-                            each.</li>
-                        <li>Overview – individually picked a popular CRM to investigate, then held a gallery walk to
-                            explore the CRMs chosen.</li>
-                    </ul>
-                </div>
-            </div>
-            <p>One of the major takeaways that we had from the information gathered during this sprint was that we
-                had assumed alumni centers were responsible for dealing with acquiring donations. Our assumption
-                was proved false from the interviews we conducted during this sprint . In reality, most universities
-                have a distinct separation between their alumni engagement office and their development center. The
-                alumni
-                center hosts events for alumni while the development office deals with all donations and philanthropic
-                activities.This realization has presented a new area of opportunity for us to consider when developing a
-                solution.</p>
-        </div>
-        <div class="dataanalysis">
-            <h1>Sprint 2</h1>
-            <h2>Interviews</h2>
-            <p>The main focus of this sprint was to conduct research with our newly-identified user group:
-                development officers at universities. From the first sprint, we learned that most universities have two,
-                separate offices for alumni engagement and university development.</p>
-            <p>To clarify, an alumni association deals with getting alumni involved with a school’s activities
-                (e.g., inviting them to programs, services, and events, connecting alumni through clubs and networks,
-                providing opportunities for both career and personal growth, etc.) while a development office focuses
-                on securing donations and promoting philanthropic activity. Because we did not recognize this
-                distinction of departments earlier, we revised our plan for this sprint to talk to those working at
-                university
-                development offices, as the interviews we did up until this point were with faculty at alumni
-                associations.</p>
-            <p>In doing so, our goal was to find saturation in our results – researching and doing as many interviews
-                as necessary to see what development officers pinpoint as an issue – and determine whether Affinity as
-                a tool to discover new leads would be something officers would find useful.</p>
-            <h3>Process</h3>
-            <p>Over the course of this sprint we conducted a total of eight in-person and online interviews. Three of
-                these were in-person interviews with officers working at Purdue and the other five were from various
-                colleges conducted over phone video call. Interviews were carried out through the course of this sprint
-                in teams of two, with one person leading the interview and one person recording notes. Most of the
-                interviews lasted from 30 minutes – 1 hour.</p>
-            <h3>Participants</h3>
-            <div class="surveyresults">
-                <div class="surveyresults-left">
-                    <p><i>In-person (Purdue University)</i></p>
-                    <ul>
-                        <li><span style="font-weight: bold;">Senior Director of Development</span>, College of
-                            Engineering</li>
-                        <li><span style="font-weight: bold;">Chief Development Officer</span>, Purdue Polytechnic
-                            Institute</li>
-                        <li><span style="font-weight: bold;">Senior Director of Development</span>, College of
-                            Agriculture</li>
-                    </ul>
-                </div>
-                <div class="surveyresults-right">
-                    <p><i>Phone / Video Call</i></p>
-                    <ul>
-                        <li><span style="font-weight: bold;">Development Operations Manager</span>, Williams University
-                        </li>
-                        <li><span style="font-weight: bold;">Director of Donor Relations and Stewardship</span>, Trine
-                            University</li>
-                        <li><span style="font-weight: bold;">Senior Development Officer</span>, Williams University</li>
-                        <li><span style="font-weight: bold;">Entrepreneurial Management student</span>, Ball State
-                            University</li>
-                        <li><span style="font-weight: bold;">Executive Vice President</span>, DonorSearch</li>
-                    </ul>
-                </div>
-            </div>
-            <h3>Interview Takeaways</h3>
-            <div class="interviewtakeaways">
-                <ol>
-                    <li><span style="font-weight: bold;">Identifying prospects and reaching out to major gift
-                            donors.</span> With all alumni recorded in a university’s CRM, development officers have
-                        large pool of people to reach out to. In addition to the CRM, officers use resources from
-                        fundraising consultancies or do a Google search to view a donor’s LinkedIn.</li>
-                    <li><span style="font-weight: bold;">Maintaining a portfolio and contact report of prospective
-                            donors.</span> Each development officer has their own way of managing their portfolio.
-                        Though all are required to log contact reports into the university’s CRM, some officers have
-                        a separate way of organizing personal notes on donors (e.g., spreadsheet, writing email
-                        drafts to oneself, etc.).</li>
-                    <li><span style="font-weight: bold;">Setting KPIs for long-term strategic planning.</span> Since
-                        it can take up to five years for a donor to complete one round in the development cycle,
-                        KPIs are based on factors such as how many people discovered, how many donations
-                        solicited/pledged, etc.</li>
-                    <li><span style="font-weight: bold;">Maintaining meaningful and lasting relationships.</span>
-                        Officers are able to form long-lasting relationships with their donors by practicing
-                        relationship-building techniques, such as remembering details from their last conversation,
-                        sending them articles about the university they might be interested in, or bringing gifts
-                        during their in-person meetings.</li>
-                </ol>
-                <p>Our major takeaway from this sprint was that development officers aren’t necessarily concerned
-                    with
-                    discovering new leads. With their university’s CRM, plenty of online tools, and social media
-                    (e.g.,
-                    LinkedIn) to look through, finding prospective donors is not a difficult task. <span
-                        style="background-color: #fff2cc">Instead, we found that
-                        fostering relationships and building trust with current donors was more important.</span>
-                    Since officers represent the university, much of their work is dedicated toward in-person visits
-                    with donors.</p>
-                <!-- <div class="persona">
-                <img src="images/mia.png" alt="Our Persona, Mia.">
-                <div class="persona-right">
-                    <h3>Mia</h3>
-                    <ul>
-                        <li>Out-of-state, first year Purdue student</li>
-                        <li>Active person; former high school soccer athlete</li>
-                        <li>Parents take care of her medical information</li>
-                        <li>Under her parent’s health insurance</li>
-                    </ul>
-                </div>
-            </div>
-            <p>After creating Mia, our group whiteboarded a simple map of her experiences related with health and Purdue. The
-                outline has six steps on what Mia experienced. Afterwards, we took these steps to utilize as a guideline for the
-                stages of our experience map.</p>
-            <div class="whiteboardexmap">
-                <img src="images/cernerwhiteboard1.jpg" alt="First Quarter of Whiteboard Experience Map.">
-                <img src="images/cernerwhiteboard2.jpg" alt="Second Quarter of Whiteboard Experience Map.">
-                <img src="images/cernerwhiteboard3.jpg" alt="Third Quarter of Whiteboard Experience Map.">
-                <img src="images/cernerwhiteboard4.jpg" alt="Fourth Quarter of Whiteboard Experience Map.">
-            </div>
-            <div class="groupphotowork">
-                <img src="images/cernergroupphoto-work.jpg" alt="Photo of group whiteboarding the experience map.">
-            </div>
-            <div class="cap3">
-                <p>Our team hard at work whiteboarding the experience!</p>
-            </div>
-            <h2>Experience Map</h2>
-            <p>Taking our persona as an inspiration, we decided to create an experience map to show different scenarios students
-                might go through while they are here on campus and need to use PUSH’s services. We focused on five different
-                phases which were pre-college, vaccine, getting sick, getting a severe disease, and post-college.</p>
-            <div class="exmapfull">
-                <img src="images/cernerexmapfull.png" alt="Finalized Experience Map.">
-            </div>
-            <div class="cap4">
-                <p>Finalized Experience Map created with Smaply. Click <a
-                        href="https://drive.google.com/file/d/1u2_-foxb6h4rs2O7ag17Mkt9gHtYA6Yl/view" target="_blank">here</a>
-                    to view full version.</p>
-            </div>
-            <p>During our sponsor meeting, our map was evaluated with the team. They were most interested in the “get sick”
-                stage, so we expanded further on that section using Mia.</p>
-            <div class="exmapgoogle">
-                <img src="images/cernergoogleexmap.png" alt="Narrowing in on the 'Getting Sick' phase of our Experience Map.">
-            </div>
-            <div class="cap5">
-                <p>Going back to our original Google Sheets file and adding more information to the “Get Sick” phase.</p>
-            </div>
-            <p>What informed us on this map were the questions and concerns during the early stage of getting sick, such as
-                “What medicine I should take?” “How serious is this?” and “What I can do to recover?.” We summed them up into
-                two major questions:</p>
-            <ol>
-                <li>What's wrong with me?</li>
-                <li>What should I do?</li>
-            </ol> -->
-            </div>
-        </div>
-        <div class="ideation">
-            <h1>Sprint 3</h1>
-            <h2>Redefined Scope and Sketching</h2>
-            <p>After each interview revealed to us the complexity involved in maintaining relationships with donors,
-                we knew we had to redefine our problem scope. Originally, our problem statement was “to find and reach
-                out to donors not previously on a development officer’s radar.” <span style="background-color: #fff2cc">Due to the significance the officers placed on strengthening their already-existing connections, we realigned our problem scope to focus on managing these personal connections through emphasis on details obtained from in-person
-                interactions.</span></p>
-            <h2>Spreadsheet</h2>
-            <p>Before jumping straight into ideation, our sponsor encouraged us to pinpoint ideas by summarizing interview findings to identify potential issues. Following this, we created a list to prioritize certain ideas over others based on how frequently they were brought up by several interviewees, then proceeded to sketch on ideas that topped the list.</p>
-            <div class="annotatedwhiteboard">
-                <img src="images/affinityspreadsheet.png"
-                    alt="Interview Takeaways Spreadsheet">
-            </div>
-            <div class="cap2">
-                <p>A screen capture of our ideation spreadsheet.</p>
-            </div>
-            <!-- <div class="affinitysketches">
-                <img src="images/affinityspreadsheet.png" alt="Interview Takeaways Spreadsheet">
-                <img src="images/cernersketch3.jpg" alt="PUSH Onboarding Process Sketch">
-            </div> -->
-            <h2>Low-Fidelity Concept Sketches</h2>
-            <p>After consolidating our ideas into the spreadsheet, we then prioritized the top two areas of focus we wanted to addrress in our solution: (1) creation and management of contact reports, and (2) map function to search donor location. Each team member then made several sketches on the features decided upon. After explaining our ideas to each other, we noted similarities between them and chose sketches we could use to base Affinity’s homepage on.
-            <div class="affinitysketches">
-                <img src="images/affinitysketch1.png" alt="Sketch 1">
-                <img src="images/affinitysketch2.png" alt="Sketch 2">
-                <img src="images/affinitysketch3.png" alt="Sketch 3">
-                <!-- <img src="images/affinitysketch4.png" alt="Sketch 4"> -->
-            </div>
-            <h2>Problem Statement and Elevator Pitch</h2>
-            <p>From the many interviews we conducted, we learned the importance of development officers keeping in
-                close communication with their donors in order to successfully solicit a donation. This was the basis for
-                our new problem statement:</p>
-            <h4>In order to successfully acquire large donations for a university, development officers must <span style="font-weight: bold">build lasting
-                relationships and foster trust with their donors in their portfolio through consistent and close
-                communication.</span> This is done through their in-person visits.</h4>
-            <p>From this, we developed our elevator pitch. Since Affinity was to be a new product, an elevator pitch
-                was necessary in order to describe its use and importance:</p>
-            <h4>For University Major Gifts / Development Officers who need a way to easily access and record important
-                information about their donors, <span style="font-weight: bold">Affinity is a cloud-based, database tool integrated with the
-                university’s CRM that allows for efficient creation and retrieval of contact reports as well as
-                flexible meeting scheduling.</span></h4>
-        </div>
-        <div class="testing">
-            <h1>Sprint 4</h1>
-            <h2>Concept Design and Testing</h2>
-            <p>In Sprint 3, we redefined our scope and narrowed down to one central idea. Our focus for this sprint,
-                therefore, was to build out Affinity’s concept through wireframes and conduct testing.</p>
-            <h2>Persona</h2>
-            <p>The goal of creating a persona was to put a face to the development officer and help an external audience understand Affinity in context.</p>
-            <div class="persona">
-                <!-- <img src="images/katherine.png" alt="Our Persona, Katherin."> -->
-                <div class="persona-right">
-                    <h3>Katherine</h3>
-                    <p>Katherine Hensley is a senior development officer at the University of
-                        Michigan. Her role as a development officer is to meet and
-                        communicate with alumni and friends of the college in order to solicit
-                        five- or six-figure gift donations. Before requesting a donation, she
-                        must build meaningful, long-term relationships with donors and
-                        prospects as well as work with them to determine what their
-                        donation should go towards. Since donors are spread out across the
-                        world, her job requires frequent travel.</p>
-                </div>
-            </div>
-          <h2>Wireframes</h2>  
-          <p>To flesh out our idea of Affinity, including the two primary functions (contact report creation and retrieval
-            and scheduling) and secondary functionalities, such as viewing a development officer’s portfolio, pulling
-            information from the university’s CRM, and sharing an itinerary with others.</p>
-            <p>Before fleshing out wireframes and designs, we had to decide what the flow of our application would be
-                like. For this, we created a site flow on Whimsical that included the main pages, lead off pages and
-                features, as well as additional independent pages. Once this was done, we determined how the different
-                features would lead into other pages.</p>
-            <!-- ADD ALT TEXT -->
-            <div class="concepttesting">
-                <img src="images/affinityappflow1.png" alt="#">
-                <img src="images/affinityappflow2.png" alt="#">
-            </div>
-        </div>
-        <div class="solution-final">
-            <h2>Final Design Concept</h2>
-            <p>[see notes on Miro board]</p>
-        </div>
-        <div class="summary">
-            <h1>Next Steps</h1>
-            <p>If we were to continue this project, we would investigate the inner workings of the development office.
-                Though Affinity is created for development officers, it would be interesting to test how different types of
-                officers would use our app. As we found from research, a regular officer’s goal may be to discover new
-                prospects while a director might be more concerned with managing officers/continuing interaction with
-                high-profile alumni. Conducting more interviews and gaining more knowledge on the development office
-                could help us tailor Affinity to a specific officer within the hierarchy.</p>
-            <p>Another way would further this project would be to better understand the relationship between an
-                alumni engagement office and development office. Since the two have an overlapping user base (the
-                majority of donors tend to be alumni), it would be fascinating to identify ways we could leverage the two
-                to maximize the size of donations universities receive.</p>
-                <p>To conclude, this project was challenging yet rewarding. Our project was initially very structured, which
-                    then transitioned to exploratory as we rescoped. Because of this, we were able to gain experience with
-                    conducting extensive research and truly empathize with our user group. This semester, our team
-                    earned how to readily adapt to both project-related and personal changes. We are proud of the work
-                    we have done, but more so on how much we have grown throughout it all.</p>
-            <div class="hero-image affinityteam"></div>
-            <div class="endcap">
-                <p>Team Affinity, Spring 2020</p>
-            </div>
-        </div>
-    </main>
-</div>
 
 <body>
+
+    <div class="pos-f-t sticky-top frosted-glass" id="navbar">
+        <div class="collapse" id="navbarToggleExternalContent">
+
+            <div class="row align-items-center mt-3 px-5em">
+                <div class="col-8">
+                    <h4 class="p-2">About</h4>
+                    <p class="my-4 p-2">Bacon ipsum dolor amet pancetta drumstick meatball pork belly picanha. Kielbasa
+                        ham hock doner picanha shank, tail strip steak cupim porchetta.
+                        Cupim rump swine brisket jerky meatloaf leberkas, t-bone beef ribs. Ball tip doner corned beef
+                        picanha swine biltong.</p>
+                </div>
+                <div class="col-4 pl-5">
+                    <h4 class="p-2">Contact</h4>
+                    <p class="my-4 p-2">Email &bull; Resume &bull;
+                        <img class="nav-button" src="/images/linkedin.svg" alt="" width="16" height="16"
+                            title="LinkedIn">
+                        <img class="nav-button" src="/images/instagram.svg" alt="" width="16" height="16"
+                            title="Instagram">
+                        <img class="nav-button" src="/images/github.svg" alt="" width="16" height="16" title="Github">
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <nav class="navbar navbar-light py-4">
+            <span class="pl-5em">
+                <!-- <img class="nav-button" src="/images/brightness-high-fill.svg" alt="" width="16" height="16" title="Light mode">
+        <img class="nav-button" src="/images/moon-grey.svg" alt="" width="16" height="16" title="Dark mode"> -->
+                <span class="custom-control custom-switch">
+                    <input type="checkbox" class="custom-control-input" id="darkSwitch" />
+                    <label class="custom-control-label" for="darkSwitch"></label>
+                    <span class="page-title">Zoë Morken</span>
+                </span>
+                <script src="scripts/dark-mode-switch.min.js"></script>
+            </span>
+            <button class="navbar-toggler pr-5em" type="button" data-toggle="collapse"
+                data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                <!-- <span class="fas fa-chevron-down"></span> -->
+            </button>
+        </nav>
+    </div>
+
+    <div class="hero-image">
+        <div class="hero-text">
+            <h1>I Dug a Canyon</h1>
+            <h4 class="mt-4">And plan to fill it with bacon</h4>
+        </div>
+    </div>
+
+    <div class="container-fluid mt-5">
+        <div class="row flex-xl-nowrap">
+            <main class="col-12 col-md-11 col-xl-10 py-md-3 pl-md-5 bd-content" role="main">
+                <div class="col mt-4 p-3">
+                    <div class="h-100 border-0">
+                        <h2 id="project-brief">
+                            <div>Project Brief</div>
+                            <a class="anchorjs-link" href="#project-brief" aria-label="Anchor" data-anchorjs-icon="#"
+                                style="padding-left: 0.375em;"></a>
+                        </h2>
+                        <p class="mt-2 p-2">During the Spring 2020 semester, my team worked with DonateEquity on a
+                            project as part of our Experience Studio course at Purdue University. We were initially
+                            tasked to create a tool that would enable university fundraising officers to quickly
+                            identify potential donors to solicit major gifts from. Our research findings led us to shift
+                            our focus instead towards helping officers build close and lasting relationships with their
+                            regular donors.
+                        </p>
+                        <h5 id="my-role">
+                            <div>My Role</div>
+                        </h5>
+                        <p>I co-led a team of seven UX Design students and worked closely with our sponsor, Landon
+                            Young. I was responsible for conducting interviews, synthesizing findings from stakeholders,
+                            and designing the wireframes for our finalized concept. As a team lead, I mentored and
+                            delegated tasks to first-year students throughout the course of the semester as well as
+                            guided the overall direction of the project.
+                        </p>
+                    </div>
+                </div>
+                <div class="row row-cols-1 row-cols-md-2 p-3">
+                    <div class="col-8 mt-4 p-3">
+                        <div class="h-100 border-0">
+                            <div class="card h-100 border-0 shadow zoom">
+                                <img src="images/katherine.jpg" class="card-img-top" alt="Katherine">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 mt-4 p-3">
+                        <div class="h-100 border-0">
+                            <h5 id="persona">
+                                <div>Meet Katherine</div>
+                            </h5>
+                            <p>Katherine is a senior development officer at the University of Michigan. Her job involves
+                                traveling and meeting with alumni and friends of the university in order to solicit
+                                major gift donations. Before requesting a donation, however, she must cultivate
+                                meaningful, long-term relationships with donors and prospects.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row row-cols-1 p-3">
+                    <div class="h-100 border-0">
+                        <h3 id="problem">
+                            <div>Problem</div>
+                            <a class="anchorjs-link " href="#problem" aria-label="Anchor" data-anchorjs-icon="#"
+                                style="padding-left: 0.375em;"></a>
+                        </h3>
+                        <p>Katherine struggles to efficiently navigate and input information into the mobile CRM app
+                            when she’s constantly on the move during business trips. Additionally, with a tight
+                            schedule, she also finds it difficult to fit in time for impromptu meetings with donors.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row row-cols-1 p-3">
+                    <div class="h-100 border-0">
+                        <h3 id="solution">
+                            <div>Solution</div>
+                            <a class="anchorjs-link " href="#solution" aria-label="Anchor" data-anchorjs-icon="#"
+                                style="padding-left: 0.375em;"></a>
+                        </h3>
+                        <p>Affinity: a cloud-based database and app integrated with the university’s Customer
+                            Relationship Management (CRM) system. Affinity allows efficient creation and retrieval of
+                            contact reports as well as flexible meeting scheduling. By using Affinity, Katherine is able
+                            to direct her energy towards getting to know patrons instead of worrying about the logistics
+                            of her job.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row row-cols-1 p-3">
+                    <div class="h-100 border-0">
+                        <h3 id="research">
+                            <div>Research</div>
+                            <a class="anchorjs-link " href="#research" aria-label="Anchor" data-anchorjs-icon="#"
+                                style="padding-left: 0.375em;"></a>
+                        </h3>
+                        <p>To begin, our team conducted several interviews with administrators from various university
+                            alumni associations. Initially, we were under the impression that alumni officers were the
+                            ones soliciting donations. We soon learned that many universities have two, separate offices
+                            for alumni engagement and university development.</p>
+                        <p>From this realization we then conducted eight interviews with development officers, three of
+                            which were in-person interviews with officers working at Purdue. Our goal was to understand
+                            the role of a development officer and find pain points areas where their workflows could
+                            be improved.</p>
+                        <p>After our interviews, we identified the common themes we heard from our participants. Our
+                            most significant and unexpected takeaway was that development officers do not have a problem
+                            finding new leads / prospects with their existing resources (internet and university
+                            archives). Instead, we found that fostering relationships and building trust with current
+                            donors was more important. Since officers represent the university, much of their work is
+                            dedicated toward in-person visits with donors. This led us to realign our problem scope to
+                            focus on managing these interpersonal connections through emphasis on details obtained from
+                            in-person interactions.</p>
+                        <p>In addition to interviews, we engaged in other research methods. These included examining
+                            online resources, analyzing findings through multiple affinity diagrams, and reviewing
+                            existing solutions for development officers (mainly CRMs). The activities were done
+                            concurrently with our interviews and helped us have productive conversations with our
+                            participants.</p>
+                    </div>
+                </div>
+
+                <div class="row row-cols-1 p-3">
+                    <div class="h-100 border-0">
+                        <h3 id="ideation">
+                            <div>Scoping and Ideation</div>
+                            <a class="anchorjs-link " href="#ideation" aria-label="Anchor" data-anchorjs-icon="#"
+                                style="padding-left: 0.375em;"></a>
+                        </h3>
+                        <p class="font-italic">Note: Because of the current COVID-19 pandemic and the shift to remote
+                            work during this sprint, all of our communication between our team as well as our sponsor
+                            moved to Zoom and Slack. Owing to these challenges, we made do by communicating with our
+                            interviewees over email. This was limiting, but still managed to provide us enough details
+                            to plan our next steps accordingly.</p>
+                        <p>Before making this pivot in our project, we created a spreadsheet to reflect what we had
+                            learned from our interviews. Each team member reviewed one interview’s audio recording and
+                            written notes. In the spreadsheet, we wrote out each interviewee’s pain points, current
+                            solutions, and ideas to address said pain points.</p>
+                        <p>The spreadsheet opened up potential opportunities we could take towards creating a solution
+                            that would address our user’s needs. After discussion, we listed different functionalities
+                            we wanted to prioritize with the tool:</p>
+                        <ul>
+                            <li>Mobile app for creation and management of contact reports</li>
+                            <li>Map function to search donor location</li>
+                            <li>Contact list app that tracks interests, birthdays, location, etc.</li>
+                            <li>App that links between calendar and other apps to plan meetings</li>
+                        </ul>
+                        <p>In the end, we decided that our solution would be in the form of a mobile application
+                            integrated with the university’s CRM. Because development officers are not always in a
+                            position to pull out their laptop and write down notes after each donor meeting, we saw
+                            value in convenience. The two main features we prioritized were:</p>
+                        <ol>
+                            <li>Contact report drafting and organization – an easily scannable list of previous trips an
+                                officer has taken (sorted from most recent to least recent), along with their respective
+                                reports on each of the donors visited.</li>
+                            <li>Donor tracker – a map depicting the number of donors in a development officer’s
+                                portfolio residing in a particular area. The larger the amount of donors living in one
+                                city, the bigger the representation on the map. This was done in order to assist
+                                officers in seeing who else they could meet up with in an area.</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="row row-cols-1 p-3">
+                    <div class="h-100 border-0">
+                        <h3 id="sitemap">
+                            <div>Site Map</div>
+                            <a class="anchorjs-link " href="#sitemap" aria-label="Anchor" data-anchorjs-icon="#"
+                                style="padding-left: 0.375em;"></a>
+                        </h3>
+                        <p>A site map was created for the purpose of communicating the different functions we wanted to
+                            prioritize within the mobile experience for our stakeholders. Since we were paring down the
+                            CRM to include only those features interacted with during business trips, we organized the
+                            flow by primary versus secondary screens.</p>
+                        <div class="font-weight-bold">Primary Screens</div>
+                        <ul>
+                            <li>Contact Report Page</li>
+                            <li>Map</li>
+                        </ul>
+                        <div class="font-weight-bold">Secondary Screens</div>
+                        <ul>
+                            <li>Portfolio</li>
+                            <li>Donor Profile</li>
+                            <li>Affinity Settings</li>
+                        </ul>
+                        <p>Wireframes of the screens were created on Whimsical and were iterated upon until we felt that
+                            our design embodied what we had in mind.</p>
+                    </div>
+                </div>
+
+                <div class="row row-cols-1 p-3">
+                    <div class="h-100 border-0">
+                        <h3 id="testing">
+                            <div>Testing</div>
+                            <a class="anchorjs-link " href="#testing" aria-label="Anchor" data-anchorjs-icon="#"
+                                style="padding-left: 0.375em;"></a>
+                        </h3>
+                        <p>In order to better understand if officers would find this app useful for their
+                            responsibilities at work as well as evaluate the overall concept, we conduct usability
+                            testing through screen sharing on video calls. Unfortunately, our current situation could
+                            not allow us to truly simulate their work environment but the feedback we received informed
+                            our iterations.</p>
+                        <p>For testing, we followed up with several of our interviewees from earlier and used an
+                            unstructured approach in which we gave them control of our screen to explore the prototypes.
+                            First, we had them think back to their last trip visiting donors and use their experience to
+                            guide their understanding of our solution. Then we had participants view a set of screens
+                            and explain to us their initial perceptions of the tool in the context of their own
+                            experience.</p>
+                        <h5 id="findings">
+                            <div>Findings</div>
+                        </h5>
+                        <ul>
+                            <li>In a donor profile, they would like to see the donor’s preferred mode of communication,
+                                what date the last gift was given, and the city a donor is from to help with
+                                organization.</li>
+                            <li>Since donors can move both forwards and backwards in the life cycle, there should be a
+                                more dynamic option for selecting what part of the cycle a donor is in.</li>
+                            <li>It would be useful to see unmanaged donors on the map so that the officer could reach
+                                out to someone new if they find themselves in the area.</li>
+                        </ul>
+                        <p>Through testing we confirmed that Affinity would most likely have a place during the
+                            scheduling process and directly after donor meetings. We also found that the ability to add
+                            quick notes directly after a meeting helped development officers organize their thoughts
+                            before submitting it into their CRM.</p>
+                    </div>
+                </div>
+
+
+                <div class="row row-cols-1 p-3">
+                    <div class="h-100 border-0">
+                        <h3 id="iterations">
+                            <div>Iterations</div>
+                            <a class="anchorjs-link " href="#iterations" aria-label="Anchor" data-anchorjs-icon="#"
+                                style="padding-left: 0.375em;"></a>
+                        </h3>
+                        <p>After gaining valuable insights from our two participants, we made iterations according to
+                            their suggestions. We felt that these changes were appropriate and would provide development officers a more robust experience.</p>
+                        <p></p>
+                    </div>
+                </div>
+
+                <div class="row row-cols-1 p-3">
+                    <div class="h-100 border-0">
+                        <h3 id="reflection">
+                            <div>Reflection</div>
+                            <a class="anchorjs-link " href="#reflection" aria-label="Anchor" data-anchorjs-icon="#"
+                                style="padding-left: 0.375em;"></a>
+                        </h3>
+                        <p>This project was a great learning experience for me. Through it all, I had to master the art of adapting: to my role as a team lead, to the dramatic rescoping of our project, and finally, the transition from in-person to remote collaboration. Despite the challenges, we were able to gain experience with conducting extensive research and truly empathize with our user group.</p>
+                        <p>In terms of future considerations, we would have liked to explore the relationship between a university’s alumni engagement office and development office. Since the two have an overlapping user base (as the majority of donors tend to be alumni), it would be fascinating to identify ways we could leverage the two to maximize the size of donations universities receive. While we didn’t pursue this area of focus due to time constraints, we made sure that our sponsor was aware of the different possibilities Affinity could take in the future.</p>
+                        <p class="font-italic">Update: In light of COVID-19, this project has returned to our Experience Studio course in order to be adapted for university development officers as they fulfill their responsibilities remotely. I am the Project Owner for the Fall 2020 team working on Affinity and will be supervising them throughout this semester.</p>
+                    </div>
+                </div>
+
+            </main>
+
+            <div class="d-none d-xl-block col-xl-2 py-md-3 pl-md-5 bc-toc">
+                <ul class="section-nav">
+                    <li class="toc-entry toc-h2">
+                        <a href="#project-brief">
+                            <h5>Project Brief</h5>
+                        </a>
+                        <a href="#problem">
+                            <h5>Problem</h5>
+                        </a>
+                        <a href="#solution">
+                            <h5>Solution</h5>
+                        </a>
+                        <a href="#research">
+                            <h5>Research</h5>
+                        </a>
+                        <a href="#ideation">
+                            <h5>Ideation</h5>
+                        </a>
+                        <a href="#testing">
+                            <h5>Testing</h5>
+                        </a>
+                        <a href="#iterations">
+                            <h5>Iterations</h5>
+                        </a>
+                        <a href="#reflection">
+                            <h5>Reflection</h5>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Spacer -->
+    <div class="p-4"></div>
+
+    <!-- Footer -->
+    <div class="row align-items-center bg-offwhite mt-3 px-10em">
+        <div class="col-10 mb-5">
+            <p class="mt-4 p-2">Bacon ipsum dolor amet pancetta drumstick meatball pork belly picanha. Kielbasa ham hock
+                doner picanha shank, tail strip steak cupim porchetta.
+                Cupim rump swine brisket jerky meatloaf leberkas, t-bone beef ribs. Ball tip doner corned beef picanha
+                swine biltong.</p>
+        </div>
+        <div class="col-2 mb-5">
+            <a href="#">Back to top</a>
+        </div>
+    </div>
 
 </body>
 
