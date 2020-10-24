@@ -2,6 +2,35 @@ body {
     font-family: Mulish, 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
 }
 
+.content-wrapper {
+  max-width: 60%;
+  margin: auto;
+}
+
+/* @media (min-width: 576px) {
+  body {
+    padding: 0 5vw;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    padding: 0 10vw;
+  }
+}
+
+@media (min-width: 992px) {
+  body {
+    padding: 0 15vw;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    padding: 0 20vw;
+  }
+} */
+
 h1,h2,h3,h4,h5,.page-title {
     font-family: Poppins, 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
 }
