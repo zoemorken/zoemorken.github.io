@@ -74,82 +74,84 @@
   </head>
 
   <body>
-    <div class="content-wrapper">
-      <div class="pos-f-t sticky-top frosted-glass" id="navbar">
-        <div class="collapse" id="navbarToggleExternalContent">
-          <div class="row align-items-center mt-3">
-            <div class="col-8">
-              <h4 class="p-2">About</h4>
-              <p class="my-4 p-2">
-                Bacon ipsum dolor amet pancetta drumstick meatball pork belly
-                picanha. Kielbasa ham hock doner picanha shank, tail strip steak
-                cupim porchetta. Cupim rump swine brisket jerky meatloaf
-                leberkas, t-bone beef ribs. Ball tip doner corned beef picanha
-                swine biltong.
-              </p>
-            </div>
-            <div class="col-4 pl-5">
-              <h4 class="p-2">Contact</h4>
-              <p class="my-4 p-2">
-                Email &bull; Resume &bull;
-                <img
-                  class="nav-button"
-                  src="/images/linkedin.svg"
-                  alt=""
-                  width="16"
-                  height="16"
-                  title="LinkedIn"
-                />
-                <img
-                  class="nav-button"
-                  src="/images/instagram.svg"
-                  alt=""
-                  width="16"
-                  height="16"
-                  title="Instagram"
-                />
-                <img
-                  class="nav-button"
-                  src="/images/github.svg"
-                  alt=""
-                  width="16"
-                  height="16"
-                  title="Github"
-                />
-              </p>
-            </div>
+    <!-- About -->
+    <div class="pos-f-t sticky-top frosted-glass" id="navbar">
+      <div class="collapse" id="navbarToggleExternalContent">
+        <div class="row align-items-center mt-3 px-5em">
+          <div class="col-10">
+            <h4 class="p-2">About</h4>
+            <p class="my-4 p-2">
+              Bacon ipsum dolor amet pancetta drumstick meatball pork belly
+              picanha. Kielbasa ham hock doner picanha shank, tail strip steak
+              cupim porchetta. Cupim rump swine brisket jerky meatloaf leberkas,
+              t-bone beef ribs. Ball tip doner corned beef picanha swine
+              biltong.
+            </p>
+          </div>
+          <div class="col-2 pl-5">
+            <h4 class="p-2">Contact</h4>
+            <p class="my-4 p-2">
+              Email &bull; Resume &bull;
+              <img
+                class="nav-button"
+                src="/images/linkedin.svg"
+                alt=""
+                width="16"
+                height="16"
+                title="LinkedIn"
+              />
+              <img
+                class="nav-button"
+                src="/images/instagram.svg"
+                alt=""
+                width="16"
+                height="16"
+                title="Instagram"
+              />
+              <img
+                class="nav-button"
+                src="/images/github.svg"
+                alt=""
+                width="16"
+                height="16"
+                title="Github"
+              />
+            </p>
           </div>
         </div>
-        <nav class="navbar navbar-light py-4">
-          <span class="pl-5em">
-            <!-- <img class="nav-button" src="/images/brightness-high-fill.svg" alt="" width="16" height="16" title="Light mode">
-        <img class="nav-button" src="/images/moon-grey.svg" alt="" width="16" height="16" title="Dark mode"> -->
-            <span class="custom-control custom-switch">
-              <input
-                type="checkbox"
-                class="custom-control-input"
-                id="darkSwitch"
-              />
-              <label class="custom-control-label" for="darkSwitch"></label>
-              <span class="page-title">Zoë Morken</span>
-            </span>
-            <script src="scripts/dark-mode-switch.min.js"></script>
-          </span>
-          <button
-            class="navbar-toggler pr-5em"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarToggleExternalContent"
-            aria-controls="navbarToggleExternalContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-            <!-- <span class="fas fa-chevron-down"></span> -->
-          </button>
-        </nav>
       </div>
+      <nav class="navbar navbar-light py-4">
+        <span class="pl-5em">
+          <!-- <img class="nav-button" src="/images/brightness-high-fill.svg" alt="" width="16" height="16" title="Light mode">
+        <img class="nav-button" src="/images/moon-grey.svg" alt="" width="16" height="16" title="Dark mode"> -->
+          <span class="custom-control custom-switch">
+            <input
+              type="checkbox"
+              class="custom-control-input"
+              id="darkSwitch"
+            />
+            <label class="custom-control-label" for="darkSwitch"></label>
+            <span class="page-title">Zoë Morken</span>
+          </span>
+          <script src="scripts/dark-mode-switch.min.js"></script>
+        </span>
+        <button
+          class="navbar-toggler pr-5em"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarToggleExternalContent"
+          aria-controls="navbarToggleExternalContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+          <!-- <span class="fas fa-chevron-down"></span> -->
+        </button>
+      </nav>
+    </div>
 
+    <div class="content-wrapper">
+      <!-- Hero image -->
       <div class="hero-image">
         <div class="hero-text">
           <h1>I Dug a Canyon</h1>
@@ -157,6 +159,7 @@
         </div>
       </div>
 
+      <!-- Main content area-->
       <div class="container-fluid mt-5">
         <div class="row flex-xl-nowrap">
           <main
@@ -658,30 +661,14 @@
           <div class="d-none d-xl-block col-xl-2 py-md-3 pl-md-3 bc-toc">
             <ul class="section-nav">
               <li class="toc-entry">
-                <a href="#project-brief">
-                  Project Brief
-                </a>
-                <a href="#problem">
-                  Problem
-                </a>
-                <a href="#solution">
-                  Solution
-                </a>
-                <a href="#research">
-                  Research
-                </a>
-                <a href="#ideation">
-                  Ideation
-                </a>
-                <a href="#testing">
-                  Testing
-                </a>
-                <a href="#iterations">
-                  Iterations
-                </a>
-                <a href="#reflection">
-                  Reflection
-                </a>
+                <a href="#project-brief"> Project Brief </a>
+                <a href="#problem"> Problem </a>
+                <a href="#solution"> Solution </a>
+                <a href="#research"> Research </a>
+                <a href="#ideation"> Ideation </a>
+                <a href="#testing"> Testing </a>
+                <a href="#iterations"> Iterations </a>
+                <a href="#reflection"> Reflection </a>
               </li>
             </ul>
           </div>
@@ -690,20 +677,20 @@
 
       <!-- Spacer -->
       <div class="p-4"></div>
+    </div>
 
-      <!-- Footer -->
-      <div class="row align-items-center bg-offwhite mt-3 px-10em">
-        <div class="col-10 mb-5">
-          <p class="mt-4 p-2">
-            Bacon ipsum dolor amet pancetta drumstick meatball pork belly
-            picanha. Kielbasa ham hock doner picanha shank, tail strip steak
-            cupim porchetta. Cupim rump swine brisket jerky meatloaf leberkas,
-            t-bone beef ribs. Ball tip doner corned beef picanha swine biltong.
-          </p>
-        </div>
-        <div class="col-2 mb-5">
-          <a href="#">Back to top</a>
-        </div>
+    <!-- Footer -->
+    <div class="row align-items-center bg-offwhite mt-3 px-10em">
+      <div class="col-10 mb-5">
+        <p class="mt-4 p-2">
+          Bacon ipsum dolor amet pancetta drumstick meatball pork belly picanha.
+          Kielbasa ham hock doner picanha shank, tail strip steak cupim
+          porchetta. Cupim rump swine brisket jerky meatloaf leberkas, t-bone
+          beef ribs. Ball tip doner corned beef picanha swine biltong.
+        </p>
+      </div>
+      <div class="col-2 mb-5">
+        <a href="#">Back to top</a>
       </div>
     </div>
   </body>
