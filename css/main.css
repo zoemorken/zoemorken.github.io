@@ -7,33 +7,9 @@ p {
 }
 
 .content-wrapper {
-  max-width: 60%;
+  max-width: 75%;
   margin: auto;
 }
-
-/* @media (min-width: 576px) {
-  body {
-    padding: 0 5vw;
-  }
-}
-
-@media (min-width: 768px) {
-  body {
-    padding: 0 10vw;
-  }
-}
-
-@media (min-width: 992px) {
-  body {
-    padding: 0 15vw;
-  }
-}
-
-@media (min-width: 1200px) {
-  body {
-    padding: 0 20vw;
-  }
-} */
 
 h1,h2,h3,h4,h5,.page-title {
   font-weight: 900;
