@@ -3,304 +3,402 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Experience Studio Fall 2019</title>
-    <link rel="stylesheet" href="css-reset.css">
-    <link rel="stylesheet" type="text/css" href="content.css">
-    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Font Awesome icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <script src="scripts/navbar-scroll.js"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/sidebar.css" />
+
+    <style>
+        /* The hero image */
+        .hero-image {
+            /* Use "linear-gradient" to add a darken background effect to the image.
+            This will make the text easier to read
+        */
+            background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("images/project3-hero.jpg");
+
+            /* Set a specific height */
+            height: 30rem;
+
+            /* Position and center the image to scale nicely on all screens */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+    </style>
+
 </head>
 
 <body>
-    <div class="container">
-        <div class="hero-image cerner">
-            <div class="cover-description">
-                <h1>Cerner</h1>
-                <p>Breaking down communication barriers in healthcare between patients and providers.</p>
+
+    <div class="pos-f-t sticky-top frosted-glass" id="navbar">
+        <div class="collapse" id="navbarToggleExternalContent">
+
+            <div class="row align-items-center mt-3 px-5em">
+                <div class="col-8">
+                    <h4 class="p-2">About</h4>
+                    <p class="my-4 p-2">Bacon ipsum dolor amet pancetta drumstick meatball pork belly picanha. Kielbasa
+                        ham hock doner picanha shank, tail strip steak cupim porchetta.
+                        Cupim rump swine brisket jerky meatloaf leberkas, t-bone beef ribs. Ball tip doner corned beef
+                        picanha swine biltong.</p>
+                </div>
+                <div class="col-4 pl-5">
+                    <h4 class="p-2">Contact</h4>
+                    <p class="my-4 p-2">Email &bull; Resume &bull;
+                        <img class="nav-button" src="/images/linkedin.svg" alt="" width="16" height="16"
+                            title="LinkedIn">
+                        <img class="nav-button" src="/images/instagram.svg" alt="" width="16" height="16"
+                            title="Instagram">
+                        <img class="nav-button" src="/images/github.svg" alt="" width="16" height="16" title="Github">
+                    </p>
+                </div>
             </div>
+
         </div>
-        <main>
-            <h1>Overview</h1>
-            <div class="context">
-                <h2>Context</h2>
-                <p>During the Fall 2019 semester, our Experience Studio team at Purdue University was sponsored by Cerner, a major supplier of information health solutions. This was an open-ended project that allowed us to explore many possible avenues toward a solution.</p>
-            </div>
-            <div class="overview">
-                <div class="objective">
-                    <h2>Objective</h2>
-                    <p>With the implementation of new communication technologies in healthcare such as the electronic medical record (EMR), the quality of communication in the healthcare environment has decreased. Therefore, we were encouraged to come up with a streamlined communication channel for patients and healthcare providers. Our intent was to empower patients to take responsibility for their health by helping them gain the support they need from their providers.</p>
-                    <p>Though there were many different directions we could take this project, we decided to focus on
-                        <span style="background-color: #fff2cc">encouraging college students to reach out to healthcare resources early with the onset of illness, so that they can be assisted properly through recovery</span>. From personal experience in a university setting, we knew that many
-                        students were not satisfied with visits to the on-campus health center, Purdue University Student Health Center (PUSH). This was an area of improvement we identified to help alleviate
-                        existing communication problems.</p>
+        <nav class="navbar navbar-light py-4">
+            <span class="pl-5em">
+                <!-- <img class="nav-button" src="/images/brightness-high-fill.svg" alt="" width="16" height="16" title="Light mode">
+        <img class="nav-button" src="/images/moon-grey.svg" alt="" width="16" height="16" title="Dark mode"> -->
+                <span class="custom-control custom-switch">
+                    <input type="checkbox" class="custom-control-input" id="darkSwitch" />
+                    <label class="custom-control-label" for="darkSwitch"></label>
+                    <span class="page-title">Zoë Morken</span>
+                </span>
+                <script src="scripts/dark-mode-switch.min.js"></script>
+            </span>
+            <button class="navbar-toggler pr-5em" type="button" data-toggle="collapse"
+                data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                <!-- <span class="fas fa-chevron-down"></span> -->
+            </button>
+        </nav>
+    </div>
+
+    <div class="hero-image">
+        <div class="hero-text">
+            <h1>I Dug a Canyon</h1>
+            <h4 class="mt-4">And plan to fill it with bacon</h4>
+        </div>
+    </div>
+
+    <div class="container-fluid mt-5">
+        <div class="row flex-xl-nowrap">
+            <main class="col-12 col-md-11 col-xl-10 py-md-3 pl-md-5 bd-content" role="main">
+                <div class="col mt-4 p-3">
+                    <div class="h-100 border-0">
+                        <h2 id="project-brief">
+                            <div>Project Brief</div>
+                            <a class="anchorjs-link" href="#project-brief" aria-label="Anchor" data-anchorjs-icon="#"
+                                style="padding-left: 0.375em;"></a>
+                        </h2>
+                        <p class="mt-2 p-2">During the Spring 2020 semester, my team worked with DonateEquity on a
+                            project as part of our Experience Studio course at Purdue University. We were initially
+                            tasked to create a tool that would enable university fundraising officers to quickly
+                            identify potential donors to solicit major gifts from. Our research findings led us to shift
+                            our focus instead towards helping officers build close and lasting relationships with their
+                            regular donors.
+                        </p>
+                        <h5 id="my-role">
+                            <div>My Role</div>
+                        </h5>
+                        <p>I co-led a team of seven UX Design students and worked closely with our sponsor, Landon
+                            Young. I was responsible for conducting interviews, synthesizing findings from stakeholders,
+                            and designing the wireframes for our finalized concept. As a team lead, I mentored and
+                            delegated tasks to first-year students throughout the course of the semester as well as
+                            guided the overall direction of the project.
+                        </p>
+                    </div>
                 </div>
-                <div class="overview-right">
-                    <h3>Role</h3>
-                    <p>UI / UX Designer</p>
-                    <h3>Duration</h3>
-                    <p>Fall Semester (August–December 2019)</p>
-                    <h3>Team Members</h3>
-                    <p>Zoë Morken, Jingle Chen, Anna Ding, Christian Espinoza, Rhea Singh, Alicia Zhang</p>
-                    <h3>Tools</h3>
-                    <p>Figma, Smaply</p>
-                    <h3>Final Deliverables</h3>
-                    <p>Design documentation including research and ideation, low to mid-fidelity prototypes</p>
+                <div class="row row-cols-1 row-cols-md-2 p-3">
+                    <div class="col-8 mt-4 p-3">
+                        <div class="h-100 border-0">
+                            <div class="card h-100 border-0 shadow zoom">
+                                <img src="images/katherine.jpg" class="card-img-top" alt="Katherine">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 mt-4 p-3">
+                        <div class="h-100 border-0">
+                            <h5 id="persona">
+                                <div>Meet Katherine</div>
+                            </h5>
+                            <p>Katherine is a senior development officer at the University of Michigan. Her job involves
+                                traveling and meeting with alumni and friends of the university in order to solicit
+                                major gift donations. Before requesting a donation, however, she must cultivate
+                                meaningful, long-term relationships with donors and prospects.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="designchallenge">
-                <h4>How can we design for preventive, rather than reactive, care? How can students be aware and informed about Purdue’s healthcare resources throughout the entirety of their physical health during college?
-                </h4>
-            </div>
-            <div class="project-info">
-                <h2>Solution</h2>
-                <p>We designed a diagnosis tool to be implemented into PUSH’s patient portal for students to assess whether they should schedule an in-person appointment. This is essentially a computer wizard that asks and adapts questions regarding a user’s current state of health. Once the questionnaire is complete, the tool produces a list of top three most plausible illnesses, with descriptions for each.</p>
-                <!-- Revise image alt names -->
-                <div class="image1 cernerimages">
-                    <img src="images/cernerimage1.png" alt="Diagnoses Results Screen">
+
+                <div class="row row-cols-1 p-3">
+                    <div class="h-100 border-0">
+                        <h3 id="problem">
+                            <div>Problem</div>
+                            <a class="anchorjs-link " href="#problem" aria-label="Anchor" data-anchorjs-icon="#"
+                                style="padding-left: 0.375em;"></a>
+                        </h3>
+                        <p>Katherine struggles to efficiently navigate and input information into the mobile CRM app
+                            when she’s constantly on the move during business trips. Additionally, with a tight
+                            schedule, she also finds it difficult to fit in time for impromptu meetings with donors.
+                        </p>
+                    </div>
                 </div>
-                <div class="cap1">
-                    <p>Mid-Fidelity Prototype of Friendli.</p>
+
+                <div class="row row-cols-1 p-3">
+                    <div class="h-100 border-0">
+                        <h3 id="solution">
+                            <div>Solution</div>
+                            <a class="anchorjs-link " href="#solution" aria-label="Anchor" data-anchorjs-icon="#"
+                                style="padding-left: 0.375em;"></a>
+                        </h3>
+                        <p>Affinity: a cloud-based database and app integrated with the university’s Customer
+                            Relationship Management (CRM) system. Affinity allows efficient creation and retrieval of
+                            contact reports as well as flexible meeting scheduling. By using Affinity, Katherine is able
+                            to direct her energy towards getting to know patrons instead of worrying about the logistics
+                            of her job.
+                        </p>
+                    </div>
                 </div>
-                <p>If the tool does not believe the illness calls for an appointment, students have the option to sign up for emails checking in on the student. These emails will occur at regular intervals (day after, week after, etc.) asking whether the student felt better after following the recommended steps. From this point, students feeling worse over time will have the tool automatically schedule an appointment for them. Students can stop email notifications at any time.</p>
-                <div class="image2 cernerimages">
-                    <img src="images/cernerimage2.png" alt="Email Notification Reminder">
+
+                <div class="row row-cols-1 p-3">
+                    <div class="h-100 border-0">
+                        <h3 id="research">
+                            <div>Research</div>
+                            <a class="anchorjs-link " href="#research" aria-label="Anchor" data-anchorjs-icon="#"
+                                style="padding-left: 0.375em;"></a>
+                        </h3>
+                        <p>To begin, our team conducted several interviews with administrators from various university
+                            alumni associations. Initially, we were under the impression that alumni officers were the
+                            ones soliciting donations. We soon learned that many universities have two, separate offices
+                            for alumni engagement and university development.</p>
+                        <p>From this realization we then conducted eight interviews with development officers, three of
+                            which were in-person interviews with officers working at Purdue. Our goal was to understand
+                            the role of a development officer and find pain points areas where their workflows could
+                            be improved.</p>
+                        <p>After our interviews, we identified the common themes we heard from our participants. Our
+                            most significant and unexpected takeaway was that development officers do not have a problem
+                            finding new leads / prospects with their existing resources (internet and university
+                            archives). Instead, we found that fostering relationships and building trust with current
+                            donors was more important. Since officers represent the university, much of their work is
+                            dedicated toward in-person visits with donors. This led us to realign our problem scope to
+                            focus on managing these interpersonal connections through emphasis on details obtained from
+                            in-person interactions.</p>
+                        <p>In addition to interviews, we engaged in other research methods. These included examining
+                            online resources, analyzing findings through multiple affinity diagrams, and reviewing
+                            existing solutions for development officers (mainly CRMs). The activities were done
+                            concurrently with our interviews and helped us have productive conversations with our
+                            participants.</p>
+                    </div>
                 </div>
-                <div class="cap2">
-                    <p>Mid-Fidelity Prototype of a Purdue student’s email inbox. Students are prompted to answer the question for further instruction from our proposed tool.</p>
-                </div>
-                <div class="contribution">
-                    <h3>My Contributions:</h3>
-                    <ul>
-                        <li>Performed extensive research on current healthcare modes of communication (EMRs) to better inform self and group members and identified areas to explore further as means of tackling different barriers of communication in healthcare</li>
-                        <li>Established written problem statement for group approved by sponsors</li>
-                        <li>Ideated constantly throughout shifting problem space, created multiple technological means of communication (e.g. mobile, web) to address different contexts, and built a persona to base our Experience Map on</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="explorationprocess">
-                <h1>Exploration Process</h1>
-                <h2>Approach</h2>
-                <p>Since the initial problem space that we were working on was extremely broad, narrowing our focus and finding the right problem to solve was an essential part of this project. Our general approach involved narrowing the project scope and picking one of the possible directions informed by our assumptions or research insights, then quickly explore that specific direction. Throughout the process, we presented our ideas to our professors and sponsors for additional feedback.</p>
-                <p>We looked into three different problems in healthcare regarding the following categories, eventually deciding to look into gaps within the healthcare transition process.</p>
-                <p>We noticed that college students were the user group most likely to not communicate with healthcare providers on a regular basis. Narrowing further, we looked into the theme of healthcare transition. This is defined as <span style="background-color: #fff2cc">the process of taking care of one's own health-related information and activity</span>.</p>
-                <p>With the general scope of “healthcare transition,” we gradually modified our scope based on pain
-                    points discovered through a survey study and expert interview.</p>
-                <!-- Add "Jump to Data Collection" button after this paragraph -->
-                <ol>
-                    <li>Encourage college students to ask more questions.</li>
-                    <li>Help college students onboard into their school's healthcare system.</li>
-                    <li>Better inform college students on what action to take.</li>
-                </ol>
-            </div>
-            <div class="datacollection">
-                <h1>Data Collection</h1>
-                <h2>Survey</h2>
-                <p>Our goal in sending out a survey was to get a better understanding of <span style="background-color: #fff2cc">students’ knowledge on healthcare before, during, and after their transition to college</span> (including insurance, medical records, medical history, etc.).</p>
-                <div class="surveyresults">
-                    <div class="surveyresults-left">
+
+                <div class="row row-cols-1 p-3">
+                    <div class="h-100 border-0">
+                        <h3 id="ideation">
+                            <div>Scoping and Ideation</div>
+                            <a class="anchorjs-link " href="#ideation" aria-label="Anchor" data-anchorjs-icon="#"
+                                style="padding-left: 0.375em;"></a>
+                        </h3>
+                        <p class="font-italic">Note: Because of the current COVID-19 pandemic and the shift to remote
+                            work during this sprint, all of our communication between our team as well as our sponsor
+                            moved to Zoom and Slack. Owing to these challenges, we made do by communicating with our
+                            interviewees over email. This was limiting, but still managed to provide us enough details
+                            to plan our next steps accordingly.</p>
+                        <p>Before making this pivot in our project, we created a spreadsheet to reflect what we had
+                            learned from our interviews. Each team member reviewed one interview’s audio recording and
+                            written notes. In the spreadsheet, we wrote out each interviewee’s pain points, current
+                            solutions, and ideas to address said pain points.</p>
+                        <p>The spreadsheet opened up potential opportunities we could take towards creating a solution
+                            that would address our user’s needs. After discussion, we listed different functionalities
+                            we wanted to prioritize with the tool:</p>
                         <ul>
-                            <li>51 responses</li>
-                            <li>80% female, 20% male</li>
-                            <li>18 responses from 18-19 year olds; 27 responses from 20-21 year olds; 6 responses from 21+ year olds</li>
+                            <li>Mobile app for creation and management of contact reports</li>
+                            <li>Map function to search donor location</li>
+                            <li>Contact list app that tracks interests, birthdays, location, etc.</li>
+                            <li>App that links between calendar and other apps to plan meetings</li>
                         </ul>
-                        <p>In the survey, we asked our participants to rate themselves on how knowledgeable they are about their medical insurance on a 1 to 5 scale (1 being not knowledgeable and 5 being knowledgeable). The result average was 2.29.</p>
-                    </div>
-                    <div class="surveyresults-right">
-                        <h3>Quotes</h3>
-                        <p>"I don't care, I'm pretty healthy."</p>
-                        <p>"I call my parents [if I have a problem]."</p>
-                        <h3>Takeaways</h3>
-                        <p>We confirmed that not understanding how to seek help from the healthcare system is a problem among college students. More importantly, what makes this issue more severe is that college students don’t recognize it as a problem.</p>
-                        <p>Our survey and results can be accessed <a
-                                href="https://docs.google.com/forms/d/114lkdkOmEkSMEX9VXy6W_seKJrNXZCdBO0hhJ1SWlxQ/edit"
-                                target="_blank">here</a>.</p>
+                        <p>In the end, we decided that our solution would be in the form of a mobile application
+                            integrated with the university’s CRM. Because development officers are not always in a
+                            position to pull out their laptop and write down notes after each donor meeting, we saw
+                            value in convenience. The two main features we prioritized were:</p>
+                        <ol>
+                            <li>Contact report drafting and organization – an easily scannable list of previous trips an
+                                officer has taken (sorted from most recent to least recent), along with their respective
+                                reports on each of the donors visited.</li>
+                            <li>Donor tracker – a map depicting the number of donors in a development officer’s
+                                portfolio residing in a particular area. The larger the amount of donors living in one
+                                city, the bigger the representation on the map. This was done in order to assist
+                                officers in seeing who else they could meet up with in an area.</li>
+                        </ol>
                     </div>
                 </div>
-                <h2>Purdue University Student Health Center (PUSH) Interview</h2>
-                <p>To gain more perspective from the provider side of patient–provider communication, we interviewed Gwen Richardson, a nurse practitioner at PUSH. Our interviewee was able to give us a baseline understanding of the inner workings of PUSH and what she feels are barriers when communicating with students.</p>
-                <p>The interview was more conversation-like, where two team members of our group started from our standard provider interview protocol and inserted follow-up questions when necessary. It was carried out on October 10, 2019 at PUSH within a 30-minute interval.</p>
-                <h3>Interview Takeaways</h3>
-                <div class="interviewtakeaways">
-                    <ol>
-                        <li><span style="font-weight: bold;">Cost is important to students.</span> Both our interviewee and PUSH strive to be honest and upfront about how much an appointment or visitation will cost a student. This is done to prevent surprise bills and claims that students were not informed.</li>
-                        <li><span style="font-weight: bold;">Students lack proper healthcare knowledge.</span> Richardson mentions that many of the students that come in are unfamiliar with their health insurance. Some students come in not knowing what medication they’re taking (if they are taking medication) or why. Because of this, providers must either search through a student’s medical record for a past diagnosis or contact the patient’s primary doctor.</li>
-                        <li><span style="font-weight: bold;">Students under-utilize their PUSH patient portal.</span> Each Purdue student automatically has an account, and though providers encourage communication through this channel, students still have not readily adopted this tool. Some students, upon receiving a secure message notification in their email, think that the message is spam or forget about it entirely.</li>
-                        <li><span style="font-weight: bold;">Since students are unprepared in handling their own healthcare information and activity, they do not speak up even if they may have questions or concerns.</span> This is a pain point for Richardson, as she wants all students to know that PUSH is a safe place where information is confidential. In a university setting, students should feel comfortable sharing health-related concerns and asking questions to help practitioners better understand their situations.</li>
-                    </ol>
-                    <p>When comparing Richardson’s viewpoints with those of the patients we interviewed, their is an evident difference in mindset leading to a disconnect in straightforward communication. Out of these insights, we found the lack of interaction with the online portal interesting, since it was a technology-forward solution which the younger generation was rejecting. Therefore, our ideation revolved around what we could build off of this existing technology.</p>
-                </div>
-            </div>
-            <div class="dataanalysis">
-                <h1>Data Analysis</h1>
-                <h2>Persona</h2>
-                <p>From collected data, we created a persona to help align our ideas and direct our Experience Map.</p>
-                <div class="persona">
-                    <img src="images/mia.png" alt="Our Persona, Mia.">
-                    <div class="persona-right">
-                        <h3>Mia</h3>
+
+                <div class="row row-cols-1 p-3">
+                    <div class="h-100 border-0">
+                        <h3 id="sitemap">
+                            <div>Site Map</div>
+                            <a class="anchorjs-link " href="#sitemap" aria-label="Anchor" data-anchorjs-icon="#"
+                                style="padding-left: 0.375em;"></a>
+                        </h3>
+                        <p>A site map was created for the purpose of communicating the different functions we wanted to
+                            prioritize within the mobile experience for our stakeholders. Since we were paring down the
+                            CRM to include only those features interacted with during business trips, we organized the
+                            flow by primary versus secondary screens.</p>
+                        <div class="font-weight-bold">Primary Screens</div>
                         <ul>
-                            <li>Out-of-state, first year Purdue student</li>
-                            <li>Active person; former high school soccer athlete</li>
-                            <li>Parents take care of her medical information</li>
-                            <li>Under her parent’s health insurance</li>
+                            <li>Contact Report Page</li>
+                            <li>Map</li>
                         </ul>
+                        <div class="font-weight-bold">Secondary Screens</div>
+                        <ul>
+                            <li>Portfolio</li>
+                            <li>Donor Profile</li>
+                            <li>Affinity Settings</li>
+                        </ul>
+                        <p>Wireframes of the screens were created on Whimsical and were iterated upon until we felt that
+                            our design embodied what we had in mind.</p>
                     </div>
                 </div>
-                <p>After creating Mia, our group whiteboarded a simple map of her experiences related with health and Purdue. The outline has six steps on what Mia experienced. Afterwards, we took these steps to utilize as a guideline for the stages of our experience map.</p>
-                <div class="whiteboardexmap">
-                    <img src="images/cernerwhiteboard1.jpg" alt="First Quarter of Whiteboard Experience Map.">
-                    <img src="images/cernerwhiteboard2.jpg" alt="Second Quarter of Whiteboard Experience Map.">
-                    <img src="images/cernerwhiteboard3.jpg" alt="Third Quarter of Whiteboard Experience Map.">
-                    <img src="images/cernerwhiteboard4.jpg" alt="Fourth Quarter of Whiteboard Experience Map.">
+
+                <div class="row row-cols-1 p-3">
+                    <div class="h-100 border-0">
+                        <h3 id="testing">
+                            <div>Testing</div>
+                            <a class="anchorjs-link " href="#testing" aria-label="Anchor" data-anchorjs-icon="#"
+                                style="padding-left: 0.375em;"></a>
+                        </h3>
+                        <p>In order to better understand if officers would find this app useful for their
+                            responsibilities at work as well as evaluate the overall concept, we conduct usability
+                            testing through screen sharing on video calls. Unfortunately, our current situation could
+                            not allow us to truly simulate their work environment but the feedback we received informed
+                            our iterations.</p>
+                        <p>For testing, we followed up with several of our interviewees from earlier and used an
+                            unstructured approach in which we gave them control of our screen to explore the prototypes.
+                            First, we had them think back to their last trip visiting donors and use their experience to
+                            guide their understanding of our solution. Then we had participants view a set of screens
+                            and explain to us their initial perceptions of the tool in the context of their own
+                            experience.</p>
+                        <h5 id="findings">
+                            <div>Findings</div>
+                        </h5>
+                        <ul>
+                            <li>In a donor profile, they would like to see the donor’s preferred mode of communication,
+                                what date the last gift was given, and the city a donor is from to help with
+                                organization.</li>
+                            <li>Since donors can move both forwards and backwards in the life cycle, there should be a
+                                more dynamic option for selecting what part of the cycle a donor is in.</li>
+                            <li>It would be useful to see unmanaged donors on the map so that the officer could reach
+                                out to someone new if they find themselves in the area.</li>
+                        </ul>
+                        <p>Through testing we confirmed that Affinity would most likely have a place during the
+                            scheduling process and directly after donor meetings. We also found that the ability to add
+                            quick notes directly after a meeting helped development officers organize their thoughts
+                            before submitting it into their CRM.</p>
+                    </div>
                 </div>
-                <div class="groupphotowork">
-                    <img src="images/cernergroupphoto-work.jpg" alt="Photo of group whiteboarding the experience map.">
+
+
+                <div class="row row-cols-1 p-3">
+                    <div class="h-100 border-0">
+                        <h3 id="iterations">
+                            <div>Iterations</div>
+                            <a class="anchorjs-link " href="#iterations" aria-label="Anchor" data-anchorjs-icon="#"
+                                style="padding-left: 0.375em;"></a>
+                        </h3>
+                        <p>After gaining valuable insights from our two participants, we made iterations according to
+                            their suggestions. We felt that these changes were appropriate and would provide development officers a more robust experience.</p>
+                        <p></p>
+                    </div>
                 </div>
-                <div class="cap3">
-                    <p>Our team hard at work whiteboarding the experience!</p>
+
+                <div class="row row-cols-1 p-3">
+                    <div class="h-100 border-0">
+                        <h3 id="reflection">
+                            <div>Reflection</div>
+                            <a class="anchorjs-link " href="#reflection" aria-label="Anchor" data-anchorjs-icon="#"
+                                style="padding-left: 0.375em;"></a>
+                        </h3>
+                        <p>This project was a great learning experience for me. Through it all, I had to master the art of adapting: to my role as a team lead, to the dramatic rescoping of our project, and finally, the transition from in-person to remote collaboration. Despite the challenges, we were able to gain experience with conducting extensive research and truly empathize with our user group.</p>
+                        <p>In terms of future considerations, we would have liked to explore the relationship between a university’s alumni engagement office and development office. Since the two have an overlapping user base (as the majority of donors tend to be alumni), it would be fascinating to identify ways we could leverage the two to maximize the size of donations universities receive. While we didn’t pursue this area of focus due to time constraints, we made sure that our sponsor was aware of the different possibilities Affinity could take in the future.</p>
+                        <p class="font-italic">Update: In light of COVID-19, this project has returned to our Experience Studio course in order to be adapted for university development officers as they fulfill their responsibilities remotely. I am the Project Owner for the Fall 2020 team working on Affinity and will be supervising them throughout this semester.</p>
+                    </div>
                 </div>
-                <h2>Experience Map</h2>
-                <p>Taking our persona as an inspiration, we decided to create an experience map to show different scenarios students might go through while they are here on campus and need to use PUSH’s services. We focused on five different phases which were pre-college, vaccine, getting sick, getting a severe disease, and post-college.</p>
-                <div class="exmapfull">
-                    <img src="images/cernerexmapfull.png" alt="Finalized Experience Map.">
-                </div>
-                <div class="cap4">
-                    <p>Finalized Experience Map created with Smaply. Click <a
-                            href="https://drive.google.com/file/d/1u2_-foxb6h4rs2O7ag17Mkt9gHtYA6Yl/view"
-                            target="_blank">here</a> to view full version.</p>
-                </div>
-                <p>During our sponsor meeting, our map was evaluated with the team. They were most interested in the “get sick” stage, so we expanded further on that section using Mia.</p>
-                <div class="exmapgoogle">
-                    <img src="images/cernergoogleexmap.png"
-                        alt="Narrowing in on the 'Getting Sick' phase of our Experience Map.">
-                </div>
-                <div class="cap5">
-                    <p>Going back to our original Google Sheets file and adding more information to the “Get Sick” phase.</p>
-                </div>
-                <p>What informed us on this map were the questions and concerns during the early stage of getting sick, such as “What medicine I should take?” “How serious is this?” and “What I can do to recover?.” We summed them up into two major questions:</p>
-                <ol>
-                    <li>What's wrong with me?</li>
-                    <li>What should I do?</li>
-                </ol>
-            </div>
-            <div class="ideation">
-                <h1>Ideation</h1>
-                <h2>Sketching</h2>
-                <p>After doing research to figure out more about our target group and see specifically where the main pain points were, we started ideation. Our more prominent ideas were a medical checklist, medical questionnaire, and PUSH patient portal onboarding.</p>
-                <!-- fix sizing later, move to center -->
-                <div class="cernersketches">
-                    <img src="images/cernersketch1.png" alt="Medical Questionnaire sketch">
-                    <!-- <img src="images/cernersketch2.jpg" alt="#"> -->
-                    <img src="images/cernersketch3.jpg" alt="PUSH Onboarding Process Sketch">
-                </div>
-                <h2>Whiteboarding</h2>
-                <p>With these three general directions in mind – medical checklist, medical questionnaire, and PUSH patient portal onboarding – we attempted to probe deeper into how Mia would interact if given one of these solutions. The results were negative; because these designs were all very one-sided in terms of interaction, we found that Mia would lose interest in all situations because there was no direct communication element with a provider. Furthermore, the medical checklist and PUSH onboarding solutions were more of a one-time point of contact that did not promote continued usage over our user group’s transition period.</p>
-                <p>Because of these reasons, we scrapped our ideas and scrutinized the “getting sick” phase of our Experience Map. We ideated again separately, our goal being to break down communication barriers between college patients and providers, and came back together to whiteboard as a group. In doing so, our ideas aligned much better. </p>
-                <p><span style="font-weight:bold">Our idea:</span> A tool implemented into the current PUSH portal that would help students determine whether they should schedule an appointment with PUSH. We felt that this addressed our scope because instead of having students worry about their illness by reading online sources – an insight we found from our Experience Map – we would have them initiate the interaction with PUSH from the beginning so that PUSH may assist them through sickness and into recovery.</p>
-                <div class="annotatedwhiteboard">
-                    <img src="images/cernerannotatedwhiteboard.png"
-                        alt="Whiteboard Ideation with annotations for our final solution.">
-                </div>
-                <ol>
-                    <li>Login into the portal and first interactions with the diagnosis tool.</li>
-                    <li>Results produced and next step options the student can take.</li>
-                    <li>Notification received from the portal a day after interaction.</li>
-                    <li>Notification received from the portal a few days after interaction.</li>
-                </ol>
-            </div>
-            <div class="testing">
-                <h1>Testing</h1>
-                <p>After whiteboarding our final solution, we turned to Figma to create low-fidelity wireframes. These,
-                    along with paper prototypes, were used for testing whether our design would address our chosen
-                    scope.</p>
-                <h2>Figma Prototype</h2>
-                <p>The goal of testing our Figma wireframes was to gauge people’s understanding and preconceived notions of “wizards” as well as determine whether these solutions would be adopted by our user group.</p>
-                <!-- ADD SLIDESHOW WITH IMAGES "cernerfirstwireframes1.png-cernerfirstwireframes5.png" TO PROJECT -->
-                <h3>Takeaways</h3>
-                <ul>
-                    <li>Users found that this solution more trustworthy and reliable than searching their symptoms
-                        online.</li>
-                    <li>There was confusion with the layout of the diagnosis page.</li>
-                    <li>Users wanted a progress bar for the survey to track how their progress.</li>
-                    <li>Users preferred the term “wizard” over “chatbot.”
+
+            </main>
+
+            <div class="d-none d-xl-block col-xl-2 py-md-3 pl-md-5 bc-toc">
+                <ul class="section-nav">
+                    <li class="toc-entry toc-h2">
+                        <a href="#project-brief">
+                            <h5>Project Brief</h5>
+                        </a>
+                        <a href="#problem">
+                            <h5>Problem</h5>
+                        </a>
+                        <a href="#solution">
+                            <h5>Solution</h5>
+                        </a>
+                        <a href="#research">
+                            <h5>Research</h5>
+                        </a>
+                        <a href="#ideation">
+                            <h5>Ideation</h5>
+                        </a>
+                        <a href="#testing">
+                            <h5>Testing</h5>
+                        </a>
+                        <a href="#iterations">
+                            <h5>Iterations</h5>
+                        </a>
+                        <a href="#reflection">
+                            <h5>Reflection</h5>
+                        </a>
                     </li>
                 </ul>
-                <h2>Concept Testing – Paper Prototype</h2>
-                <p>A paper prototype was created in order to determine how best to organize our screen for symptom severity (rating the level of severity for each symptom that the patient lists).</p>
-                <!-- ADD ALT TEXT -->
-                <div class="concepttesting">
-                    <img src="images/cernerct1.png" alt="#">
-                    <img src="images/cernerct2.png" alt="#">
-                </div>
-                <div class="concepttestingcap">
-                    <div class="cap6">
-                        <p>Yellow and red paperclips: drag and drop each symptoms you have and rank them in the right order.</p>
-                    </div>
-                    <div class="cap7">
-                        <p>Chatbot: question will pop up, the user answers it, and then the next question will pop up right away (asking for severity).</p>
-                    </div>
-                </div>
-                <h3>Takeaways</h3>
-                <ul>
-                    <li>Participants found using sliders more intuitive.</li>
-                    <li>Users wanted three levels of severity because they felt that it was easier to rate their level of severity that way.</li>
-                </ul>
             </div>
-            <div class="solution-final">
-                <h1>Final Prototype</h1>
-                <h2>Iterations</h2>
-                <p>After presenting our final prototype to our sponsors, we made the following changes:</p>
-                <ol>
-                    <li>Changed severity scale from sliders to numbers to make it easier to use for both the user and computer.</li>
-                    <li>Sectioned the timeline to better indicate user progress and the amount of questions that remain.</li>
-                    <li>Added percentages on the diagnoses page to emphasize that tool should be used as a suggestion.</li>
-                    <li>Hid information away on separate tabs for easy access when the user scrolls down.</li>
-                    <li>Represented physical feeling with emoticons in the notification email to eliminate potential bias toward picking a certain color.</li>
-                </ol>
-            </div>
-            <div class="nextsteps">
-                <h1>Next Steps</h1>
-                <p>We had other ideas we would like to explore further for the purposes of this project.</p>
-                <ul>
-                    <li><span style="font-weight: bold">Journaling:</span> Users would have the option to write down their own thoughts and feelings about their illness when using the tool. From testing, we found that the multiple choice questions could be hindering accurate diagnosis.</li>
-                    <li><span style="font-weight: bold">History:</span> The patient and medical practitioner should also be able to see previous use results of the diagnosis tool. </li>
-                    <li><span style="font-weight: bold">Driving Tool Usage:</span> Another topic brought up during our meetings was how the diagnosis tool should be introduced. We had ideas on introducing the portal through word of mouth, during PUSH appointments, or through the PUSH website.</li>
-                </ul>
-            </div>
-            <div class="summary">
-                <h1>Summary and Design Rationale</h1>
-                <p>This diagnosis tool implemented into PUSH’s patient portal is meant for students to make the first
-                    steps toward taking care of their health. Our solution encourages enhances patient-provider
-                    communication by first getting students comfortable using the portal, then scheduling an appointment
-                    when necessary.</p>
-                <p>Instead of leaving students at a loss of what to do when they get sick, we hoped that our solution
-                    would fuel their desire to be more aware of how to take care of themselves during a major transition
-                    period (home to college) in their lives.</p>
-                <h2>What I Learned</h2>
-                <p>Open-ended projects such as this require much careful research and planning. Though we were focused on scoping down as soon as possible, our haste ironically led us to wander around the problem space in circles.</p>
-                <p>After choosing a scope and sticking to it, most of our research was fairly traditional (secondary research, surveys, interviews). If planned better, our group would have hosted a co-design workshop to provide more deeper insights.</p>
-                <p>Though we experienced setbacks, our group was able to successfully pull together a solution that addressed a real need in our community.</p>
-                <div class="hero-image cernerteam"></div>
-                <div class="endcap">
-                    <p>Team Cerner, Fall 2019</p>
-                </div>
-            </div>
-        </main>
-    </div>
-    </div>
-    <footer>
-        <h1>Zo&euml; Morken</h1>
-        <p>
-            <a href="mailto:zmorken@purdue.edu">Email</a> –
-            <a href="zoemorkenresume.pdf" target="_blank">Resume</a> –
-            <a href="http://linkedin.com/in/zoe-morken" target="_blank">LinkedIn</a> –
-            <a href="https://www.instagram.com/zoe.morken/" target="_blank">Instagram</a> – 
-            <a href="https://github.com/zoemorken" target="_blank">GitHub</a>
-        </p>
-        <div class="copyright">
-            <p>© 2020</p>
         </div>
-    </footer> 
+    </div>
+
+
+    <!-- Spacer -->
+    <div class="p-4"></div>
+
+    <!-- Footer -->
+    <div class="row align-items-center bg-offwhite mt-3 px-10em">
+        <div class="col-10 mb-5">
+            <p class="mt-4 p-2">Bacon ipsum dolor amet pancetta drumstick meatball pork belly picanha. Kielbasa ham hock
+                doner picanha shank, tail strip steak cupim porchetta.
+                Cupim rump swine brisket jerky meatloaf leberkas, t-bone beef ribs. Ball tip doner corned beef picanha
+                swine biltong.</p>
+        </div>
+        <div class="col-2 mb-5">
+            <a href="#">Back to top</a>
+        </div>
+    </div>
+
 </body>
 
 </html>
