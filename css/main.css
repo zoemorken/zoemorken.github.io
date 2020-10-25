@@ -80,6 +80,10 @@ button.navbar-toggler:focus {
   outline: none;
 }
 
+.img-corner {
+  border-radius: 0 !important;
+}
+
 /* Place text in the middle of the image */
 .hero-text {
   position: absolute;

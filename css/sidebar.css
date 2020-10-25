@@ -18,9 +18,8 @@
 .toc-entry a {
     display: block;
     padding: .125rem 1.5rem;
-    color: #99979c
+    color: #99979c;
     font-weight: 500;
-    color: #999;
 }
 
 .toc-entry a:hover {
