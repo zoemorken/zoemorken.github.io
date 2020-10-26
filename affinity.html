@@ -676,9 +676,9 @@
     </div>
     <script>
     function setTop() {
-        document.getElementById("rightnav").setAttribute("style", "top: " + Math.max(100, 600-window.pageYOffset) + "px;");
+        document.getElementById("rightnav").setAttribute("style", "top: " + Math.max(70, 600-window.pageYOffset) + "px;");
     }
-    window.onscroll = setTop;
+    window.addEventListener('scroll', setTop);
     setTop();
     </script>
 
