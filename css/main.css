@@ -59,6 +59,13 @@ h5 {
   font-weight: 500;
   font-size: large;
 }
+
+ul.contact {
+  list-style-type: none !important;
+  padding-left: 1em !important;
+  line-height: 2;
+}
+
 .nav-button {
   margin: 4px;
 }

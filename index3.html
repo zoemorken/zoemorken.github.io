@@ -30,11 +30,13 @@
   <link rel="stylesheet" href="css/main.css" />
 
   <style>
-    ul {
-      list-style-type: disc !important;
-      padding-left: 1em !important;
-      margin-left: 1em;
+    .affinity-thumbnail {
+      background-image: linear-gradient(to right, #45497A, #F16D5E);
     }
+    .cerner-thumbnail {
+      background-image: linear-gradient(to left, #54BBFF, #3773FA);
+    }
+
   </style>
 
 </head>
@@ -44,7 +46,7 @@
   <div class="pos-f-t sticky-top frosted-glass" id="navbar">
     <div class="collapse" id="navbarToggleExternalContent">
 
-      <div class="row align-items-center mt-3 px-5em">
+      <div class="row mt-3 px-5em">
         <div class="col-8">
           <h4 class="p-2">About</h4>
           <p class="my-4 p-2">Hello! I’m Zoë, a junior studying UX Design at Purdue University. Previously, I worked as
@@ -52,14 +54,15 @@
         </div>
         <div class="col-4 pl-5">
           <h4 class="p-2">Contact</h4>
-          <p class="my-4 p-2">Email</p>
-          <p class="my-4 p-2">Resume</p>
-            <i class="fab fa-linkedin-in"></i>
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-github"></i>
-            <!-- <img class="nav-button" src="/images/linkedin.svg" alt="" width="16" height="16" title="LinkedIn"> -->
-            <!-- <img class="nav-button" src="/images/instagram.svg" alt="" width="16" height="16" title="Instagram"> -->
-            <!-- <img class="nav-button" src="/images/github.svg" alt="" width="16" height="16" title="Github"> -->
+          <ul class="contact">
+            <li><a href="mailto:zmorken@purdue.edu">Email</a></li>
+            <li>Resume</li>
+            <li class="mt-2">
+              <i class="pr-2 fab fa-linkedin-in fa-lg"></i>
+              <i class="pr-2 fab fa-instagram fa-lg"></i>
+              <i class="pr-2 fab fa-github fa-lg"></i>
+            </li>
+          </ul>
         </div>
       </div>
 
@@ -114,7 +117,7 @@
       <div class="card h-100 border-0 shadow zoom">
         <img
           src="images/affinity-thumbnail.png"
-          class="card-img-top" alt="Affinity Thumbnail">
+          class="card-img-top affinity-thumbnail" alt="Affinity Thumbnail">
         <div class="card-body px-5">
           <h5 class="card-title">Affinity</h5>
           <p class="card-text">Experience Studio Project | Spring 2020</p>
@@ -125,7 +128,7 @@
 
     <div class="col mt-4 p-3">
       <div class="card h-100 border-0 shadow zoom">
-        <img src="images/cerner-thumbnail.png" class="card-img-top"
+        <img src="images/cerner-thumbnail.png" class="card-img-top cerner-thumbnail"
           alt="Cerner Thumbnail">
         <div class="card-body px-5">
           <h5 class="card-title">Cerner</h5>
