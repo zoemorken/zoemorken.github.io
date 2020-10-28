@@ -107,6 +107,12 @@ button.navbar-toggler:focus {
   color: white;
 }
 
+.outstanding-block {
+font-weight: 800;
+font-size: larger;
+color: #44d;
+line-height: 1.5;
+}
 
 .bg-offwhite {
   background-color: #f8f8f8;
