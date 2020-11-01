@@ -94,6 +94,20 @@ button.navbar-toggler:focus {
   outline: none;
 }
 
+button.contact {
+  border: none;
+  width: 100%;
+  height: 3rem;
+  color: #f8f8f8;
+  background-color: #553399
+}
+button.navbar-toggler:focus {
+  outline: none;
+}
+button.contact:hover {
+  background-color: #5533aa
+}
+
 .img-corner {
   border-radius: 0 !important;
 }
