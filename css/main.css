@@ -6,6 +6,11 @@ p {
   margin-bottom: 1.5rem;
 }
 
+a.bare-link:hover, a.bare-link:active, a.bare-link:link, a.bare-link:visited {
+  text-decoration: none;
+  color: black;
+}
+
 .content-wrapper {
   max-width: 75%;
   margin: auto;
@@ -97,15 +102,16 @@ button.navbar-toggler:focus {
 button.contact {
   border: none;
   width: 100%;
-  height: 3rem;
+  height: 4rem;
   color: #f8f8f8;
-  background-color: #553399
+  background-color: rgba(105, 90, 205, 0.815);
+  transition: background-color 0.2s ease-in-out;
 }
 button.navbar-toggler:focus {
   outline: none;
 }
 button.contact:hover {
-  background-color: #5533aa
+  background-color: slateblue;
 }
 
 .img-corner {
@@ -185,4 +191,9 @@ line-height: 1.5;
 
 [data-theme="dark"] .bg-offwhite {
   background-color: #222;
+}
+
+[data-theme="dark"] a.bare-link:hover, [data-theme="dark"] a.bare-link:active, [data-theme="dark"] a.bare-link:link, [data-theme="dark"] a.bare-link:visited {
+  text-decoration: none;
+  color: white;
 }
