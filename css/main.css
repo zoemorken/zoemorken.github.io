@@ -99,6 +99,23 @@ button.navbar-toggler:focus {
   outline: none;
 }
 
+button.navbar-about {
+  border: none;
+  width: 16rem;
+  height: 3rem;
+  color:  #101077;  
+  background-color: rgba(199, 192, 243, 0.815);
+  transition: color 0.2s ease-in-out,
+              background-color 0.2s ease-in-out;
+}
+button.navbar-about:hover {
+  color: #f8f8f8;
+  background-color: rgba(105, 90, 205, 0.815);
+}
+button.navbar-about:focus {
+  outline: none;
+}
+
 button.contact {
   border: none;
   width: 100%;
