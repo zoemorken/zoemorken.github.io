@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Zoë Morken – Cerner</title>
+    <title>Zoë Morken – Moody</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
@@ -37,7 +37,7 @@
             This will make the text easier to read
         */
 
-            background-image: url("images/cerner-heroimage.png"), linear-gradient(to left, #54BBFF, #3773FA);
+            background-image: url("images/cerner-heroimage.png"), linear-gradient(to right, #B09FE0, #212B6A);
 
             /* Set a specific height */
             height: 30rem;
@@ -98,9 +98,9 @@
     <!-- Hero image -->
     <div class="hero-image">
         <div class="hero-text">
-            <h1>HiDelta Internship</h1>
-            <h4 class="mt-4">Built a mobile application aimed at reinventing food delivery.</h4>
-            <p class="mt-4">Remote, Summer 2020 (4 months, May–August 2020)</p>
+            <h1>Moody</h1>
+            <h4 class="mt-4">A Spotify web experience that plays music to fit the mood.</h4>
+            <p class="mt-4">Fall 2020 (7 weeks, October–December 2019)</p>
         </div>
     </div>
 
@@ -125,7 +125,7 @@
                                 <li>Chosen API: Spotify’s Web API for Developers</li>
                                 <li>Input: Mood / Situation (visualized as menu on the side of the screen)</li>
                                 <li>Output: Recommended playlist or list of songs</li>
-                                <li>Endpoint: /v1/recommendations</li>
+                                <li>Endpoint: <a href="https://developer.spotify.com/documentation/web-api/reference/browse/get-recommendations/" target="_blank">/v1/recommendations</a></li>
                             </ul>
                         </div>
                     </div>
@@ -136,13 +136,33 @@
                                 <div>Approach</div>
                                 <a class="anchorjs-link" href="#approach" aria-label="Anchor" data-anchorjs-icon="#"></a>
                             </h2>
-                            <ul>
-                                <li>Chosen API: Spotify’s Web API for Developers</li>
-                                <li>Input: Mood / Situation (visualized as menu on the side of the screen)</li>
-                                <li>Output: Recommended playlist or list of songs</li>
-                                <li>Endpoint: /v1/recommendations</li>
-                            </ul>
+                            <h5 id="spotify-authorization">
+                              <div>Spotify Authorization Setup</div>
+                            </h5>
+                            <p>To start, I followed <a href="https://developer.spotify.com/documentation/web-api/quick-start/" target="_blank">Spotify’s quick start web API tutorial</a>. Though Spotify’s API is free, it requires a Spotify account to access user-related information. Therefore, it was imperative that I register my app according to the guide. Following the setup process, I did the following:</p>
+                            <ol>
+                              <li>Register my application. I created the app under my Spotify account. After deciding on a name and description, Spotify provided me with a Client ID and secret (a key to pass secure calls to Spotify Accounts and Web API services).</li>
+                              <li>Prepare and test my environment. Following the tutorial, I downloaded and installed Node.js in order to create an HTTP server on my computer. Running both server.js and app.js in Node, I was able to start up a web server on my computer at port 8888. When typing in “localhost:8888,” my Chrome browser made a call to a server, in which Node replied with the http request. Per the Spotify tutorial, I set up the response as “Hello World.”</li>
+                              <li>Add Node.js into downloaded OAuth examples. I downloaded a GitHub repository with the examples supplied in the tutorial.</li>
+                              <li>Provide the app credentials. In the app.js file (one of the files I downloaded from GitHub), I had to input the Client ID, Client Secret, and Redirect URI in order to call my specific app. Going back to my dashboard, I retrieved these values to get the app up and running.</li>
+                            </ol>
+                            <h5 id="functionality">
+                              <div>Specifying Functionality</div>
+                            </h5>
+                            <p>Following the tutorial, my API retrieved the Spotify user’s account data. This was a placeholder endpoint that I changed. To customize Moody, I replaced this with my chosen endpoint: <a href="https://developer.spotify.com/documentation/web-api/reference/browse/get-recommendations/" target="_blank">/v1/recommendations</a>. Changes I made in the code were added incrementally – I always commented out code I thought I didn’t need, checked the browser, then deleted if everything was still working – to reduce the possibility of not knowing where the error occurred.</p>
+                            <p>Most of my changes were made on the index.html page I downloaded from GitHub. I did not make a separate file due to the fact that some of the components needed for authorization and access into Spotify’s API already existed on this page upon downloading. Therefore, the index.html page includes not only HTML, but some JavaScript (JS) and jQuery as well as Handlebars.js, a compiler that takes HTML and (using a Handlebars expression) compiles them to a JS function. For clarity, different scripts are organized in logical order, from the first login page to the actual web app itself.</p>
+                            <p>The app functions as follows:</p>
+                            <ol>
+                              <li>The user provides their credentials to log in to Spotify.</li>
+                              <li>The navigation menu on the left side calls an AJAX function which retrieves data from Spotify’s server asynchronously (the endpoint URL is built to make the AJAX call).</li>
+                              <li>JSON results from the API are parsed and rendered by Handlebars into HTML.</li>
+                            </ol>
                         </div>
+                        <h5 id="styling">
+                          <div>Styling and Enhanced UX</div>
+                        </h5>
+                        <p>After getting Moody to function as intended, I styled the web app. I wanted users to be able to discover new songs when selecting a given mood. To do this, I followed <a href="https://developer.spotify.com/branding-guidelines/" target="_blank">Spotify’s branding guidelines</a> to help users associate the app with Spotify as well as make a navigation menu out of iOS emojis.</p>
+                        <p>Styling for Moody was done in a separate style.css file. Here, I manipulated background color, customized placement of the aside, generated tracks, and altered the size of the emojis. The emojis themselves are displayed in HTML using their unique decimal reference.</p>
                     </div>
 
                     <div class="row row-cols-1 p-3">
@@ -152,11 +172,13 @@
                                 <a class="anchorjs-link" href="#reflection" aria-label="Anchor"
                                     data-anchorjs-icon="#"></a>
                             </h2>
+                            <p>My first experience working with an API was much more difficult than anticipated. Prior to this exercise, I had no background knowledge on the subject and had no idea what many of the terms thrown my way meant. Because each part of the process exercised different mental capabilities, I’ve broken this reflection into how I approached creating Moody.</p>
                             <ul>
-                                <li>Communication is key: With my team spread across five different time zones, it was imperative that we keep aligned. To do this, we created a Scrum schedule that involved meeting with the other design interns at the beginning of our weekly sprints, then showcasing our individual progress at the end of the week. Daily updates were sent out asynchronously through Slack. This internship was unique in that our hours were flexible, so establishing a deliverable structure beforehand provided us the constraints needed to plan and execute our tasks. We quickly adapted to this new style of work, and it allowed us to iterate efficiently on our tasks. Furthermore, regular incremental feedback on our work in progress helped us improve as designers as we began to anticipate our stakeholder’s needs.</li>
-                                <li>Don’t be afraid to start over: When the first round of designs presented to HiDelta’s client by a hired design agency did not meet the vision he had for his proposed application, he turned to our team of interns to start from scratch. This responsibility gave us the freedom to truly focus on the user. Though we still had time constraints and technical requirements to meet, the client offered us a rare opportunity to transform his concept into something that could be integrated into the user’s existing experience discovering new meals to enjoy. I seized this chance to experiment with different ways someone could come across the app, capitalizing on innovative interactions that would expose users to recommendations in novel ways.</li>
-                                <li>Take the initiative: In my time as lead designer, I occasionally found myself not knowing how to accomplish what was asked of me. I took it upon myself to improve my technical skills by finding resources online. This has helped me gain in self-efficacy and confidence.</li>
+                              <li>Spotify Authorization Set-Up: By far the most technically challenging part. I relied heavily on external sources when the tutorial didn’t make sense or wasn’t working for me. Coming into this exercise, I struggled to understand what an API was, much less how I could run one. Therefore, when going through the tutorial, I asked many questions: “What is Node.js? What is a local host? What is an access / refresh token?” Though these terms are not as foreign to me now as they were then, I still am not completely familiar with the many components in my code running behind the scenes. However, I understand how everything interacts with one another, from the client-side HTML to the server-side API. Additionally, I learned basic Unix commands to start the terminal.</li>
+                              <li>Specifying Functionality: This was also difficult, as I had limited JS and jQuery knowledge. Once I had the API example set up on my computer, I began to edit and rearrange the code gradually. I saved and checked the smallest of modifications in the browser to confirm everything was still running properly. By doing so, I was able to reduce the amount of time spent debugging since only one change was made at a time. This made running into issues easier; when I did encounter problems, I would use Developer Tools to view errors (which was especially helpful when replacing user profile information with track information).</li>
+                              <li>Styling and Enhanced UX: What I found most exciting to do besides seeing the API work for the first time. Because I was already familiar with CSS, this part was relatively short and involved playing around with line widths, spacing, sizing, etc. When deciding on a more meaningful way to showcase information retrieved from the API, I was happy to discover that emojis had their own HTML reference. I had to learn a bit of JS to have the playlist name update accordingly, but this addition enhanced the overall end result.</li>
                             </ul>
+                            <p class="font-italic">Update: I am currently in the process of improving Moody's interface in order to further enhance the final web experience.</p>
                         </div>
                 </div>
                 </main>
