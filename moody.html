@@ -52,5 +52,154 @@
 </head>
 
 <body>
+    <div class="pos-f-t sticky-top frosted-glass" id="navbar">
+        <div class="collapse" id="navbarToggleExternalContent">
     
+          <div class="row mt-3 px-5em">
+            <div class="col-8">
+              <h4 class="p-2">About</h4>
+              <p class="mt-4 p-2 mb-1">Hello! I’m Zoë, a junior studying UX Design at Purdue University. Previously, I worked as
+                the lead designer for HiDelta, a startup dedicated to bringing entrepreneurial visions to life.</p>
+                <button class="rounded navbar-about" onclick="window.location='about.html'">More About Me</button>
+    
+            </div>
+            <div class="col-4 pl-5">
+              <h4 class="p-2">Contact</h4>
+              <ul class="mt-4 contact">
+                <li><a href="mailto:zmorken@purdue.edu">Email</a></li>
+                <li><a href="Zoe_Morken_Resume.pdf" target="_blank">Resume</a></li>
+                <li class="mt-2">
+                  <a class="bare-link" href="https://www.linkedin.com/in/zoe-morken/" target="_blank"><i class="pr-2 fab fa-linkedin-in fa-lg"></i></a>
+                  <a class="bare-link" href="https://www.instagram.com/zoe.morken/" target="_blank"><i class="pr-2 fab fa-instagram fa-lg"></i></a>
+                  <a class="bare-link" href="https://github.com/zoemorken" target="_blank"><i class="pr-2 fab fa-github fa-lg"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+    
+        </div>
+        <nav class="navbar navbar-light py-4">
+          <span class="pl-5em">
+            <span class="custom-control custom-switch">
+              <input type="checkbox" class="custom-control-input" id="darkSwitch" />
+              <label class="custom-control-label" for="darkSwitch"></label>
+              <span class="page-title"><a class="bare-link" href="index.html">Zoë Morken</a></span>
+            </span>
+            <script src="scripts/dark-mode-switch.min.js"></script>
+          </span>
+          <button class="navbar-toggler pr-5em" type="button" data-toggle="collapse"
+            data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </nav>
+      </div>
+
+    <!-- Hero image -->
+    <div class="hero-image">
+        <div class="hero-text">
+            <h1>HiDelta Internship</h1>
+            <h4 class="mt-4">Built a mobile application aimed at reinventing food delivery.</h4>
+            <p class="mt-4">Remote, Summer 2020 (4 months, May–August 2020)</p>
+        </div>
+    </div>
+
+    <div class="content-wrapper">
+        <!-- Main content area-->
+        <div class="container-fluid mt-5">
+            <div class="row flex-xl-nowrap">
+                <main class="col-12 col-md-11 col-xl-10 py-md-3 bd-content" role="main">
+                    <div class="row mt-4 p-3">
+                        <div class="h-100 border-0">
+                            <h2 id="Project Brief">
+                                <div>Project Brief</div>
+                                <a class="anchorjs-link" href="#projectbrief" aria-label="Anchor"
+                                    data-anchorjs-icon="#"></a>
+                            </h2>
+                            <p>In the past decade, the traditional method of designing websites (static pages with links) has largely been replaced with the designing of web applications. Web apps are able to engage users through dynamic and interactive content through external web services. Different web services supply methods for sending and receiving information across a network, typically from a server to a client. Through application programming interfaces (APIs), web developers can request content from web services to implement onto their web applications. Popular services such as Google, Facebook, and YouTube provide public APIs.</p>
+                            <p>Our task was to create a web app that called upon a public API. The final product was an interactive web page (HTML) styled with CSS and an API that enhanced functionality and UX of our web app. I chose to create my web app using Spotify's API for Developers that would allow users to generate playlists tailored to their current mood.</p>
+                            <h5 id="focus">
+                                <div>Focus and Chosen API</div>
+                              </h5>
+                              <ul>
+                                <li>Chosen API: Spotify’s Web API for Developers</li>
+                                <li>Input: Mood / Situation (visualized as menu on the side of the screen)</li>
+                                <li>Output: Recommended playlist or list of songs</li>
+                                <li>Endpoint: /v1/recommendations</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="row row-cols-1 p-3">
+                        <div class="h-100 border-0">
+                            <h2 id="approach">
+                                <div>Approach</div>
+                                <a class="anchorjs-link" href="#approach" aria-label="Anchor" data-anchorjs-icon="#"></a>
+                            </h2>
+                            <ul>
+                                <li>Chosen API: Spotify’s Web API for Developers</li>
+                                <li>Input: Mood / Situation (visualized as menu on the side of the screen)</li>
+                                <li>Output: Recommended playlist or list of songs</li>
+                                <li>Endpoint: /v1/recommendations</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="row row-cols-1 p-3">
+                        <div class="h-100 border-0">
+                            <h2 id="reflection">
+                                <div>Reflection</div>
+                                <a class="anchorjs-link" href="#reflection" aria-label="Anchor"
+                                    data-anchorjs-icon="#"></a>
+                            </h2>
+                            <ul>
+                                <li>Communication is key: With my team spread across five different time zones, it was imperative that we keep aligned. To do this, we created a Scrum schedule that involved meeting with the other design interns at the beginning of our weekly sprints, then showcasing our individual progress at the end of the week. Daily updates were sent out asynchronously through Slack. This internship was unique in that our hours were flexible, so establishing a deliverable structure beforehand provided us the constraints needed to plan and execute our tasks. We quickly adapted to this new style of work, and it allowed us to iterate efficiently on our tasks. Furthermore, regular incremental feedback on our work in progress helped us improve as designers as we began to anticipate our stakeholder’s needs.</li>
+                                <li>Don’t be afraid to start over: When the first round of designs presented to HiDelta’s client by a hired design agency did not meet the vision he had for his proposed application, he turned to our team of interns to start from scratch. This responsibility gave us the freedom to truly focus on the user. Though we still had time constraints and technical requirements to meet, the client offered us a rare opportunity to transform his concept into something that could be integrated into the user’s existing experience discovering new meals to enjoy. I seized this chance to experiment with different ways someone could come across the app, capitalizing on innovative interactions that would expose users to recommendations in novel ways.</li>
+                                <li>Take the initiative: In my time as lead designer, I occasionally found myself not knowing how to accomplish what was asked of me. I took it upon myself to improve my technical skills by finding resources online. This has helped me gain in self-efficacy and confidence.</li>
+                            </ul>
+                        </div>
+                </div>
+                </main>
+            </div>
+        </div>
+
+        <!-- Spacer -->
+        <div class="p-4"></div>
+    </div>
+
+    <!-- Right nav bar -->
+    <div class="d-none d-xl-block col-xl-2 py-md-3 pl-md-3 bc-toc" id="rightnav">
+        <ul class="section-nav">
+            <li class="toc-entry">
+                <a href="#projectbrief"> Project Brief </a>
+                <a href="#approach"> Approach </a>
+                <a href="#reflection"> Reflection </a>
+            </li>
+        </ul>
+    </div>
+    <script>
+        function setTop() {
+            document.getElementById("rightnav").setAttribute("style", "top: " + Math.max(70, 600 - window.pageYOffset) + "px;");
+        }
+        window.addEventListener('scroll', setTop);
+        setTop();
+    </script>
+
+    <!-- Footer -->
+    <div class="row align-items-center bg-offwhite mt-3 pl-5">
+        <div class="col-10 mb-5">
+          <p class="mt-5 pl-3">100% organic and website builder free &#x1f389;</p>
+          <ul class="contact">
+            <li>
+              <a class="bare-link" href="https://www.linkedin.com/in/zoe-morken/" target="_blank"><i class="pr-2 fab fa-linkedin-in fa-lg"></i></a>
+              <a class="bare-link" href="https://www.instagram.com/zoe.morken/" target="_blank"><i class="pr-2 fab fa-instagram fa-lg"></i></a>
+              <a class="bare-link" href="https://github.com/zoemorken" target="_blank"><i class="pr-2 fab fa-github fa-lg"></i></a>
+            </li>
+          </ul>
+          <p class="mt-4 pl-3">&copy; Zoë Morken 2020</p>
+        </div>
+        <div class="col-2 mb-5">
+          <a href="#">Back to top</a>
+        </div>
+      </div>
 </body>
