@@ -2,226 +2,317 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Zoë Morken – Moody</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
-    <!-- Font Awesome icons -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
-        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
-    <!-- Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Zoë Morken – Moody</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+  <!-- Font Awesome icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
 
-    <script src="scripts/navbar-scroll.js"></script>
+  <script src="scripts/navbar-scroll.js"></script>
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700;800&display=swap" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" />
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/sidebar.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700;800&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/sidebar.css" />
 
-    <style>
-        /* The hero image */
-        .hero-image {
-            /* Use "linear-gradient" to add a darken background effect to the image.
+  <style>
+    /* The hero image */
+    .hero-image {
+      /* Use "linear-gradient" to add a darken background effect to the image.
             This will make the text easier to read
         */
 
-            background-image: url("images/cerner-heroimage.png"), linear-gradient(to right, #B09FE0, #212B6A);
+      background-image: linear-gradient(to right, #B09FE0, #212B6A);
 
-            /* Set a specific height */
-            height: 30rem;
+      /* Set a specific height */
+      height: 30rem;
 
-            /* Position and center the image to scale nicely on all screens */
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            position: relative;
-        }
-    </style>
+      /* Position and center the image to scale nicely on all screens */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+    }
+
+    .hero-text-center {
+      color: #FFF;
+      margin: auto;
+      padding-top: 12rem;
+      width: 50%;
+      text-align: center;
+    }
+
+    .hero-text-center h4 {
+      font-weight: 300 !important;
+      font-family: Mulish !important;
+      line-height: 1.5;
+    }
+  </style>
 </head>
 
 <body>
-    <div class="pos-f-t sticky-top frosted-glass" id="navbar">
-        <div class="collapse" id="navbarToggleExternalContent">
-    
-          <div class="row mt-3 px-5em">
-            <div class="col-8">
-              <h4 class="p-2">About</h4>
-              <p class="mt-4 p-2 mb-1">Hello! I’m Zoë, a junior studying UX Design at Purdue University. Previously, I worked as
-                the lead designer for HiDelta, a startup dedicated to bringing entrepreneurial visions to life.</p>
-                <button class="rounded navbar-about" onclick="window.location='about.html'">More About Me</button>
-    
+  <div class="pos-f-t sticky-top frosted-glass" id="navbar">
+    <div class="collapse" id="navbarToggleExternalContent">
+
+      <div class="row mt-3 px-5em">
+        <div class="col-8">
+          <h4 class="p-2">About</h4>
+          <p class="mt-4 p-2 mb-1">Hello! I’m Zoë, a junior studying UX Design at Purdue University. Previously, I
+            worked as
+            the lead designer for HiDelta, a startup dedicated to bringing entrepreneurial visions to life.</p>
+          <button class="rounded navbar-about" onclick="window.location='about.html'">More About Me</button>
+
+        </div>
+        <div class="col-4 pl-5">
+          <h4 class="p-2">Contact</h4>
+          <ul class="mt-4 contact">
+            <li><a href="mailto:zmorken@purdue.edu">Email</a></li>
+            <li><a href="Zoe_Morken_Resume.pdf" target="_blank">Resume</a></li>
+            <li class="mt-2">
+              <a class="bare-link" href="https://www.linkedin.com/in/zoe-morken/" target="_blank"><i
+                  class="pr-2 fab fa-linkedin-in fa-lg"></i></a>
+              <a class="bare-link" href="https://www.instagram.com/zoe.morken/" target="_blank"><i
+                  class="pr-2 fab fa-instagram fa-lg"></i></a>
+              <a class="bare-link" href="https://github.com/zoemorken" target="_blank"><i
+                  class="pr-2 fab fa-github fa-lg"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+    <nav class="navbar navbar-light py-4">
+      <span class="pl-5em">
+        <span class="custom-control custom-switch">
+          <input type="checkbox" class="custom-control-input" id="darkSwitch" />
+          <label class="custom-control-label" for="darkSwitch"></label>
+          <span class="page-title"><a class="bare-link" href="index.html">Zoë Morken</a></span>
+        </span>
+        <script src="scripts/dark-mode-switch.min.js"></script>
+      </span>
+      <button class="navbar-toggler pr-5em" type="button" data-toggle="collapse"
+        data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </nav>
+  </div>
+
+  <!-- Hero image -->
+  <div class="hero-image">
+    <div class="hero-text-center">
+      <h1>Moody</h1>
+      <h4 class="mt-4">A Spotify web experience that plays music to fit the mood.</h4>
+      <!-- <p class="mt-4">Remote, Summer 2020 (4 months, May–August 2020)</p> -->
+    </div>
+  </div>
+
+  <div class="content-wrapper">
+    <!-- Main content area-->
+    <div class="container-fluid mt-5">
+      <div class="row flex-xl-nowrap">
+        <main class="col-12 col-md-11 col-xl-10 py-md-3 bd-content" role="main">
+
+          <div class="row mt-4 p-3">
+            <div class="h-100 border-0">
+              <h2 id="Moody">
+                <div><a href="http://18.191.32.9/" target="_blank">Moody</a> / <a href="https://github.com/zoemorken/moody" target="_blank">Source Code</a></div>
+                <a class="anchorjs-link" href="#moody-code" aria-label="Anchor" data-anchorjs-icon="#"></a>
+              </h2>
             </div>
-            <div class="col-4 pl-5">
-              <h4 class="p-2">Contact</h4>
-              <ul class="mt-4 contact">
-                <li><a href="mailto:zmorken@purdue.edu">Email</a></li>
-                <li><a href="Zoe_Morken_Resume.pdf" target="_blank">Resume</a></li>
-                <li class="mt-2">
-                  <a class="bare-link" href="https://www.linkedin.com/in/zoe-morken/" target="_blank"><i class="pr-2 fab fa-linkedin-in fa-lg"></i></a>
-                  <a class="bare-link" href="https://www.instagram.com/zoe.morken/" target="_blank"><i class="pr-2 fab fa-instagram fa-lg"></i></a>
-                  <a class="bare-link" href="https://github.com/zoemorken" target="_blank"><i class="pr-2 fab fa-github fa-lg"></i></a>
-                </li>
+          </div>
+
+          <div class="row mt-4 p-3">
+            <div class="h-100 border-0">
+              <h2 id="Project Brief">
+                <div>Project Brief</div>
+                <a class="anchorjs-link" href="#projectbrief" aria-label="Anchor" data-anchorjs-icon="#"></a>
+              </h2>
+              <p>In the past decade, the traditional method of designing websites (static pages with links) has largely
+                been replaced with the designing of web applications. Web apps are able to engage users through dynamic
+                and interactive content through external web services. Different web services supply methods for sending
+                and receiving information across a network, typically from a server to a client. Through application
+                programming interfaces (APIs), web developers can request content from web services to implement onto
+                their web applications. Popular services such as Google, Facebook, and YouTube provide public APIs.</p>
+              <p>Our task was to create a web app that called upon a public API. The final product was an interactive
+                web page (HTML) styled with CSS and an API that enhanced functionality and UX of our web app. I chose to
+                create my web app using Spotify's API for Developers that would allow users to generate playlists
+                tailored to their current mood.</p>
+              <h5 id="focus">
+                <div>Focus and Chosen API</div>
+              </h5>
+              <ul>
+                <li>Chosen API: Spotify’s Web API for Developers</li>
+                <li>Input: Mood / Situation (visualized as menu on the side of the screen)</li>
+                <li>Output: Recommended playlist or list of songs</li>
+                <li>Endpoint: <a
+                    href="https://developer.spotify.com/documentation/web-api/reference/browse/get-recommendations/"
+                    target="_blank">/v1/recommendations</a></li>
               </ul>
             </div>
           </div>
-    
-        </div>
-        <nav class="navbar navbar-light py-4">
-          <span class="pl-5em">
-            <span class="custom-control custom-switch">
-              <input type="checkbox" class="custom-control-input" id="darkSwitch" />
-              <label class="custom-control-label" for="darkSwitch"></label>
-              <span class="page-title"><a class="bare-link" href="index.html">Zoë Morken</a></span>
-            </span>
-            <script src="scripts/dark-mode-switch.min.js"></script>
-          </span>
-          <button class="navbar-toggler pr-5em" type="button" data-toggle="collapse"
-            data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </nav>
-      </div>
 
-    <!-- Hero image -->
-    <div class="hero-image">
-        <div class="hero-text">
-            <h1>Moody</h1>
-            <h4 class="mt-4">A Spotify web experience that plays music to fit the mood.</h4>
-            <p class="mt-4">Fall 2020 (7 weeks, October–December 2019)</p>
-        </div>
-    </div>
-
-    <div class="content-wrapper">
-        <!-- Main content area-->
-        <div class="container-fluid mt-5">
-            <div class="row flex-xl-nowrap">
-                <main class="col-12 col-md-11 col-xl-10 py-md-3 bd-content" role="main">
-                    <div class="row mt-4 p-3">
-                        <div class="h-100 border-0">
-                            <h2 id="Project Brief">
-                                <div>Project Brief</div>
-                                <a class="anchorjs-link" href="#projectbrief" aria-label="Anchor"
-                                    data-anchorjs-icon="#"></a>
-                            </h2>
-                            <p>In the past decade, the traditional method of designing websites (static pages with links) has largely been replaced with the designing of web applications. Web apps are able to engage users through dynamic and interactive content through external web services. Different web services supply methods for sending and receiving information across a network, typically from a server to a client. Through application programming interfaces (APIs), web developers can request content from web services to implement onto their web applications. Popular services such as Google, Facebook, and YouTube provide public APIs.</p>
-                            <p>Our task was to create a web app that called upon a public API. The final product was an interactive web page (HTML) styled with CSS and an API that enhanced functionality and UX of our web app. I chose to create my web app using Spotify's API for Developers that would allow users to generate playlists tailored to their current mood.</p>
-                            <h5 id="focus">
-                                <div>Focus and Chosen API</div>
-                              </h5>
-                              <ul>
-                                <li>Chosen API: Spotify’s Web API for Developers</li>
-                                <li>Input: Mood / Situation (visualized as menu on the side of the screen)</li>
-                                <li>Output: Recommended playlist or list of songs</li>
-                                <li>Endpoint: <a href="https://developer.spotify.com/documentation/web-api/reference/browse/get-recommendations/" target="_blank">/v1/recommendations</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="row row-cols-1 p-3">
-                        <div class="h-100 border-0">
-                            <h2 id="approach">
-                                <div>Approach</div>
-                                <a class="anchorjs-link" href="#approach" aria-label="Anchor" data-anchorjs-icon="#"></a>
-                            </h2>
-                            <h5 id="spotify-authorization">
-                              <div>Spotify Authorization Setup</div>
-                            </h5>
-                            <p>To start, I followed <a href="https://developer.spotify.com/documentation/web-api/quick-start/" target="_blank">Spotify’s quick start web API tutorial</a>. Though Spotify’s API is free, it requires a Spotify account to access user-related information. Therefore, it was imperative that I register my app according to the guide. Following the setup process, I did the following:</p>
-                            <ol>
-                              <li>Register my application. I created the app under my Spotify account. After deciding on a name and description, Spotify provided me with a Client ID and secret (a key to pass secure calls to Spotify Accounts and Web API services).</li>
-                              <li>Prepare and test my environment. Following the tutorial, I downloaded and installed Node.js in order to create an HTTP server on my computer. Running both server.js and app.js in Node, I was able to start up a web server on my computer at port 8888. When typing in “localhost:8888,” my Chrome browser made a call to a server, in which Node replied with the http request. Per the Spotify tutorial, I set up the response as “Hello World.”</li>
-                              <li>Add Node.js into downloaded OAuth examples. I downloaded a GitHub repository with the examples supplied in the tutorial.</li>
-                              <li>Provide the app credentials. In the app.js file (one of the files I downloaded from GitHub), I had to input the Client ID, Client Secret, and Redirect URI in order to call my specific app. Going back to my dashboard, I retrieved these values to get the app up and running.</li>
-                            </ol>
-                            <h5 id="functionality">
-                              <div>Specifying Functionality</div>
-                            </h5>
-                            <p>Following the tutorial, my API retrieved the Spotify user’s account data. This was a placeholder endpoint that I changed. To customize Moody, I replaced this with my chosen endpoint: <a href="https://developer.spotify.com/documentation/web-api/reference/browse/get-recommendations/" target="_blank">/v1/recommendations</a>. Changes I made in the code were added incrementally – I always commented out code I thought I didn’t need, checked the browser, then deleted if everything was still working – to reduce the possibility of not knowing where the error occurred.</p>
-                            <p>Most of my changes were made on the index.html page I downloaded from GitHub. I did not make a separate file due to the fact that some of the components needed for authorization and access into Spotify’s API already existed on this page upon downloading. Therefore, the index.html page includes not only HTML, but some JavaScript (JS) and jQuery as well as Handlebars.js, a compiler that takes HTML and (using a Handlebars expression) compiles them to a JS function. For clarity, different scripts are organized in logical order, from the first login page to the actual web app itself.</p>
-                            <p>The app functions as follows:</p>
-                            <ol>
-                              <li>The user provides their credentials to log in to Spotify.</li>
-                              <li>The navigation menu on the left side calls an AJAX function which retrieves data from Spotify’s server asynchronously (the endpoint URL is built to make the AJAX call).</li>
-                              <li>JSON results from the API are parsed and rendered by Handlebars into HTML.</li>
-                            </ol>
-                        </div>
-                        <h5 id="styling">
-                          <div>Styling and Enhanced UX</div>
-                        </h5>
-                        <p>After getting Moody to function as intended, I styled the web app. I wanted users to be able to discover new songs when selecting a given mood. To do this, I followed <a href="https://developer.spotify.com/branding-guidelines/" target="_blank">Spotify’s branding guidelines</a> to help users associate the app with Spotify as well as make a navigation menu out of iOS emojis.</p>
-                        <p>Styling for Moody was done in a separate style.css file. Here, I manipulated background color, customized placement of the aside, generated tracks, and altered the size of the emojis. The emojis themselves are displayed in HTML using their unique decimal reference.</p>
-                    </div>
-
-                    <div class="row row-cols-1 p-3">
-                        <div class="h-100 border-0">
-                            <h2 id="reflection">
-                                <div>Reflection</div>
-                                <a class="anchorjs-link" href="#reflection" aria-label="Anchor"
-                                    data-anchorjs-icon="#"></a>
-                            </h2>
-                            <p>My first experience working with an API was much more difficult than anticipated. Prior to this exercise, I had no background knowledge on the subject and had no idea what many of the terms thrown my way meant. Because each part of the process exercised different mental capabilities, I’ve broken this reflection into how I approached creating Moody.</p>
-                            <ul>
-                              <li>Spotify Authorization Set-Up: By far the most technically challenging part. I relied heavily on external sources when the tutorial didn’t make sense or wasn’t working for me. Coming into this exercise, I struggled to understand what an API was, much less how I could run one. Therefore, when going through the tutorial, I asked many questions: “What is Node.js? What is a local host? What is an access / refresh token?” Though these terms are not as foreign to me now as they were then, I still am not completely familiar with the many components in my code running behind the scenes. However, I understand how everything interacts with one another, from the client-side HTML to the server-side API. Additionally, I learned basic Unix commands to start the terminal.</li>
-                              <li>Specifying Functionality: This was also difficult, as I had limited JS and jQuery knowledge. Once I had the API example set up on my computer, I began to edit and rearrange the code gradually. I saved and checked the smallest of modifications in the browser to confirm everything was still running properly. By doing so, I was able to reduce the amount of time spent debugging since only one change was made at a time. This made running into issues easier; when I did encounter problems, I would use Developer Tools to view errors (which was especially helpful when replacing user profile information with track information).</li>
-                              <li>Styling and Enhanced UX: What I found most exciting to do besides seeing the API work for the first time. Because I was already familiar with CSS, this part was relatively short and involved playing around with line widths, spacing, sizing, etc. When deciding on a more meaningful way to showcase information retrieved from the API, I was happy to discover that emojis had their own HTML reference. I had to learn a bit of JS to have the playlist name update accordingly, but this addition enhanced the overall end result.</li>
-                            </ul>
-                            <p class="font-italic">Update: I am currently in the process of improving Moody's interface in order to further enhance the final web experience.</p>
-                        </div>
-                </div>
-                </main>
+          <div class="row row-cols-1 p-3">
+            <div class="h-100 border-0">
+              <h2 id="approach">
+                <div>Approach</div>
+                <a class="anchorjs-link" href="#approach" aria-label="Anchor" data-anchorjs-icon="#"></a>
+              </h2>
+              <h5 id="spotify-authorization">
+                <div>Spotify Authorization Setup</div>
+              </h5>
+              <p>To start, I followed <a href="https://developer.spotify.com/documentation/web-api/quick-start/"
+                  target="_blank">Spotify’s quick start web API tutorial</a>. Though Spotify’s API is free, it requires
+                a Spotify account to access user-related information. Therefore, it was imperative that I register my
+                app according to the guide. Following the setup process, I did the following:</p>
+              <ol>
+                <li>Register my application. I created the app under my Spotify account. After deciding on a name and
+                  description, Spotify provided me with a Client ID and secret (a key to pass secure calls to Spotify
+                  Accounts and Web API services).</li>
+                <li>Prepare and test my environment. Following the tutorial, I downloaded and installed Node.js in order
+                  to create an HTTP server on my computer. Running both server.js and app.js in Node, I was able to
+                  start up a web server on my computer at port 8888. When typing in “localhost:8888,” my Chrome browser
+                  made a call to a server, in which Node replied with the http request. Per the Spotify tutorial, I set
+                  up the response as “Hello World.”</li>
+                <li>Add Node.js into downloaded OAuth examples. I downloaded a GitHub repository with the examples
+                  supplied in the tutorial.</li>
+                <li>Provide the app credentials. In the app.js file (one of the files I downloaded from GitHub), I had
+                  to input the Client ID, Client Secret, and Redirect URI in order to call my specific app. Going back
+                  to my dashboard, I retrieved these values to get the app up and running.</li>
+              </ol>
+              <h5 id="functionality">
+                <div>Specifying Functionality</div>
+              </h5>
+              <p>Following the tutorial, my API retrieved the Spotify user’s account data. This was a placeholder
+                endpoint that I changed. To customize Moody, I replaced this with my chosen endpoint: <a
+                  href="https://developer.spotify.com/documentation/web-api/reference/browse/get-recommendations/"
+                  target="_blank">/v1/recommendations</a>. Changes I made in the code were added incrementally – I
+                always commented out code I thought I didn’t need, checked the browser, then deleted if everything was
+                still working – to reduce the possibility of not knowing where the error occurred.</p>
+              <p>Most of my changes were made on the index.html page I downloaded from GitHub. I did not make a separate
+                file due to the fact that some of the components needed for authorization and access into Spotify’s API
+                already existed on this page upon downloading. Therefore, the index.html page includes not only HTML,
+                but some JavaScript (JS) and jQuery as well as Handlebars.js, a compiler that takes HTML and (using a
+                Handlebars expression) compiles them to a JS function. For clarity, different scripts are organized in
+                logical order, from the first login page to the actual web app itself.</p>
+              <p>The app functions as follows:</p>
+              <ol>
+                <li>The user provides their credentials to log in to Spotify.</li>
+                <li>The navigation menu on the left side calls an AJAX function which retrieves data from Spotify’s
+                  server asynchronously (the endpoint URL is built to make the AJAX call).</li>
+                <li>JSON results from the API are parsed and rendered by Handlebars into HTML.</li>
+              </ol>
             </div>
-        </div>
+            <h5 id="styling">
+              <div>Styling and Enhanced UX</div>
+            </h5>
+            <p>After getting Moody to function as intended, I styled the web app. I wanted users to be able to discover
+              new songs when selecting a given mood. To do this, I followed <a
+                href="https://developer.spotify.com/branding-guidelines/" target="_blank">Spotify’s branding
+                guidelines</a> to help users associate the app with Spotify as well as make a navigation menu out of iOS
+              emojis.</p>
+            <p>Styling for Moody was done in a separate style.css file. Here, I manipulated background color, customized
+              placement of the aside, generated tracks, and altered the size of the emojis. The emojis themselves are
+              displayed in HTML using their unique decimal reference.</p>
+          </div>
 
-        <!-- Spacer -->
-        <div class="p-4"></div>
-    </div>
-
-    <!-- Right nav bar -->
-    <div class="d-none d-xl-block col-xl-2 py-md-3 pl-md-3 bc-toc" id="rightnav">
-        <ul class="section-nav">
-            <li class="toc-entry">
-                <a href="#projectbrief"> Project Brief </a>
-                <a href="#approach"> Approach </a>
-                <a href="#reflection"> Reflection </a>
-            </li>
-        </ul>
-    </div>
-    <script>
-        function setTop() {
-            document.getElementById("rightnav").setAttribute("style", "top: " + Math.max(70, 600 - window.pageYOffset) + "px;");
-        }
-        window.addEventListener('scroll', setTop);
-        setTop();
-    </script>
-
-    <!-- Footer -->
-    <div class="row align-items-center bg-offwhite mt-3 pl-5">
-        <div class="col-10 mb-5">
-          <p class="mt-5 pl-3">100% organic and website builder free &#x1f389;</p>
-          <ul class="contact">
-            <li>
-              <a class="bare-link" href="https://www.linkedin.com/in/zoe-morken/" target="_blank"><i class="pr-2 fab fa-linkedin-in fa-lg"></i></a>
-              <a class="bare-link" href="https://www.instagram.com/zoe.morken/" target="_blank"><i class="pr-2 fab fa-instagram fa-lg"></i></a>
-              <a class="bare-link" href="https://github.com/zoemorken" target="_blank"><i class="pr-2 fab fa-github fa-lg"></i></a>
-            </li>
-          </ul>
-          <p class="mt-4 pl-3">&copy; Zoë Morken 2020</p>
-        </div>
-        <div class="col-2 mb-5">
-          <a href="#">Back to top</a>
-        </div>
+          <div class="row row-cols-1 p-3">
+            <div class="h-100 border-0">
+              <h2 id="reflection">
+                <div>Reflection</div>
+                <a class="anchorjs-link" href="#reflection" aria-label="Anchor" data-anchorjs-icon="#"></a>
+              </h2>
+              <p>My first experience working with an API was much more difficult than anticipated. Prior to this
+                exercise, I had no background knowledge on the subject and had no idea what many of the terms thrown my
+                way meant. Because each part of the process exercised different mental capabilities, I’ve broken this
+                reflection into how I approached creating Moody.</p>
+              <ul>
+                <li>Spotify Authorization Set-Up: By far the most technically challenging part. I relied heavily on
+                  external sources when the tutorial didn’t make sense or wasn’t working for me. Coming into this
+                  exercise, I struggled to understand what an API was, much less how I could run one. Therefore, when
+                  going through the tutorial, I asked many questions: “What is Node.js? What is a local host? What is an
+                  access / refresh token?” Though these terms are not as foreign to me now as they were then, I still am
+                  not completely familiar with the many components in my code running behind the scenes. However, I
+                  understand how everything interacts with one another, from the client-side HTML to the server-side
+                  API. Additionally, I learned basic Unix commands to start the terminal.</li>
+                <li>Specifying Functionality: This was also difficult, as I had limited JS and jQuery knowledge. Once I
+                  had the API example set up on my computer, I began to edit and rearrange the code gradually. I saved
+                  and checked the smallest of modifications in the browser to confirm everything was still running
+                  properly. By doing so, I was able to reduce the amount of time spent debugging since only one change
+                  was made at a time. This made running into issues easier; when I did encounter problems, I would use
+                  Developer Tools to view errors (which was especially helpful when replacing user profile information
+                  with track information).</li>
+                <li>Styling and Enhanced UX: What I found most exciting to do besides seeing the API work for the first
+                  time. Because I was already familiar with CSS, this part was relatively short and involved playing
+                  around with line widths, spacing, sizing, etc. When deciding on a more meaningful way to showcase
+                  information retrieved from the API, I was happy to discover that emojis had their own HTML reference.
+                  I had to learn a bit of JS to have the playlist name update accordingly, but this addition enhanced
+                  the overall end result.</li>
+              </ul>
+              <p class="font-italic">Update: I am currently in the process of improving Moody's interface in order to
+                further enhance the final web experience.</p>
+            </div>
+          </div>
+        </main>
       </div>
+    </div>
+
+    <!-- Spacer -->
+    <div class="p-4"></div>
+  </div>
+
+  <!-- Right nav bar -->
+  <div class="d-none d-xl-block col-xl-2 py-md-3 pl-md-3 bc-toc" id="rightnav">
+    <ul class="section-nav">
+      <li class="toc-entry">
+        <a href="#moody-code"> Moody / Source Code </a>
+        <a href="#projectbrief"> Project Brief </a>
+        <a href="#approach"> Approach </a>
+        <a href="#reflection"> Reflection </a>
+      </li>
+    </ul>
+  </div>
+  <script>
+    function setTop() {
+      document.getElementById("rightnav").setAttribute("style", "top: " + Math.max(70, 600 - window.pageYOffset) + "px;");
+    }
+    window.addEventListener('scroll', setTop);
+    setTop();
+  </script>
+
+  <!-- Footer -->
+  <div class="row align-items-center bg-offwhite mt-3 pl-5">
+    <div class="col-10 mb-5">
+      <p class="mt-5 pl-3">100% organic and website builder free &#x1f389;</p>
+      <ul class="contact">
+        <li>
+          <a class="bare-link" href="https://www.linkedin.com/in/zoe-morken/" target="_blank"><i
+              class="pr-2 fab fa-linkedin-in fa-lg"></i></a>
+          <a class="bare-link" href="https://www.instagram.com/zoe.morken/" target="_blank"><i
+              class="pr-2 fab fa-instagram fa-lg"></i></a>
+          <a class="bare-link" href="https://github.com/zoemorken" target="_blank"><i
+              class="pr-2 fab fa-github fa-lg"></i></a>
+        </li>
+      </ul>
+      <p class="mt-4 pl-3">&copy; Zoë Morken 2020</p>
+    </div>
+    <div class="col-2 mb-5">
+      <a href="#">Back to top</a>
+    </div>
+  </div>
 </body>
