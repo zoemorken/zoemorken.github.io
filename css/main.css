@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    font-family: Mulish, 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
+    font-family: Inter, 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
 }
 
 p {
@@ -13,6 +13,10 @@ p {
 a.bare-link:hover, a.bare-link:active, a.bare-link:link, a.bare-link:visited {
   text-decoration: none;
   color: black;
+}
+
+.card-text {
+  color:#434343;
 }
 
 .content-wrapper {
@@ -27,7 +31,7 @@ h1,h2,h3,h4,h5, .page-title {
 
 .hero-text h4{
   font-weight: 300 !important;
-  font-family: Mulish !important;
+  font-family: Inter !important;
   width: 30vw;
   line-height: 1.5;
 }
@@ -75,9 +79,9 @@ ul.contact {
   line-height: 2;
 }
 
-.nav-button {
+/* .nav-button {
   margin: 4px;
-}
+} */
 .zoom {
   transition: transform 0.3s ease-in-out;
 }
@@ -103,7 +107,7 @@ button.navbar-toggler:focus {
   outline: none;
 }
 
-button.navbar-about {
+/* button.navbar-about {
   border: none;
   width: 16rem;
   height: 3rem;
@@ -115,10 +119,10 @@ button.navbar-about {
 button.navbar-about:hover {
   color: #f8f8f8;
   background-color: rgba(105, 90, 205, 0.815);
-}
-button.navbar-about:focus {
+} */
+/* button.navbar-about:focus {
   outline: none;
-}
+} */
 
 button.contact {
   border: none;
