@@ -1,0 +1,29 @@
+<html>
+<head>
+<script>
+function getQueryVariable(variable) {
+  const query = window.location.search.substring(1);
+  const vars = query.split("&");
+  for (let i = 0; i < vars.length; i++) {
+    let pair = vars[i].split("=");
+    if (pair[0] == variable) {
+      return pair[1];
+    }
+  }
+  return false;
+}
+let url = getQueryVariable("url");
+if (url) {
+  url = decodeURIComponent(url);
+}
+const re = /^https:\/\/[^\/\?]+(?:ti\.com\/|tij\.co\.jp\/|ti\.com\.cn\/)/;
+if (re.exec(url)) {
+  window.location = url;
+}
+else {
+  window.location = "https://www.ti.com";
+}
+</script>
+</head>
+<body></body>
+</html>
