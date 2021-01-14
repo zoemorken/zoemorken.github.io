@@ -15,8 +15,36 @@ a.bare-link:hover, a.bare-link:active, a.bare-link:link, a.bare-link:visited {
   color: black;
 }
 
-.card-text {
+.navbar {
+  padding-top: 2rem !important;
+  padding-bottom: 2rem !important;
+}
+
+/* .card-text {
   color:#434343;
+} */
+
+.shadow-subtle {
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.08) !important;
+}
+
+.padding-nav {
+  /* padding-left: 0.5vw;
+  padding-right: 0.5vw;
+  padding-top: 0rem;
+  padding-bottom: 0rem; */
+  padding: 0 0 0 0;
+  margin: 0.5rem 1vw 0.5rem 1vw;
+  /* -webkit-transition: all 300ms cubic-bezier(0.34, 1.56, 0.64, 1);
+  transition: all 300ms cubic-bezier(0.34, 1.56, 0.64, 1); */
+  transition: all 300ms cubic-bezier(.165, .84, .44, 1);
+}
+
+.hover-nav:hover {
+  background-color: #7f7f7f15;
+  border-radius: 4px;
+  padding: 0.5rem 1vw 0.5rem 1vw;
+  margin: 0 0 0 0;
 }
 
 .content-wrapper {
@@ -28,6 +56,13 @@ h1,h2,h3,h4,h5, .page-title {
   font-weight: 400;
   font-family: Rubik, 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
 }
+
+@media only screen and (max-width: 550px) {
+  .page-title {
+    display: none;
+  }
+}
+
 
 .hero-text h4{
   font-weight: 300 !important;
@@ -63,8 +98,8 @@ h5 {
 .pl-5em {
   padding-left: 5rem;
 }
-.pr-5em {
-  padding-right: 5rem;
+.pr-4rem {
+  padding-right: 4rem;
 }
 
 .page-title {
