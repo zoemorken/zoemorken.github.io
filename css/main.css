@@ -20,6 +20,12 @@ a.bare-link:hover, a.bare-link:active, a.bare-link:link, a.bare-link:visited {
   padding-bottom: 2rem !important;
 }
 
+.bio {
+  font-weight: 300;
+  font-family: Inter, 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
+  margin-bottom: 1.5rem;
+}
+
 /* .card-text {
   color:#434343;
 } */
@@ -28,10 +34,14 @@ a.bare-link:hover, a.bare-link:active, a.bare-link:link, a.bare-link:visited {
   box-shadow: 0 .5rem 1rem rgba(0,0,0,.08) !important;
 }
 
+.right-nav-1, .right-nav-2, .right-nav-3 {
+  font-family: Inter, 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
+}
+
 .right-nav-1 {
   position: absolute;
   right: 260px;
-  top: 40px;
+  top: 2.08rem;
   padding: 0 0 0 0;
   transition: all 300ms cubic-bezier(.165, .84, .44, 1);
 }
@@ -39,15 +49,15 @@ a.bare-link:hover, a.bare-link:active, a.bare-link:link, a.bare-link:visited {
 .right-nav-1:hover {
   background-color: #7f7f7f15;
   border-radius: 4px;
-  padding: 10px 20px;
+  padding: 0.75rem 1.25rem;
   right: 240px;
-  top: 30px;
+  top: 1.33rem;
 }
 
 .right-nav-2 {
   position: absolute;
   right: 180px;
-  top: 40px;
+  top: 2.08rem;
   padding: 0 0 0 0;
   transition: all 300ms cubic-bezier(.165, .84, .44, 1);
 }
@@ -55,15 +65,15 @@ a.bare-link:hover, a.bare-link:active, a.bare-link:link, a.bare-link:visited {
 .right-nav-2:hover {
   background-color: #7f7f7f15;
   border-radius: 4px;
-  padding: 10px 20px;
+  padding: 0.75rem 1.25rem;
   right: 160px;
-  top: 30px;
+  top: 1.33rem;
 }
 
 .right-nav-3 {
   position: absolute;
   right: 85px;
-  top: 40px;
+  top: 2.08rem;
   padding: 0 0 0 0;
   transition: all 300ms cubic-bezier(.165, .84, .44, 1);
 }
@@ -71,9 +81,9 @@ a.bare-link:hover, a.bare-link:active, a.bare-link:link, a.bare-link:visited {
 .right-nav-3:hover {
   background-color: #7f7f7f15;
   border-radius: 4px;
-  padding: 10px 20px;
+  padding: 0.75rem 1.25rem;
   right: 65px;
-  top: 30px;
+  top: 1.33rem;
 }
 
 .content-wrapper {
@@ -294,7 +304,7 @@ line-height: 1.5;
 }
 
 [data-theme="dark"] .frosted-glass {
-  background-color: rgba(0, 0, 0, 0.5) !important;
+  background-color: rgba(18, 18, 18, 0.5) !important;
   backdrop-filter: blur(5px);
 }
 
