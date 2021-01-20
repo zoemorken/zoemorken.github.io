@@ -147,7 +147,7 @@
 
     <div class="col mt-4 p-3">
       <a class="bare-link" href="hidelta.html">
-        <div data-aos="fade-down" class="card h-100 border-0 shadow-subtle zoom">
+        <div data-aos="fade-up" class="card h-100 border-0 shadow-subtle zoom">
           <img src="images/hidelta-thumbnail.png" class="card-img-top hidelta-thumbnail" alt="HiDelta Thumbnail">
           <div class="card-body px-5">
             <h5 class="card-title">HiDelta</h5>
@@ -161,7 +161,7 @@
 
     <div class="col mt-4 p-3">
       <a class="bare-link" href="affinity.html">
-        <div data-aos="fade-right" class="card h-100 border-0 shadow-subtle zoom">
+        <div data-aos="fade-up" class="card h-100 border-0 shadow-subtle zoom">
           <img src="images/affinity-thumbnail.png" class="card-img-top affinity-thumbnail" alt="Affinity Thumbnail">
           <div class="card-body px-5">
             <h5 class="card-title">Affinity</h5>
@@ -175,7 +175,7 @@
 
     <div class="col mt-4 p-3">
       <a class="bare-link" href="cerner.html">
-        <div data-aos="fade-left" class="card h-100 border-0 shadow-subtle zoom">
+        <div data-aos="fade-up" class="card h-100 border-0 shadow-subtle zoom">
           <img src="images/cerner-thumbnail.png" class="card-img-top cerner-thumbnail" alt="Cerner Thumbnail">
           <div class="card-body px-5">
             <h5 class="card-title">Cerner</h5>
@@ -208,7 +208,7 @@
 
     <div class="col mt-4 p-3">
       <a class="bare-link" href="moody.html">
-        <div data-aos="flip-up" class="card h-100 border-0 shadow-subtle zoom">
+        <div data-aos="fade-up" class="card h-100 border-0 shadow-subtle zoom">
           <img src="images/moody-thumbnail.png" class="card-img-top moody-thumbnail" alt="Moody Thumbnail">
           <div class="card-body px-5">
             <h5 class="card-title">Moody, Spotify Playlist Generator</h5>
@@ -220,7 +220,7 @@
 
     <div class="col mt-4 p-3">
       <a class="bare-link" href="visualworks.html">
-        <div data-aos="slide-up" class="card h-100 border-0 shadow-subtle zoom">
+        <div data-aos="fade-up" class="card h-100 border-0 shadow-subtle zoom">
           <img src="images/visuals-thumbnail.png" class="card-img-top visuals-thumbnail" alt="Visual Works Thumbnail">
           <div class="card-body px-5">
             <h5 class="card-title">Digital and Print Design</h5>
@@ -256,7 +256,14 @@
   </div>
 
   <script>
-    AOS.init({duration:1200});
+    AOS.init({duration:1200, startEvent:'firstScroll'});
+    var fired = false;
+    window.onscroll = function() {
+      if (!fired) {
+        document.dispatchEvent(new CustomEvent('firstScroll'));
+      }
+      fired = true;
+    };
   </script>
 </body>
 </html>
