@@ -10,6 +10,11 @@ p {
   margin-bottom: 1.5rem;
 }
 
+figcaption {
+  text-align: center;
+  font-style: italic;
+}
+
 a.bare-link:hover, a.bare-link:active, a.bare-link:link, a.bare-link:visited {
   text-decoration: none;
   color: black;
@@ -89,6 +94,7 @@ a.bare-link:hover, a.bare-link:active, a.bare-link:link, a.bare-link:visited {
 .content-wrapper {
   max-width: 75%;
   margin: auto;
+  line-height: 1.6;
 }
 
 h1,h2,h3,h4,h5, .page-title {
@@ -253,7 +259,7 @@ line-height: 1.5;
 }
 
 .toc-entry a.current {
-  font-weight: 600;
+  font-weight: 500;
   color: #555;
 }
 
@@ -318,6 +324,6 @@ line-height: 1.5;
 }
 
 [data-theme="dark"] .toc-entry a.current {
-  font-weight: 600;
+  font-weight: 500;
   color: #ddd;
 }
