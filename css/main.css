@@ -29,6 +29,9 @@ a.bare-link:hover, a.bare-link:active, a.bare-link:link, a.bare-link:visited {
   font-weight: 300;
   font-family: Inter, 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
   margin-bottom: 1.5rem;
+  transition: opacity 1s ease-in, margin-left 1s ease-in;
+  opacity: 0;
+  margin-left: -100%;
 }
 
 /* .card-text {

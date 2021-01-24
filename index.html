@@ -113,14 +113,13 @@
 
   <div class="row px-5em my-5">
     <div class="my-5 p-3">
-      <h1 class="bio">I’m <span style="font-weight: bold">Zoë</span>, a junior studying User Experience Design at Purdue University.</h1>
-      <h4 class="bio">Previously at LeadSigma and HiDelta.</h4>
+      <h1 class="bio">I’m <span style="font-weight: bold">Zoë</span>, a junior studying User
+        Experience Design at Purdue University.</h1>
+      <h4 class="bio">Previously the Lead Designer at LeadSigma and HiDelta.</h4>
     </div>
   </div>
 
-<div class="row px-5em my-5">
-<div class="p-3">✧･ﾟ: *✧･ﾟ:* Scroll down *:･ﾟ✧*:･ﾟ✧</div>
-</div>
+  </div>
 
   <div class="row row-cols-1 row-cols-md-2 px-5em">
 
@@ -143,7 +142,8 @@
           <div class="card-body px-5">
             <h5 class="card-title">LeadSigma</h5>
             <p class="card-text">UX / UI Design Lead | Winter 2020</p>
-            <p class="card-text">Led the vision for the LeadSigma’s sales-tech platform supporting small businesses by creating high-fidelity, interactive prototypes.</p>
+            <p class="card-text">Led the vision for the LeadSigma’s sales-tech platform supporting small businesses by
+              creating high-fidelity, interactive prototypes.</p>
           </div>
         </div>
       </a>
@@ -260,14 +260,15 @@
   </div>
 
   <script>
-    AOS.init({duration:1200, startEvent:'firstScroll'});
-    var fired = false;
-    window.onscroll = function() {
-      if (!fired) {
-        document.dispatchEvent(new CustomEvent('firstScroll'));
-      }
-      fired = true;
-    };
+    AOS.init({ duration: 1200, once: true, startEvent: 'timer' });
+
+    window.setTimeout(function () {
+      document.dispatchEvent(new CustomEvent('timer'));
+    }, 800);
+
+    document.querySelectorAll('.bio').forEach(e => {e.style['opacity']=1; e.style['margin-left']=0;});
+    // AOS.init({duration:1200, once:true});
   </script>
 </body>
+
 </html>
