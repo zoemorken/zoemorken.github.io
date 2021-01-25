@@ -40,6 +40,7 @@
     ></script>
 
     <script src="scripts/navbar-scroll.js"></script>
+    <script src="scripts/highlighter.js"></script>
 
     <link
       rel="stylesheet"
@@ -51,6 +52,7 @@
     />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/sidebar.css" />
+    <link rel="stylesheet" href="css/highlight.css" />
 
     <style>
       /* The hero image */
@@ -75,22 +77,22 @@
 
   <body>
     <div class="pos-f-t sticky-top frosted-glass" id="navbar">
-        <nav class="navbar navbar-light py-4">
-          <span class="pl-5em">
-            <span class="custom-control custom-switch">
-              <input type="checkbox" class="custom-control-input" id="darkSwitch" />
-              <label class="custom-control-label" for="darkSwitch"></label>
-              <span class="page-title"><a class="bare-link" href="index.html">Zoë Morken</a></span>
-            </span>
-            <script src="scripts/dark-mode-switch.min.js"></script>
+      <nav class="navbar navbar-light">
+        <span class="pl-5em">
+          <span class="custom-control custom-switch">
+            <input type="checkbox" class="custom-control-input" id="darkSwitch" />
+            <label class="custom-control-label" for="darkSwitch"></label>
+            <span class="page-title"><a class="bare-link" href="index.html">Zoë Morken</a></span>
           </span>
-    
-          <span class="pr-5em">
-            <span class="mx-2"><a class="bare-link" href="index.html">Work</a></span>
-            <span class="mx-2"><a class="bare-link" href="about.html">About</a></span>
-            <span class="mx-2"><a class="bare-link" href="Zoe_Morken_Resume.pdf" target="_blank">Resume</a></span>
-          </span>
-        </nav>
+          <script src="scripts/dark-mode-switch.min.js"></script>
+        </span>
+  
+        <span class="pr-4rem">
+          <span class="right-nav-1"><a class="bare-link" href="index.html">Work</a></span>
+          <span class="right-nav-2"><a class="bare-link" href="about.html">About</a></span>
+          <span class="right-nav-3"><a class="bare-link" href="Zoe_Morken_Resume.pdf" target="_blank">Resume</a></span>
+        </span>
+      </nav>
     </div>
 
     <!-- Hero image -->
@@ -124,22 +126,22 @@
                 <p class="mt-2">
                   During the Spring 2020 semester, my team worked with
                   DonateEquity on a project as part of our Experience Studio
-                  course at Purdue University. We were initially tasked to
+                  course at Purdue University. <span class="highlight">We were initially tasked to
                   create a tool that would enable university fundraising
                   officers to quickly identify potential donors to solicit major
                   gifts from. Our research findings led us to shift our focus
                   instead towards helping officers build close and lasting
-                  relationships with their regular donors.
+                  relationships with their regular donors.</span> 
                 </p>
                 <h5 id="my-role">
                   <div>My Role</div>
                 </h5>
                 <p>
                   I co-led a team of seven UX Design students and worked closely
-                  with our sponsor, Landon Young. I was responsible for
+                  with our sponsor, Landon Young. <span class="highlight">I was responsible for
                   conducting interviews, synthesizing findings from
                   stakeholders, and designing the wireframes for our finalized
-                  concept. As a team lead, I mentored and delegated tasks to
+                  concept.</span> As a team lead, I mentored and delegated tasks to
                   first-year students throughout the course of the semester as
                   well as guided the overall direction of the project.
                 </p>
@@ -207,10 +209,10 @@
                   ></a>
                 </h3>
                 <p>
-                  Affinity: a cloud-based database and app integrated with the
+                  <span class="highlight">Affinity: a cloud-based database and app integrated with the
                   university’s Customer Relationship Management (CRM) system.
                   Affinity allows efficient creation and retrieval of contact
-                  reports as well as flexible meeting scheduling. By using
+                  reports as well as flexible meeting scheduling.</span> By using
                   Affinity, Katherine is able to direct her energy towards
                   getting to know patrons instead of worrying about the
                   logistics of her job.
@@ -272,12 +274,12 @@
                 </ul>
                 <p>
                   After our interviews, we identified the common themes we heard
-                  from our participants. Our most significant and unexpected
+                  from our participants. <span class="highlight">Our most significant and unexpected
                   takeaway was that development officers do not have a problem
                   finding new leads / prospects with their existing resources
                   (internet and university archives). Instead, we found that
                   fostering relationships and building trust with current donors
-                  was more important. Since officers represent the university,
+                  was more important.</span> Since officers represent the university,
                   much of their work is dedicated toward in-person visits with
                   donors. This led us to realign our problem scope to focus on
                   managing these interpersonal connections through emphasis on
@@ -394,13 +396,13 @@
                 </p>
                 <ol>
                   <li>
-                    Contact report drafting and organization – an easily
+                    <span class="highlight fast">Contact report drafting and organization</span> – an easily
                     scannable list of previous trips an officer has taken
                     (sorted from most recent to least recent), along with their
                     respective reports on each of the donors visited.
                   </li>
                   <li>
-                    Donor tracker – a map depicting the number of donors in a
+                    <span class="highlight fast">Donor tracker</span> – a map depicting the number of donors in a
                     development officer’s portfolio residing in a particular
                     area. The larger the amount of donors living in one city,
                     the bigger the representation on the map. This was done in
@@ -480,7 +482,7 @@
                 <p>
                   In order to better understand if officers would find this app
                   useful for their responsibilities at work as well as evaluate
-                  the overall concept, we conduct usability testing through
+                  the overall concept, we conducted usability testing through
                   screen sharing on video calls. Unfortunately, our current
                   situation could not allow us to truly simulate their work
                   environment but the feedback we received informed our
@@ -518,9 +520,9 @@
                   </li>
                 </ul>
                 <p>
-                  Through testing we confirmed that Affinity would most likely
+                  <span class="highlight">Through testing we confirmed that Affinity would most likely
                   have a place during the scheduling process and directly after
-                  donor meetings. We also found that the ability to add quick
+                  donor meetings.</span> We also found that the ability to add quick
                   notes directly after a meeting helped development officers
                   organize their thoughts before submitting it into their CRM.
                 </p>
@@ -544,7 +546,63 @@
                   these changes were appropriate and would provide development
                   officers a more robust experience.
                 </p>
-                <p></p>
+                <div class="row row-cols-1 row-cols-md-2 p-3">
+                  <div class="mt-4 p-3">
+                    <div class="h-100 border-0">
+                      <div class="card h-100 border-0">
+                        <img
+                          src="images/affinity-iteration1-before.png"
+                          class="card-img-top img-corner"
+                          alt="Iteration 1 Before"
+                        />
+                        <figcaption>Before</figcaption>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mt-4 p-3">
+                    <div class="h-100 border-0">
+                      <div class="card h-100 border-0">
+                        <img
+                          src="images/affinity-iteration1-after.png"
+                          class="card-img-top img-corner"
+                          alt="Iteration 1 After"
+                        />
+                        <figcaption>After</figcaption>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="font-weight-bold">Contact Report Creation</div>
+                <p>After the contact report, development officers now have an option to set a follow-up reminder as well as move donors to any part of the development cycle. Originally, donors could only stay in the same phase or move forward.</p>
+
+                <div class="row row-cols-1 row-cols-md-2 p-3">
+                  <div class="mt-4 p-3">
+                    <div class="h-100 border-0">
+                      <div class="card h-100 border-0">
+                        <img
+                          src="images/affinity-iteration2-before.png"
+                          class="card-img-top img-corner"
+                          alt="Iteration 1 Before"
+                        />
+                        <figcaption>Before</figcaption>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mt-4 p-3">
+                    <div class="h-100 border-0">
+                      <div class="card h-100 border-0">
+                        <img
+                          src="images/affinity-iteration2-after.png"
+                          class="card-img-top img-corner"
+                          alt="Iteration 1 After"
+                        />
+                        <figcaption>After</figcaption>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="font-weight-bold">New Trip Creation</div>
+                <p>Instead of assigning donors to what day officers planned to meet with them, officers can now indicate specific time and location within a trip. We also added an option to share a trip itinerary.</p>
               </div>
             </div>
 
@@ -601,9 +659,9 @@
                   Update: In light of COVID-19, this project has returned to our
                   Experience Studio course in order to be adapted for university
                   development officers as they fulfill their responsibilities
-                  remotely. I am the Project Owner for the Fall 2020 team
-                  working on Affinity and will be supervising them throughout
-                  this semester.
+                  remotely. I was the Project Owner for the Fall 2020 team
+                  working on Affinity and supervised them throughout
+                  the semester.
                 </p>
                 <div class="text-center">
                   <img
@@ -658,7 +716,7 @@
             <a class="bare-link" href="https://github.com/zoemorken" target="_blank"><i class="pr-2 fab fa-github fa-lg"></i></a>
           </li>
         </ul>
-        <p class="mt-4 pl-3">&copy; Zoë Morken 2020</p>
+        <p class="mt-4 pl-3">&copy; Zoë Morken 2021</p>
       </div>
       <div class="col-2 mb-5">
         <a href="#">Back to top</a>

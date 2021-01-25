@@ -1,0 +1,29 @@
+.highlight {
+    background-image: linear-gradient(to right, #fff2cc, #fff2cc);
+    background-repeat: no-repeat;
+    background-size: 0% 95%;
+    background-position: 0 95%;
+    transition: background-size 1.0s ease-in;
+}
+
+.fast {
+    background-image: linear-gradient(to right, #fff2cc, #fff2cc);
+    transition: background-size 0.3s ease-in;
+}
+
+[data-theme="dark"] .highlight {
+    background-image: linear-gradient(to right, #695acdb0, #695acdb0);
+    background-repeat: no-repeat;
+    background-size: 0% 95%;
+    background-position: 0 95%;
+    transition: background-size 1.0s ease-in;
+}
+
+[data-theme="dark"] .fast {
+    background-image: linear-gradient(to right, #695acdb0,  #695acdb0);
+    transition: background-size 0.3s ease-in;
+}
+
+.highlight.highlighted {
+    background-size: 100% 95%;
+}

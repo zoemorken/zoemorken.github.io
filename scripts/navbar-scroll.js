@@ -65,3 +65,8 @@ function processScroll()  {
   });
 }
 
+/* Remember what page we're on for throttling effects */
+if (!window.location.pathname.endsWith('index.html') &&
+    window.location.pathname !== '/') {
+  sessionStorage.setItem('last-page', window.location.pathname);
+}
