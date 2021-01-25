@@ -55,7 +55,7 @@ a.bare-link:hover, a.bare-link:active, a.bare-link:link, a.bare-link:visited {
 }
 
 .right-nav-1:hover {
-  background-color: #7f7f7f15;
+  background-color: #f4f4f4;
   border-radius: 4px;
   padding: 0.75rem 1.25rem;
   right: 240px;
@@ -71,7 +71,7 @@ a.bare-link:hover, a.bare-link:active, a.bare-link:link, a.bare-link:visited {
 }
 
 .right-nav-2:hover {
-  background-color: #7f7f7f15;
+  background-color: #f4f4f4;
   border-radius: 4px;
   padding: 0.75rem 1.25rem;
   right: 160px;
@@ -87,7 +87,7 @@ a.bare-link:hover, a.bare-link:active, a.bare-link:link, a.bare-link:visited {
 }
 
 .right-nav-3:hover {
-  background-color: #7f7f7f15;
+  background-color: #f4f4f4;
   border-radius: 4px;
   padding: 0.75rem 1.25rem;
   right: 65px;
@@ -301,7 +301,11 @@ line-height: 1.5;
 }
 
 [data-theme="dark"] .card {
-  background-color: #222;
+  background-color: #121212;
+}
+
+[data-theme="dark"] .right-nav-1:hover, [data-theme="dark"] .right-nav-2:hover, [data-theme="dark"] .right-nav-3:hover {
+  background-color: #303030;
 }
 
 [data-theme="dark"] .nav-button {

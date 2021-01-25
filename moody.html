@@ -24,11 +24,13 @@
     crossorigin="anonymous"></script>
 
   <script src="scripts/navbar-scroll.js"></script>
+  <script src="scripts/highlighter.js"></script>
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700;800&display=swap" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" />
   <link rel="stylesheet" href="css/main.css" />
   <link rel="stylesheet" href="css/sidebar.css" />
+  <link rel="stylesheet" href="css/highlight.css" />
 
   <style>
     /* The hero image */
@@ -67,7 +69,7 @@
 
 <body>
   <div class="pos-f-t sticky-top frosted-glass" id="navbar">
-    <nav class="navbar navbar-light py-4">
+    <nav class="navbar navbar-light">
       <span class="pl-5em">
         <span class="custom-control custom-switch">
           <input type="checkbox" class="custom-control-input" id="darkSwitch" />
@@ -77,10 +79,10 @@
         <script src="scripts/dark-mode-switch.min.js"></script>
       </span>
 
-      <span class="pr-5em">
-       <span class="mx-2"><a class="bare-link" href="index.html">Work</a></span>
-       <span class="mx-2"><a class="bare-link" href="about.html">About</a></span>
-        <span class="mx-2"><a class="bare-link" href="Zoe_Morken_Resume.pdf" target="_blank">Resume</a></span>
+      <span class="pr-4rem">
+        <span class="right-nav-1"><a class="bare-link" href="index.html">Work</a></span>
+        <span class="right-nav-2"><a class="bare-link" href="about.html">About</a></span>
+        <span class="right-nav-3"><a class="bare-link" href="Zoe_Morken_Resume.pdf" target="_blank">Resume</a></span>
       </span>
     </nav>
   </div>
@@ -214,7 +216,7 @@
                 way meant. Because each part of the process exercised different mental capabilities, I’ve broken this
                 reflection into how I approached creating Moody.</p>
               <ul>
-                <li>Spotify Authorization Set-Up: By far the most technically challenging part. I relied heavily on
+                <li><span class="highlight fast">Spotify Authorization Set-Up:</span> By far the most technically challenging part. I relied heavily on
                   external sources when the tutorial didn’t make sense or wasn’t working for me. Coming into this
                   exercise, I struggled to understand what an API was, much less how I could run one. Therefore, when
                   going through the tutorial, I asked many questions: “What is Node.js? What is a local host? What is an
@@ -222,14 +224,14 @@
                   not completely familiar with the many components in my code running behind the scenes. However, I
                   understand how everything interacts with one another, from the client-side HTML to the server-side
                   API. Additionally, I learned basic Unix commands to start the terminal.</li>
-                <li>Specifying Functionality: This was also difficult, as I had limited JS and jQuery knowledge. Once I
+                <li><span class="highlight fast">Specifying Functionality:</span> This was also difficult, as I had limited JS and jQuery knowledge. Once I
                   had the API example set up on my computer, I began to edit and rearrange the code gradually. I saved
                   and checked the smallest of modifications in the browser to confirm everything was still running
                   properly. By doing so, I was able to reduce the amount of time spent debugging since only one change
                   was made at a time. This made running into issues easier; when I did encounter problems, I would use
                   Developer Tools to view errors (which was especially helpful when replacing user profile information
                   with track information).</li>
-                <li>Styling and Enhanced UX: What I found most exciting to do besides seeing the API work for the first
+                <li><span class="highlight fast">Styling and Enhanced UX:</span> What I found most exciting to do besides seeing the API work for the first
                   time. Because I was already familiar with CSS, this part was relatively short and involved playing
                   around with line widths, spacing, sizing, etc. When deciding on a more meaningful way to showcase
                   information retrieved from the API, I was happy to discover that emojis had their own HTML reference.
@@ -288,3 +290,4 @@
     </div>
   </div>
 </body>
+</html>

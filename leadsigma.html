@@ -23,13 +23,15 @@
         crossorigin="anonymous"></script>
 
     <script src="scripts/navbar-scroll.js"></script>
-
+    <script src="scripts/highlighter.js"></script>
+    
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700;800&display=swap" />
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/sidebar.css" />
+    <link rel="stylesheet" href="css/highlight.css" />
 
     <style>
         /* The hero image */
@@ -54,7 +56,7 @@
 
 <body>
     <div class="pos-f-t sticky-top frosted-glass" id="navbar">
-        <nav class="navbar navbar-light py-4">
+        <nav class="navbar navbar-light">
             <span class="pl-5em">
                 <span class="custom-control custom-switch">
                     <input type="checkbox" class="custom-control-input" id="darkSwitch" />
@@ -64,10 +66,11 @@
                 <script src="scripts/dark-mode-switch.min.js"></script>
             </span>
 
-            <span class="pr-5em">
-                <span class="mx-2"><a class="bare-link" href="index.html">Work</a></span>
-                <span class="mx-2"><a class="bare-link" href="about.html">About</a></span>
-                <span class="mx-2"><a class="bare-link" href="Zoe_Morken_Resume.pdf" target="_blank">Resume</a></span>
+            <span class="pr-4rem">
+                <span class="right-nav-1"><a class="bare-link" href="index.html">Work</a></span>
+                <span class="right-nav-2"><a class="bare-link" href="about.html">About</a></span>
+                <span class="right-nav-3"><a class="bare-link" href="Zoe_Morken_Resume.pdf"
+                        target="_blank">Resume</a></span>
             </span>
         </nav>
     </div>
@@ -199,20 +202,28 @@
                                 <div class="mt-4 p-3">
                                     <div class="h-100 border-0">
                                         <div class="card h-100 border-0">
-                                            <img src="images/leadsigma-figma1.png" class="card-img-top img-corner"
-                                                alt="Figma app page" />
+                                            <a href="images/leadsigma-figma1.png">
+                                                <img src="images/leadsigma-figma1.png" class="card-img-top img-corner"
+                                                    alt="Figma app page" />
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="mt-4 p-3">
                                     <div class="h-100 border-0">
                                         <div class="card h-100 border-0">
-                                            <img src="images/leadsigma-figma2.png" class="card-img-top img-corner"
-                                                alt="Figma components page" />
+                                            <a href="images/leadsigma-figma2.png">
+                                                <img src="images/leadsigma-figma2.png" class="card-img-top img-corner"
+                                                    alt="Figma components page" />
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            <figcaption>How I organized my prototype. Components repeated in different areas of the app
+                                are placed in their own separate page. Pages of the app are organized in rows. Local
+                                styles on the right made it easy for me to make sure I was applying the correct branding
+                                guidelines.</figcaption>
                         </div>
                     </div>
 
@@ -224,12 +235,13 @@
                                     data-anchorjs-icon="#"></a>
                             </h2>
                             <ul>
-                                <li>Frequently ask for feedback on designs from others on the team: Because I worked
+                                <li><span class="highlight">Frequently ask for feedback on designs from others on the
+                                        team:</span> Because I worked
                                     closely with Scott and John, it was imperative that what I created aligned with
                                     their vision of the web app functionality. Though it’s important to test with
                                     external stakeholders, receiving input from team members was just as necessary.</li>
-                                <li>Make sure the focus is on the person, not the design: Since my work was primarily on
-                                    the UI of the app, it was easy to get lost in the details rather than view the
+                                <li><span class="highlight"> Make sure the focus is on the person, not the design:</span>
+                                    Since my work was primarily on the UI of the app, it was easy to get lost in the details rather than view the
                                     project at a holistic level. To mitigate this, I would frequently revisit
                                     LeadSigma’s vision. Asking questions like “What is the salesperson trying to achieve
                                     when placed in [X] situation?” or “What functionalities would be important to
@@ -244,7 +256,7 @@
                             <div class="text-center">
                                 <img src="images/leadsigma-groupphoto.png" alt="LeadSigma group photo"
                                     class="img-fluid my-5" />
-                                <figcaption>Last virtual happy hour &#9829; (timed perfectly with my poor Internet
+                                <figcaption>Last virtual happy hour &#10084; (timed perfectly with my poor Internet
                                     connectivity).</figcaption>
                             </div>
                         </div>

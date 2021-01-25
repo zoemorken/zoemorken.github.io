@@ -24,6 +24,7 @@
         crossorigin="anonymous"></script>
 
     <script src="scripts/navbar-scroll.js"></script>
+    <script src="scripts/highlighter.js"></script>
 
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700;800&display=swap" />
@@ -31,6 +32,7 @@
         href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/sidebar.css" />
+    <link rel="stylesheet" href="css/highlight.css" />
 
     <style>
     </style>
@@ -38,22 +40,22 @@
 
 <body>
     <div class="pos-f-t sticky-top frosted-glass" id="navbar">
-        <nav class="navbar navbar-light py-4">
+        <nav class="navbar navbar-light">
             <span class="pl-5em">
-                <span class="custom-control custom-switch">
-                    <input type="checkbox" class="custom-control-input" id="darkSwitch" />
-                    <label class="custom-control-label" for="darkSwitch"></label>
-                    <span class="page-title"><a class="bare-link" href="index.html">Zoë Morken</a></span>
-                </span>
-                <script src="scripts/dark-mode-switch.min.js"></script>
+              <span class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="darkSwitch" />
+                <label class="custom-control-label" for="darkSwitch"></label>
+                <span class="page-title"><a class="bare-link" href="index.html">Zoë Morken</a></span>
+              </span>
+              <script src="scripts/dark-mode-switch.min.js"></script>
             </span>
-
-            <span class="pr-5em">
-                <span class="mx-2"><a class="bare-link" href="index.html">Work</a></span>
-                <span class="mx-2"><a class="bare-link" href="about.html">About</a></span>
-                <span class="mx-2"><a class="bare-link" href="Zoe_Morken_Resume.pdf" target="_blank">Resume</a></span>
+      
+            <span class="pr-4rem">
+              <span class="right-nav-1"><a class="bare-link" href="index.html">Work</a></span>
+              <span class="right-nav-2"><a class="bare-link" href="about.html">About</a></span>
+              <span class="right-nav-3"><a class="bare-link" href="Zoe_Morken_Resume.pdf" target="_blank">Resume</a></span>
             </span>
-        </nav>
+          </nav>
     </div>
 
 
@@ -86,11 +88,11 @@
                                         <div>What I'm Up To</div>
                                     </h5>
                                     <ul>
-                                        <li>Teaching myself Java through Codecademy &#128187;</li>
+                                        <li>Learning Java through Codecademy &#128187;</li>
                                         <li>Reading <span class="font-italic">Strength to Love</span> by Martin Luther King,
                                             Jr. &#128214;</li>
                                         <li>Pushing through daily barre workouts &#128170;</li>
-                                        <li>Practicing my cooking skills with ingredients I've never used before &#127840;
+                                        <li>Practicing my cooking skills with new ingredients &#127840;
                                         </li>
                                     </ul>
                                 </div>
@@ -151,20 +153,6 @@
                         </div>
                     </div>
 
-                    <!-- <div class="row row-cols-1 p-3">
-                        <div class="h-100 border-0">
-                            <h3 id="current-work">
-                                <div>What I'm Up To</div>
-                            </h3>
-                            <ul>
-                                <li>Teaching myself Java through Codecademy &#128187;</li>
-                                <li>Reading <span class="font-italic">Strength to Love</span> by Martin Luther King, Jr. &#128214;</li>
-                                <li>Pushing through daily barre workouts &#128170;</li>
-                                <li>Practicing my cooking skills with ingredients I've never used before &#127840;</li>
-                            </ul>
-                        </div>
-                    </div> -->
-
                     <h3 id="contact">
                         <div class="mt-5">Get in Touch</div>
                     </h3>
@@ -173,7 +161,7 @@
                             <button class="rounded contact" onclick="window.location='mailto:zmorken@purdue.edu'">Contact Me</button>
                         </div>
                         <div class="col-6 mt-3">
-                            <button class="rounded contact" onclick="window.location='Zoe_Morken_Resume.pdf' ">Download Resume</button>
+                            <a href="Zoe_Morken_Resume.pdf" target="_blank"><button class="rounded contact">Download Resume</button></a>
                         </div>
                     </div>
 

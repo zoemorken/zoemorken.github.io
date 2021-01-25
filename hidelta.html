@@ -24,11 +24,13 @@
     crossorigin="anonymous"></script>
 
   <script src="scripts/navbar-scroll.js"></script>
+  <script src="scripts/highlighter.js"></script>
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;700;800&display=swap" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" />
   <link rel="stylesheet" href="css/main.css" />
   <link rel="stylesheet" href="css/sidebar.css" />
+  <link rel="stylesheet" href="css/highlight.css" />
 
   <style>
     /* The hero image */
@@ -53,7 +55,7 @@
 
 <body>
   <div class="pos-f-t sticky-top frosted-glass" id="navbar">
-    <nav class="navbar navbar-light py-4">
+    <nav class="navbar navbar-light">
       <span class="pl-5em">
         <span class="custom-control custom-switch">
           <input type="checkbox" class="custom-control-input" id="darkSwitch" />
@@ -63,10 +65,10 @@
         <script src="scripts/dark-mode-switch.min.js"></script>
       </span>
 
-      <span class="pr-5em">
-        <span class="mx-2"><a class="bare-link" href="index.html">Work</a></span>
-        <span class="mx-2"><a class="bare-link" href="about.html">About</a></span>
-        <span class="mx-2"><a class="bare-link" href="Zoe_Morken_Resume.pdf" target="_blank">Resume</a></span>
+      <span class="pr-4rem">
+        <span class="right-nav-1"><a class="bare-link" href="index.html">Work</a></span>
+        <span class="right-nav-2"><a class="bare-link" href="about.html">About</a></span>
+        <span class="right-nav-3"><a class="bare-link" href="Zoe_Morken_Resume.pdf" target="_blank">Resume</a></span>
       </span>
     </nav>
   </div>
@@ -122,7 +124,7 @@
                 <a class="anchorjs-link" href="#reflection" aria-label="Anchor" data-anchorjs-icon="#"></a>
               </h2>
               <ul>
-                <li>Communication is key: With my team spread across five different time zones, it was imperative that
+                <li><span class="highlight fast">Communication is key:</span> With my team spread across five different time zones, it was imperative that
                   we keep aligned. To do this, we created a Scrum schedule that involved meeting with the other design
                   interns at the beginning of our weekly sprints, then showcasing our individual progress at the end of
                   the week. Daily updates were sent out asynchronously through Slack. This internship was unique in that
@@ -130,7 +132,7 @@
                   constraints needed to plan and execute our tasks. We quickly adapted to this new style of work, and it
                   allowed us to iterate efficiently on our tasks. Furthermore, regular incremental feedback on our work
                   in progress helped us improve as designers as we began to anticipate our stakeholder’s needs.</li>
-                <li>Don’t be afraid to start over: When the first round of designs presented to HiDelta’s client by a
+                <li><span class="highlight fast">Don’t be afraid to start over:</span> When the first round of designs presented to HiDelta’s client by a
                   hired design agency did not meet the vision he had for his proposed application, he turned to our team
                   of interns to start from scratch. This responsibility gave us the freedom to truly focus on the user.
                   Though we still had time constraints and technical requirements to meet, the client offered us a rare
@@ -138,7 +140,7 @@
                   experience discovering new meals to enjoy. I seized this chance to experiment with different ways
                   someone could come across the app, capitalizing on innovative interactions that would expose users to
                   recommendations in novel ways.</li>
-                <li>Take the initiative: In my time as lead designer, I occasionally found myself not knowing how to
+                <li><span class="highlight fast">Take the initiative:</span> In my time as lead designer, I occasionally found myself not knowing how to
                   accomplish what was asked of me. I took it upon myself to improve my technical skills by finding
                   resources online. This has helped me gain in self-efficacy and confidence.</li>
               </ul>
