@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoë Morken – Avanade</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <!-- Font Awesome icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <script src="scripts/navbar-scroll.js"></script>
+    <script src="scripts/highlighter.js"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/sidebar.css" />
+    <link rel="stylesheet" href="css/highlight.css" />
+
+    <style>
+        /* The hero image */
+        .hero-image {
+            /* Use "linear-gradient" to add a darken background effect to the image.
+            This will make the text easier to read
+         */
+
+            background-image: url("images/"), linear-gradient();
+
+            /* Set a specific height */
+            height: 30rem;
+
+            /* Position and center the image to scale nicely on all screens */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="pos-f-t sticky-top frosted-glass" id="navbar">
+        <nav class="navbar navbar-light">
+            <span class="pl-5em">
+                <span class="custom-control custom-switch">
+                    <input type="checkbox" class="custom-control-input" id="darkSwitch" />
+                    <label class="custom-control-label" for="darkSwitch"></label>
+                    <span class="page-title"><a class="bare-link" href="index.html">Zoë Morken</a></span>
+                </span>
+                <script src="scripts/dark-mode-switch.min.js"></script>
+            </span>
+
+            <span class="pr-4rem">
+                <span class="right-nav-1"><a class="bare-link" href="index.html">Work</a></span>
+                <span class="right-nav-2"><a class="bare-link" href="about.html">About</a></span>
+                <span class="right-nav-3"><a class="bare-link" href="Zoe_Morken_Resume.pdf"
+                        target="_blank">Resume</a></span>
+            </span>
+        </nav>
+    </div>
+
+    <!-- Hero image -->
+    <div class="hero-image">
+        <div class="hero-text">
+            <!-- <h1>Affinity</h1>
+          <h4 class="mt-4">A cloud-based mobile app for university fundraising officers.</h4>
+          <p class="mt-4">Spring 2020 (5 months, January–May 2020)</p> -->
+        </div>
+    </div>
+
+    <div class="content-wrapper">
+        <!-- Main content area-->
+        <div class="container-fluid mt-5">
+            <div class="row flex-xl-nowrap">
+                <main class="col-12 col-md-11 col-xl-10 py-md-3 bd-content" role="main">
+                    <div class="row mt-4 p-3 linked-section">
+                        <div class="h-100 border-0">
+                            <h2 id="project-brief">
+                                <div>Project Brief</div>
+                                <a class="anchorjs-link" href="#project-brief" aria-label="Anchor"
+                                    data-anchorjs-icon="#"></a>
+                            </h2>
+                            <p class="mt-2">
+                                During the Spring 2021 semester, my team worked with Avanade on a project as part of our Experience Studio course at Purdue University. We were tasked to create a digital platform to serve as a source of authoritative guidance for the city of West Lafayette. To do this, we decided to focus our efforts on helping students at Purdue University (located in West Lafayette) navigate the quarantine process confidently.</p>
+                            <h5 id="my-role">
+                                <div>My Role</div>
+                            </h5>
+                            <p>
+                                I co-led a team of seven UX Design students and worked closely with our sponsors. I was responsible for conducting interviews with stakeholders, synthesizing results from team ideation sessions, and designing the mockups for our finalized concept. As a team lead, I built and executed the sprint schedule to complete milestones as well as facilitated remote team activities.
+                            </p>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+
+        <!-- Spacer -->
+        <div class="p-4"></div>
+    </div>
+
+    <!-- Right nav bar -->
+    <div class="d-none d-xl-block col-xl-2 py-md-3 pl-md-3 bc-toc" id="rightnav">
+        <!-- <ul class="section-nav">
+                    <li class="toc-entry">
+                        <a href="#project-brief"> Project Brief </a>
+                        <a href="#problem"> Problem </a>
+                        <a href="#solution"> Solution </a>
+                        <a href="#research"> Research </a>
+                        <a href="#ideation"> Ideation </a>
+                        <a href="#sitemap"> Site Map </a>
+                        <a href="#testing"> Testing </a>
+                        <a href="#iterations"> Iterations </a>
+                        <a href="#finaldesign"> Final Design </a>
+                        <a href="#reflection"> Reflection </a>
+                    </li>
+                </ul> -->
+    </div>
+    <script>
+        function setTop() {
+            document.getElementById("rightnav").setAttribute("style", "top: " + Math.max(70, 600 - window.pageYOffset) + "px;");
+        }
+        window.addEventListener('scroll', setTop);
+        setTop();
+    </script>
+
+    <!-- Footer -->
+    <div class="row align-items-center bg-offwhite mt-3 pl-5">
+        <div class="col-10 mb-5">
+            <p class="mt-5 pl-3">100% organic and website builder free &#x1f389;</p>
+            <ul class="contact">
+                <li>
+                    <a class="bare-link" href="https://www.linkedin.com/in/zoe-morken/" target="_blank"><i
+                            class="pr-2 fab fa-linkedin-in fa-lg"></i></a>
+                    <a class="bare-link" href="https://www.instagram.com/zoe.morken/" target="_blank"><i
+                            class="pr-2 fab fa-instagram fa-lg"></i></a>
+                    <a class="bare-link" href="https://github.com/zoemorken" target="_blank"><i
+                            class="pr-2 fab fa-github fa-lg"></i></a>
+                </li>
+            </ul>
+            <p class="mt-4 pl-3">&copy; Zoë Morken 2021</p>
+        </div>
+        <div class="col-2 mb-5">
+            <a href="#">Back to top</a>
+        </div>
+    </div>
+</body>
+
+</html>
