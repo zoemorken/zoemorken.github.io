@@ -145,10 +145,15 @@ h1,h2,h3,h4,h5, .page-title {
     max-width: 100%;
   }
   .hero-image {
-    background-position: 35%;
+    background-position: 35%!important;
   }
   .hero-text h4,.hero-text p {
     width: 12rem!important;
+  }
+  /* footer */
+  .row.bg-offwhite {
+    margin: 0;
+    padding-left: 1rem!important;
   }
 }
 
