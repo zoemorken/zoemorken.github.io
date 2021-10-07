@@ -108,18 +108,58 @@ h1,h2,h3,h4,h5, .page-title {
   font-family: Rubik, 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
 }
 
-@media only screen and (max-width: 550px) {
-  .page-title {
+@media only screen and (max-width: 350px) {
+  .navbar {
     display: none;
   }
 }
 
+@media only screen and (max-width: 550px) {
+  .page-title {
+    display: none;
+  }
+  .pl-5em {
+    padding-left: 0!important;
+  }
+  .content-wrapper {
+    max-width:90%;
+  }
+  .col-1 {
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+  .col-2 {
+    flex: 0 0 40%;
+    max-width: 40%;
+  }
+  .col-3 {
+    flex: 0 0 60%;
+    max-width: 60%;
+  }
+  .col-4 {
+    flex: 0 0 80%;
+    max-width: 80%;
+  }
+  .col-5,.col-6,.col-7,.col-8,.col-9,.col-10,.col-11,.col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .hero-image {
+    background-position: 35%;
+  }
+  .hero-text h4,.hero-text p {
+    width: 12rem!important;
+  }
+}
 
-.hero-text h4{
+.hero-text h4 {
   font-weight: 300 !important;
   font-family: Inter !important;
   width: 30vw;
   line-height: 1.5;
+}
+.hero-text p {
+  width: 30vw;
 }
 
 h1 {
